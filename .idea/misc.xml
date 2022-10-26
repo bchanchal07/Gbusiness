@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/drawable-hdpi/circle.xml" value="0.22" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/drawable-hdpi/default_img.xml" value="0.22" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/drawable/bg_gradient.xml" value="0.22" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/drawable/circle.xml" value="0.22" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/activity_main.xml" value="0.32974358974358975" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/custom_dialog.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/expandable_business_list_child_layout.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/expandable_business_list_group_layout.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_blank.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_business_list.xml" value="0.33" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_business_list_create.xml" value="0.32974358974358975" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_business_list_edit.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_business_listing.xml" value="0.33" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_photos.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_step_1_business_list.xml" value="0.33" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_step_2_business_list.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_update_step_one.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_update_step_two.xml" value="0.25" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/gallery_image_view_adapter_layout.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/picturedialog.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/recyclerview_item_business_category_details.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/recyclerview_item_seller_links.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/show_bottom_action_layout.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/step_1_business_list_items_adapter_layout.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/step_2_business_list_items_adapter_layout.xml" value="0.25" />
+        <entry key="..\:/Chanchal-Bhasker/Android_App/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/step_two_gallery_images_adapter.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/drawable/cell_back_table.xml" value="0.2125" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/drawable/cell_back_table_white.xml" value="0.2125" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/drawable/set_expandable_child_bg.xml" value="0.2125" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/about_us_layout.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/activity_intro.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/activity_login.xml" value="0.32974358974358975" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/activity_main.xml" value="0.32974358974358975" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/activity_otp.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/activity_sign_up.xml" value="0.32974358974358975" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/dlg_error_msg_signup.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/dlg_logout.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/expandable_business_list_child_layout.xml" value="0.33" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/expandable_business_list_group_layout.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_about_us.xml" value="0.32974358974358975" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_book_domain.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_book_sub_domain.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_booked_sub_domain_list.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_business_list.xml" value="0.32974358974358975" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_business_list_create.xml" value="0.32974358974358975" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_business_list_edit.xml" value="0.32974358974358975" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_business_listing.xml" value="0.32974358974358975" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_domain_order.xml" value="0.32974358974358975" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_earning.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_main.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_payment_or_invoice_web_view.xml" value="0.32974358974358975" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_step_1__business_list.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_step_2__business_list.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/fragment_step_2_business_list.xml" value="0.32974358974358975" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/list_item.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/recyclerview_item_business_category_details.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/recyclerview_item_business_list.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/recyclerview_item_dashboard.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/show_bottom_action_layout.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/layout/slide1.xml" value="0.33489583333333334" />
+        <entry key="..\:/Chanchal-Bhasker/GBusinessApp/Gbusiness31522/Gbusiness/app/src/main/res/menu/drawer_menu.xml" value="0.33489583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

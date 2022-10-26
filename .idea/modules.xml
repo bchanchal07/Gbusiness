@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Gbusiness.iml" filepath="$PROJECT_DIR$/.idea/modules/Gbusiness.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FieldSetView/Gbusiness.FieldSetView.iml" filepath="$PROJECT_DIR$/.idea/modules/FieldSetView/Gbusiness.FieldSetView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FieldSetView/Gbusiness.FieldSetView.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/FieldSetView/Gbusiness.FieldSetView.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FieldSetView/Gbusiness.FieldSetView.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FieldSetView/Gbusiness.FieldSetView.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FieldSetView/Gbusiness.FieldSetView.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/FieldSetView/Gbusiness.FieldSetView.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Gbusiness.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Gbusiness.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Gbusiness.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Gbusiness.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Gbusiness.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Gbusiness.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Gbusiness.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Gbusiness.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/full-image-view-library/Gbusiness.full-image-view-library.iml" filepath="$PROJECT_DIR$/.idea/modules/full-image-view-library/Gbusiness.full-image-view-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gallery-viewer/Gbusiness.gallery-viewer.iml" filepath="$PROJECT_DIR$/.idea/modules/gallery-viewer/Gbusiness.gallery-viewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gallery-viewer/Gbusiness.gallery-viewer.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/gallery-viewer/Gbusiness.gallery-viewer.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gallery-viewer/Gbusiness.gallery-viewer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/gallery-viewer/Gbusiness.gallery-viewer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gallery-viewer/Gbusiness.gallery-viewer.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/gallery-viewer/Gbusiness.gallery-viewer.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/motiontoast/Gbusiness.motiontoast.iml" filepath="$PROJECT_DIR$/.idea/modules/motiontoast/Gbusiness.motiontoast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/motiontoast/Gbusiness.motiontoast.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/motiontoast/Gbusiness.motiontoast.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/motiontoast/Gbusiness.motiontoast.main.iml" filepath="$PROJECT_DIR$/.idea/modules/motiontoast/Gbusiness.motiontoast.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/motiontoast/Gbusiness.motiontoast.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/motiontoast/Gbusiness.motiontoast.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/searchablespinner/Gbusiness.searchablespinner.iml" filepath="$PROJECT_DIR$/.idea/modules/searchablespinner/Gbusiness.searchablespinner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/searchablespinner/Gbusiness.searchablespinner.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/searchablespinner/Gbusiness.searchablespinner.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/searchablespinner/Gbusiness.searchablespinner.main.iml" filepath="$PROJECT_DIR$/.idea/modules/searchablespinner/Gbusiness.searchablespinner.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/searchablespinner/Gbusiness.searchablespinner.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/searchablespinner/Gbusiness.searchablespinner.unitTest.iml" />
+    </modules>
+  </component>
+</project>

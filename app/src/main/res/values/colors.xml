@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#211d5a</color>
+    <color name="colorPrimaryTint">#40211D5A</color>
+    <color name="colorPrimaryDark">#0E6655</color>
+    <color name="colorAccent">@color/buttonRedcolor</color>
+    <color name="colorPink">#FF4081</color>
+    <color name="EditTextbackcolor">#1E080114</color>
+    <color name="buttonRedcolor">#c5213c</color>
+    <color name="headerColor">#A8001C</color>
+    <color name="colorYellow">#ffeb3b</color>
+
+    <color name="liteBlue">#E1D2F4</color>
+    <color name="liteBluewithOpaCity">#59E1D2F4</color>
+    <color name="liteOrangeOpaCity">#F6B0C0</color>
+    <color name="liteOrange">#F6B0C0</color>
+    <color name="lastOne">#F1F2F2</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blacktrsns">#05000000</color>
+    <color name="gray4">#48DADADA</color>
+    <color name="gray2">#DADADA</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#48C9B0</color>
+    <color name="bg_screen2">#A569BD</color>
+    <color name="bg_screen3">#DC7633</color>
+    <color name="bg_screen4">#F5B041</color>
+    <color name="transparent_color">#0000ffff</color>
+    <color name="button_bg_black">#111111</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#138D75</color>
+    <color name="dot_dark_screen2">#FF9C24CC</color>
+    <color name="dot_dark_screen3">#FFD15605</color>
+    <color name="dot_dark_screen4">#FFA76905</color>
+    <color name="grey">#444444</color>
+    <color name="blue">#008EFF</color>
+    <color name="red">#FF1100</color>
+    <color name="green">#00B807</color>
+    <color name="greyLight">#CECECE</color>
+    <color name="greyLightLight">#F3F3F3</color>
+    <color name="colorBlue">#2196F3</color>
+    <color name="colorHintGrey">#E48A8A8A</color>
+    <color name="greenMsg">#007100</color>
+    <color name="greyHint">#989898</color>
+    <color name="greenDark">#008105</color>
+    <color name="unselected_selectable_text_bg">#EAEAEB</color>
+    <color name="listDisableColor">#888888</color>
+    <color name="green_tranparent_color">#33FFFFFF</color>
+    <color name="chip_border">#3EF97976</color>
+    <color name="chip_ripple">#3EF97976</color>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="web_blue">#007bff</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

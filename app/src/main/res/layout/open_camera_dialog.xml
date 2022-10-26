@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_alignParentBottom="true"
+              app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+              android:fitsSystemWindows="true"
+              android:layout_marginRight="20dp"
+              android:layout_marginLeft="20dp"
+              android:elevation="300dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+
+    <TextView android:layout_width="match_parent"
+              android:id="@+id/tvOpenCamera"
+              android:text="camera"
+
+              android:textSize="15dp"
+              android:textColor="@color/black"
+              android:textAlignment="center"
+              android:padding="10dp"
+              android:layout_height="wrap_content"/>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+          android:background="@color/colorPrimaryTint"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:id="@+id/tvOpenGallery"
+                  android:text="Gallery"
+                  android:textSize="15dp"
+                  android:textColor="@color/black"
+                  android:textAlignment="center"
+                  android:padding="10dp"
+                  android:layout_height="wrap_content"/>
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+          android:background="@color/colorPrimaryTint"/>
+    <TextView android:layout_width="match_parent"
+              android:id="@+id/tvOpencancel"
+              android:text="cancel"
+              android:textSize="15dp"
+              android:textColor="@color/black"
+              android:textAlignment="center"
+              android:padding="10dp"
+              android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>

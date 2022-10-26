@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragments.AddTicketFragment">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <ImageView
+            android:id="@+id/addTicketBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="15dp"
+            android:src="@drawable/ic_back_24" />
+
+        <TextView
+            android:id="@+id/tolbar_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/addTicketBack"
+            android:text="@string/add_ticket"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">-->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+
+        <libs.mjn.fieldset.FieldSetView
+            android:id="@+id/fsvIssueTicket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            app:fsv_borderAlpha="0.75"
+            app:fsv_borderColor="@color/grey"
+            app:fsv_borderRadius="5dp"
+            app:fsv_borderWidth="1.5dp"
+            app:fsv_legend="Select Issue"
+            app:fsv_legendColor="@color/grey"
+            app:fsv_legendFont="lobster.ttf"
+            app:fsv_legendPosition="left"
+            app:fsv_legendSize="12sp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvIssueTicket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_down_arrow"
+                    android:drawablePadding="10dp"
+                    android:hint="Select Issue"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="3dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/colorHintGrey" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </libs.mjn.fieldset.FieldSetView>
+
+        <libs.mjn.fieldset.FieldSetView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            app:fsv_borderAlpha="0.75"
+            app:fsv_borderColor="@color/grey"
+            app:fsv_borderRadius="5dp"
+            app:fsv_borderWidth="1.5dp"
+            app:fsv_legend="Upload Screenshot Related Your Concern"
+            app:fsv_legendColor="@color/grey"
+            app:fsv_legendFont="lobster.ttf"
+            app:fsv_legendPosition="left"
+            app:fsv_legendSize="12sp">
+
+            <TextView
+                android:id="@+id/tvUploadScreenshotTicket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/ic_choose_file"
+                android:hint="No file chosen"
+                android:maxLines="1"
+                android:paddingVertical="3dp"
+                android:paddingStart="10dp"
+                android:paddingRight="3dp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorHintGrey"
+                android:textSize="12sp" />
+
+        </libs.mjn.fieldset.FieldSetView>
+
+        <libs.mjn.fieldset.FieldSetView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            app:fsv_borderAlpha="0.75"
+            app:fsv_borderColor="@color/grey"
+            app:fsv_borderRadius="5dp"
+            app:fsv_borderWidth="1.5dp"
+            app:fsv_legend="Your Issues"
+            app:fsv_legendColor="@color/grey"
+            app:fsv_legendFont="lobster.ttf"
+            app:fsv_legendPosition="left"
+            app:fsv_legendSize="12sp">
+
+            <EditText
+                android:id="@+id/etCommentTicket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="top|left"
+                android:hint="Please share your concern with us, and we are happy to help you"
+                android:inputType="textMultiLine"
+                android:minHeight="100dp"
+                android:paddingStart="10dp"
+                android:singleLine="false"
+                android:textAlignment="gravity"
+                android:textColorHint="@color/colorHintGrey"
+                android:textSize="14sp" />
+
+        </libs.mjn.fieldset.FieldSetView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmitTicket"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/button_bg_red"
+            android:drawableEnd="@drawable/ic_double_arrow_18"
+            android:drawableTint="@color/white"
+            android:paddingEnd="10dp"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivCategorySoftware" />
+
+    </LinearLayout>
+    <!--</ScrollView>-->
+</RelativeLayout>

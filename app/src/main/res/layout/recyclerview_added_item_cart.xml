@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layoutDomain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutHeader"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="0.85"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:id="@+id/tvSearchedDomainName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:paddingHorizontal="8dp"
+                        android:paddingStart="20dp"
+                        android:text="Domain"
+                        android:textColor="@color/black"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/tvSearchDomainPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/bg_left_corner_color_green"
+                        android:maxLines="1"
+                        android:paddingVertical="3dp"
+                        android:text="$10.00"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <!--<ImageView
+                    android:id="@+id/btnRemoveCartItem"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_remove_cart_item" />-->
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:id="@+id/viewTop"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/layoutDomain"
+                android:background="@color/greyLight" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewTop"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvRemoveCardItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@color/liteBluewithOpaCity"
+                    android:drawableRight="@drawable/ic_remove_cart_item"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    android:padding="4dp"
+                    android:text="Delete"
+                    android:textAlignment="center"
+                    android:textColor="@color/buttonRedcolor"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/greyLight" />
+
+                <TextView
+                    android:id="@+id/tvCheckOutCartItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:background="@color/liteBluewithOpaCity"
+                    android:drawableRight="@drawable/ic_checkout_cart_item"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    android:padding="4dp"
+                    android:text="Checkout"
+                    android:textAlignment="center"
+                    android:textColor="@color/green"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

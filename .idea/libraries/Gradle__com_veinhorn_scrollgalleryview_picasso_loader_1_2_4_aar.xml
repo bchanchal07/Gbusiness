@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.veinhorn.scrollgalleryview:picasso-loader:1.2.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/65acfb68fb0007d89f0ac03abe37587d/picasso-loader-1.2.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/65acfb68fb0007d89f0ac03abe37587d/picasso-loader-1.2.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/65acfb68fb0007d89f0ac03abe37587d/picasso-loader-1.2.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.veinhorn.scrollgalleryview/picasso-loader/1.2.4/30f315c66a6fde29856829c1a10fe8d2471b115/picasso-loader-1.2.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.veinhorn.scrollgalleryview/picasso-loader/1.2.4/80fdca9944aac9dd29f11550a1e0aa363189b285/picasso-loader-1.2.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

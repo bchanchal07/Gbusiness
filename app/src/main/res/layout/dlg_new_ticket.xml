@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_back_popup"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/layoutHeaderPopup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="New Ticket"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivCancel"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    android:src="@drawable/ic_cancel" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewSeparator"
+                android:layout_width="match_parent"
+                android:layout_height="0.50dp"
+                android:layout_below="@+id/layoutHeaderPopup"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/changePassWordCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewSeparator"
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="#ADFFFFFF"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:id="@+id/fsvIssue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="30dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="#000000"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1dp"
+                        app:fsv_legend="Select Issue"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvIssue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableRight="@drawable/ic_down_arrow"
+                                android:drawablePadding="10dp"
+                                android:hint="Select Issue"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="3dp"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/colorHintGrey" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="30dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="#000000"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1dp"
+                        app:fsv_legend="Upload Screenshot Related Your Concern"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp">
+
+                        <TextView
+                            android:id="@+id/tvUploadScreenshot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableRight="@drawable/ic_choose_file"
+                            android:hint="No file chosen"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:paddingRight="3dp"
+                            android:paddingVertical="5dp"
+                            android:singleLine="true"
+                            android:textColorHint="@color/colorHintGrey"
+                            android:textSize="12sp" />
+
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="30dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="#000000"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1dp"
+                        app:fsv_legend="Your Issues"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp">
+
+                        <EditText
+                            android:id="@+id/questionFragAnswerTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:gravity="top|left"
+                            android:hint="Please share your concern with us, and we are happy to help you"
+                            android:inputType="textMultiLine"
+                            android:minHeight="100dp"
+                            android:paddingStart="10dp"
+                            android:singleLine="false"
+                            android:textAlignment="gravity"
+                            android:textColorHint="@color/colorHintGrey"
+                            android:textSize="14sp" />
+
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnSubmitTicket"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="100dp"
+                        android:layout_marginVertical="20dp"
+                        android:background="@drawable/button_bg_red"
+                        android:drawableEnd="@drawable/ic_double_arrow_18"
+                        android:drawableTint="@color/white"
+                        android:paddingEnd="10dp"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ivCategorySoftware" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/configActivateSSL"
+    android:layout_width="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
+        android:background="@android:color/holo_red_light"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/configAdpDomian" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background_normal"
+            android:padding="10dp"
+            android:maxLines="1"
+
+
+            android:singleLine="true"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tvActivateSSl"
+            android:text="@string/active"
+            android:background="@android:drawable/editbox_background_normal"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="5dp"
+            android:textAllCaps="true"
+            android:backgroundTint="@color/bg_screen2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+
+    android:layout_marginStart="10dp"
+    android:id="@+id/configActivateWebMail"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@android:color/holo_blue_bright"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+
+            android:orientation="vertical" android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/configAdpDomianWebName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background_normal"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/configAdpDomianWebMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:background="@android:drawable/editbox_background_normal"
+                android:padding="10dp"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvActivateWebMail"
+            android:text="@string/create"
+            android:background="@android:drawable/editbox_background_normal"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="5dp"
+            android:textAllCaps="true"
+            android:backgroundTint="@color/bg_screen2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient"
+        android:orientation="vertical">
+
+        <!--<TextView
+            android:id="@+id/domainAdpDomainName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:minHeight="35dp"
+            android:paddingStart="10dp"
+            android:drawablePadding="10dp"
+            android:text="myDomain Name"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="normal"
+            android:typeface="sans" />-->
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#74E3E3E3"
+            android:stretchColumns="1,2,3,4">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/tvSrNo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.10"
+                    android:background="@drawable/cell_back_table"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvSubdomainName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/cell_back_table"
+                    android:gravity="start|center_vertical"
+                    android:paddingHorizontal="5dp"
+                    android:text="https://vinod.gbusiness.co"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvSubdomainStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.20"
+                    android:background="@drawable/cell_back_table"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Success"
+                    android:textColor="@color/green"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tvSubdomainBookingDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.20"
+                    android:background="@drawable/cell_back_table"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:textAllCaps="true"
+                    android:text="17-01-2022 08:53 PM"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_MyOrder"
+        android:title="My Order"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Cart"
+        android:title="My Cart"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_notification"
+        android:title="Notification"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/withdrowl"
+        android:title="WithDrawal Amount"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/withdrowlHistory"
+        android:title="WithDrawal History"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/paymentORInvoice"
+        android:title="Payment &amp; Invoice"
+        app:showAsAction="never" />
+
+
+    <!-- <item
+         android:id="@+id/securitys"
+         android:title="Setting"
+         app:showAsAction="never">
+
+         <menu>-->
+    <item
+        android:id="@+id/security"
+        android:title="Security Setting"
+        app:showAsAction="never" />
+    <!-- <item
+         android:id="@+id/setPinLock"
+         android:title="Set Pin Lock"
+         app:showAsAction="never"/>-->
+
+
+    <!-- </menu>
+
+ </item>-->
+
+
+    <item
+        android:id="@+id/support"
+        android:title="Support"
+        app:showAsAction="never" />
+
+    <!--<item
+        android:id="@+id/feedback"
+        android:title="Feedback"
+        app:showAsAction="never"/>-->
+    <item
+        android:id="@+id/rateus"
+        android:title="Rate us"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_Logout"
+        android:title="Logout"
+        app:showAsAction="never" />
+</menu>

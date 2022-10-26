@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.thealeksandr:PFLockScreen-Android:1.0.0-beta5@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0708277589b6e50a1456c085a70c2608/PFLockScreen-Android-1.0.0-beta5/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0708277589b6e50a1456c085a70c2608/PFLockScreen-Android-1.0.0-beta5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0708277589b6e50a1456c085a70c2608/PFLockScreen-Android-1.0.0-beta5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0708277589b6e50a1456c085a70c2608/PFLockScreen-Android-1.0.0-beta5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.thealeksandr/PFLockScreen-Android/1.0.0-beta5/7ee93637024126bae318735902e64fc36e1875f3/PFLockScreen-Android-1.0.0-beta5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

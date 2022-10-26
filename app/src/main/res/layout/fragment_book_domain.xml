@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".fragments.BookDomainFragment">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <ImageView
+            android:id="@+id/mySearchDomainBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="15dp"
+            android:src="@drawable/ic_back_24" />
+
+        <TextView
+            android:id="@+id/tolbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/mySearchDomainBack"
+            android:text="Book Your Domain"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <ru.nikartm.support.ImageBadgeView
+            android:id="@+id/ibvCart"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/ic_shopping_cart_24"
+            app:ibv_badgeColor="@color/red"
+            app:ibv_badgeLimitValue="true"
+            app:ibv_badgePadding="2dp"
+            app:ibv_badgeTextColor="#ffffff"
+            app:ibv_badgeTextSize="12sp"
+            app:ibv_badgeValue="15"
+            app:ibv_visibleBadge="true" />
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutSearchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layoutSearchDomain"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.80"
+            android:background="@drawable/boader">
+
+            <EditText
+                android:id="@+id/etSearchDomain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70"
+                android:background="@android:color/transparent"
+                android:maxLines="1"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:hint="@string/search_domain"
+                android:textColorHint="@color/greyLight"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBookDomain"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:layout_toRightOf="@+id/layoutSearchDomain"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/book_now"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <RelativeLayout
+        android:id="@+id/layoutSuccessError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutSearchBar">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvDomainError"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingHorizontal="10dp"
+            android:visibility="gone"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_gradient"
+                android:orientation="horizontal"
+                android:paddingVertical="5dp">
+
+                <TextView
+                    android:id="@+id/searchDomainNameError"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|start"
+                    android:minHeight="35dp"
+                    android:paddingStart="10dp"
+                    android:text="anjvin.com"
+                    android:textColor="@color/red"
+                    android:textStyle="normal"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvDomainSuccess"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingHorizontal="10dp"
+            android:visibility="gone"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_gradient"
+                android:orientation="horizontal"
+                android:paddingVertical="5dp">
+
+                <TextView
+                    android:id="@+id/searchDomainNameSuccess"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|start"
+                    android:minHeight="35dp"
+                    android:paddingStart="10dp"
+                    android:text="anjvin.com"
+                    android:textColor="@color/green"
+                    android:textStyle="normal"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearchDomainCartItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutSuccessError"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        tools:listitem="@layout/recyclerview_search_domain_list" />
+
+
+</RelativeLayout>

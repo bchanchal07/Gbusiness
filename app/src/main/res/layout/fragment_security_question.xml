@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragments.SecurityQuestionFragment">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <ImageView
+            android:id="@+id/mySecQuestionBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="15dp"
+            android:src="@drawable/ic_back_24" />
+
+        <TextView
+            android:id="@+id/tolbar_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/mySecQuestionBack"
+            android:text="@string/security_question"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/logo" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:text="Security Question"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <libs.mjn.fieldset.FieldSetView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                app:fsv_borderAlpha="0.75"
+                app:fsv_borderColor="@color/grey"
+                app:fsv_borderRadius="5dp"
+                app:fsv_borderWidth="1.5dp"
+                app:fsv_legend="Security Question"
+                app:fsv_legendColor="@color/grey"
+                app:fsv_legendFont="lobster.ttf"
+                app:fsv_legendPosition="left"
+                app:fsv_legendSize="12sp">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Spinner
+                        android:id="@+id/questionFragQstionTv"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.90"
+                        android:background="@drawable/spinner_bg"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:prompt="@string/discuss_about_header"
+                        android:singleLine="true"
+                        android:spinnerMode="dialog"
+                        android:text="Select Question"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </libs.mjn.fieldset.FieldSetView>
+
+            <libs.mjn.fieldset.FieldSetView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                app:fsv_borderAlpha="0.75"
+                app:fsv_borderColor="@color/grey"
+                app:fsv_borderRadius="5dp"
+                app:fsv_borderWidth="1.5dp"
+                app:fsv_legend="Your Answer"
+                app:fsv_legendColor="@color/grey"
+                app:fsv_legendFont="lobster.ttf"
+                app:fsv_legendPosition="left"
+                app:fsv_legendSize="12sp">
+
+                <EditText
+                    android:id="@+id/questionFragAnswerTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:paddingStart="10dp"
+                    android:hint="Your Answer"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/grey"
+                    android:singleLine="true" />
+
+            </libs.mjn.fieldset.FieldSetView>
+
+            <!-- <androidx.cardview.widget.CardView
+
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp"
+                 android:layout_marginLeft="40dp"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginRight="40dp"
+                 android:backgroundTint="#40211D5A"
+                 app:cardCornerRadius="20dp"
+                 app:cardElevation="10dp">
+
+
+                 <ImageView
+                     android:id="@+id/questionDropDownImg"
+                     android:layout_width="30dp"
+                     android:layout_height="30dp"
+                     android:layout_centerVertical="true"
+                     android:layout_gravity="center_vertical|end"
+                     android:layout_marginEnd="10dp"
+                     android:backgroundTint="#f12234"
+                     android:inputType="none"
+                     android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                     app:buttonTint="#f12234" />
+
+                 <Spinner
+                     android:id="@+id/questionFragQstionTv"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_marginStart="5dp"
+                     android:layout_marginEnd="20dp"
+                     android:background="@null"
+                     android:gravity="center_vertical"
+                     android:maxLines="1"
+                     android:prompt="@string/discuss_about_header"
+                     android:singleLine="true"
+                     android:spinnerMode="dialog"
+                     android:text="Select Question"
+                     android:textColor="@color/black"
+                     android:textSize="18sp"
+                     android:textStyle="bold" />
+
+                 &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+
+             </androidx.cardview.widget.CardView>-->
+
+
+            <!--<androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="@color/colorPrimaryTint"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+
+                <EditText
+                    android:id="@+id/questionFragAnswerTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"
+                    android:hint="Your Answer"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+
+            </androidx.cardview.widget.CardView>-->
+
+
+            <EditText
+                android:id="@+id/forgotAnswerField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:backgroundTint="@color/colorPrimaryTint"
+                android:hint="enter answer"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/SubmittRecBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_gradent"
+                android:paddingStart="20dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="8dp"
+                android:text="SUBMIT"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layoutClose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@android:drawable/ic_delete" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/g_logo"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Send Quotes"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <libs.mjn.fieldset.FieldSetView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="10dp"
+                app:fsv_borderAlpha="0.75"
+                app:fsv_borderColor="#000000"
+                app:fsv_borderRadius="20dp"
+                app:fsv_borderWidth="2dp"
+                app:fsv_legend="Name*"
+                app:fsv_legendColor="@color/grey"
+                app:fsv_legendFont="lobster.ttf"
+                app:fsv_legendPosition="left"
+                app:fsv_legendSize="12sp">
+
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter full name"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="3dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textSize="16sp" />
+            </libs.mjn.fieldset.FieldSetView>
+
+            <libs.mjn.fieldset.FieldSetView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="10dp"
+                app:fsv_borderAlpha="0.75"
+                app:fsv_borderColor="#000000"
+                app:fsv_borderRadius="20dp"
+                app:fsv_borderWidth="2dp"
+                app:fsv_legend="Email*"
+                app:fsv_legendColor="@color/grey"
+                app:fsv_legendFont="lobster.ttf"
+                app:fsv_legendPosition="left"
+                app:fsv_legendSize="12sp">
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter email"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="3dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textSize="16sp" />
+            </libs.mjn.fieldset.FieldSetView>
+
+            <libs.mjn.fieldset.FieldSetView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="10dp"
+                app:fsv_borderAlpha="0.75"
+                app:fsv_borderColor="#000000"
+                app:fsv_borderRadius="20dp"
+                app:fsv_borderWidth="2dp"
+                app:fsv_legend="Mobile*"
+                app:fsv_legendColor="@color/grey"
+                app:fsv_legendFont="lobster.ttf"
+                app:fsv_legendPosition="left"
+                app:fsv_legendSize="12sp">
+
+                <EditText
+                    android:id="@+id/edtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter mobile no"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="3dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textSize="16sp" />
+            </libs.mjn.fieldset.FieldSetView>
+
+            <libs.mjn.fieldset.FieldSetView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="10dp"
+                app:fsv_borderAlpha="0.75"
+                app:fsv_borderColor="#000000"
+                app:fsv_borderRadius="20dp"
+                app:fsv_borderWidth="2dp"
+                app:fsv_legend="Services*"
+                app:fsv_legendColor="@color/grey"
+                app:fsv_legendFont="lobster.ttf"
+                app:fsv_legendPosition="left"
+                app:fsv_legendSize="12sp">
+
+                <EditText
+                    android:id="@+id/edtType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter service type"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="3dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textSize="16sp" />
+            </libs.mjn.fieldset.FieldSetView>
+
+            <!--<androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="@color/EditTextbackcolor"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="name"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAlignment="center" />
+
+                &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="@color/EditTextbackcolor"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:hint="email"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAlignment="center" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="@color/EditTextbackcolor"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+
+                <EditText
+                    android:id="@+id/edtPhone"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:hint="phone"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAlignment="center" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:backgroundTint="@color/EditTextbackcolor"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+
+                <EditText
+                    android:id="@+id/edtType"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:hint="Service"
+                    android:inputType="none"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Service"
+                    android:textAlignment="center" />
+
+
+            </androidx.cardview.widget.CardView>-->
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/background"
+
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+
+                <EditText
+                    android:id="@+id/edtMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@drawable/background"
+                    android:gravity="start"
+
+                    android:hint="Enter message"
+                    android:inputType="none"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:textColorHint="@color/grey" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmitQuotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:text="SUBMIT"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- <com.google.android.material.button.MaterialButton
+             android:id="@+id/material_button"
+             style="@style/Widget.MaterialComponents.Button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="jfkgjskfjdg"/>-->
+
+</RelativeLayout>

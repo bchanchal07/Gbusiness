@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape>
+            <solid android:color="#7EFFFFFF" />
+            <stroke android:width="0.5dp"  android:color="#8C8C8C"/>
+            <padding
+                android:left="2dp"
+                android:right="4dp"
+                 />
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:gravity="end"
+            android:src="@drawable/ic_down_arrow_small" />
+    </item>
+</layer-list>

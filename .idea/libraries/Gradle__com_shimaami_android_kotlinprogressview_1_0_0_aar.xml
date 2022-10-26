@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.shimaami.android:kotlinprogressview:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7c5a6a98c7b8e0493706bb2f5ec0d58e/kotlinprogressview-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7c5a6a98c7b8e0493706bb2f5ec0d58e/kotlinprogressview-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7c5a6a98c7b8e0493706bb2f5ec0d58e/kotlinprogressview-1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.shimaami.android/kotlinprogressview/1.0.0/6afd592c57697da447168a52981b8e9a34ae6207/kotlinprogressview-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

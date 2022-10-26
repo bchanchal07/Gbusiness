@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/closeBottomSheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@android:drawable/ic_delete" />
+
+                <TextView
+                    android:id="@+id/tvWelcomeMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:text="THANKS FOR SHOWING YOUR INTEREST !"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+            <TextView
+                android:id="@+id/headerOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="header"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/headerTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="Thanks for showing your interest in our services. To avail it, you will have to pay the amount given below. Our representatives will be in touch with you soon. Before proceeding for final payment, please read our terms &amp; conditions carefully. After successful payment, our teammates will contact you to understand your needs and offer services accordingly. We make sure you will be provided the best service experience which you will not get from anyone else in the market. We will keep updating you the status of work through your registered Email id and Contact number."
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="15dp">
+
+                <CheckBox
+                    android:id="@+id/serviceCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/termCondition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Agree &amp; Accept terms of use "
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/policeCondition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:singleLine="true"
+                    android:text="and privacy policy"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--<EditText
+                android:id="@+id/edtserviceMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="Message" />-->
+            <libs.mjn.fieldset.FieldSetView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                app:fsv_borderAlpha="0.75"
+                app:fsv_borderColor="#000000"
+                app:fsv_borderRadius="20dp"
+                app:fsv_borderWidth="2dp"
+                app:fsv_legend="Message*"
+                app:fsv_legendColor="@color/grey"
+                app:fsv_legendFont="lobster.ttf"
+                app:fsv_legendPosition="left"
+                app:fsv_legendSize="12sp">
+
+                <EditText
+                    android:id="@+id/edtServiceMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter message"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    android:paddingHorizontal="30dp"
+                    android:paddingVertical="3dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textSize="16sp" />
+            </libs.mjn.fieldset.FieldSetView>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBuyService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:paddingStart="35dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="35dp"
+                android:paddingBottom="5dp"
+                android:text="buy" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

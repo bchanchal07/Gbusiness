@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragments.SubDomainWebsiteFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize">
+
+                <ImageView
+                    android:id="@+id/businessSubdomainBack"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_back_24" />
+
+                <TextView
+                    android:id="@+id/tolbar_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/businessSubdomainBack"
+                    android:text="@string/business_subdomain"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000">
+
+                <ImageView
+                    android:id="@+id/ivBannerSubdomain"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_back_domain" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:background="#A6000000"
+                    android:scaleType="centerCrop" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivLogoGBusiness"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/logo_circle"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="1dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/ivLogoGBusiness"
+                    android:padding="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivLogoBusiness"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/logo_tadoba"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="0.80dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvTitleBusiness"
+                        android:layout_width="232dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:drawableRight="@drawable/ic_share"
+                        android:drawablePadding="10dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:paddingHorizontal="5dp"
+                        android:paddingVertical="4dp"
+                        android:singleLine="true"
+                        android:text="Flower Petal Boutique"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivLogoBusiness"
+                        app:layout_constraintStart_toEndOf="@+id/ivLogoBusiness"
+                        app:layout_constraintTop_toTopOf="@+id/ivLogoBusiness"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutRatingReview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitleBusiness">
+
+                        <TextView
+                            android:id="@+id/tvAvgRatingValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_green_review"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="3.5"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatRatingBar
+                            android:id="@+id/ratingBar"
+                            style="@style/RatingBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="2dp"
+                            android:background="@drawable/bg_grey_review"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:paddingVertical="4dp"
+                            android:progressTint="@color/colorYellow"
+                            android:stepSize="0.1" />
+
+                        <TextView
+                            android:id="@+id/tvVotesValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_green_review"
+                            android:padding="4dp"
+                            android:text="262 Votes"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivLocation"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/ic_address_loc"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/layoutRatingReview"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tvLocation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:paddingEnd="20dp"
+                        android:text="1601 SW State Route 150, Lee's Summit, MO 64082"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivLocation"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/ivLocation"
+                        app:layout_constraintTop_toTopOf="@+id/ivLocation" />
+
+                    <ImageView
+                        android:id="@+id/ivMobile"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_phone_call"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvLocation"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tvMobile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="+1 816-600-3055"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivMobile"
+                        app:layout_constraintEnd_toStartOf="@+id/tvTitleContactUs"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/ivMobile"
+                        app:layout_constraintTop_toTopOf="@+id/ivMobile" />
+
+                    <TextView
+                        android:id="@+id/tvTitleContactUs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="Contact Us"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvMobile"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tvMobile" />
+
+                    <ImageView
+                        android:id="@+id/ivTime"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_time"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvMobile"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tvBusinessEstablishedDate"
+                        android:layout_width="0dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="8dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivTime"
+                        app:layout_constraintStart_toEndOf="@+id/ivTime"
+                        app:layout_constraintTop_toTopOf="@+id/ivTime" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-10dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintTop_toBottomOf="@+id/ivTime">
+
+                        <LinearLayout
+                            android:id="@+id/layoutMap"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/ivMap"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_map" />
+
+                            <TextView
+                                android:id="@+id/tvMap"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="Map"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutMail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/ivMail"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_email" />
+
+                            <TextView
+                                android:id="@+id/tvMail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="Mail"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutWriteReview"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/ivWriteReview"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_write_review" />
+
+                            <TextView
+                                android:id="@+id/tvWriteReview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="Write Review"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutEditThis"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/ivEditThis"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_edit" />
+
+                            <TextView
+                                android:id="@+id/tvEditThis"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="Edit This"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutChangeCampaign"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/ivChangeCampaign"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_compaign" />
+
+                            <TextView
+                                android:id="@+id/tvChangeCampaign"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="Change Campaign"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutWhatsapp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/ivWhatsapp"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_whatapp" />
+
+                            <TextView
+                                android:id="@+id/tvWhatsapp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="Whatsapp"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--<ImageView
+                        android:id="@+id/ivCall"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_email"
+                        app:layout_constraintStart_toStartOf="@+id/tvTitleContactUs"
+                         />-->
+
+                    <!--<ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_whatsapp"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitleContactUs" />-->
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_white_subdomain"
+                android:paddingBottom="5dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tvGallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="Gallery"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvGalleryImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvGallery"
+                    android:padding="0dp" />
+
+                <ImageView
+                    android:id="@+id/ivNoGallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/tvGallery"
+                    android:src="@drawable/no_image" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_white_subdomain"
+                android:orientation="vertical"
+                android:paddingBottom="5dp">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/grey"
+                    app:tabIndicatorHeight="5dp"
+                    app:tabMode="auto"
+                    app:tabSelectedTextColor="@color/black" />
+                <!--app:tabMode="scrollable"-->
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPager2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:scrollbars="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.milkyway.gbusiness.utils.MyRadioButton
+                            android:id="@+id/rbAboutUs"
+                            style="@style/MyCustomRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:checked="true"
+                            android:text="About Business" />
+
+                        <com.milkyway.gbusiness.utils.MyRadioButton
+                            android:id="@+id/rbAlsoListed"
+                            style="@style/MyCustomRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="Also Listed" />
+
+                        <com.milkyway.gbusiness.utils.MyRadioButton
+                            android:id="@+id/rbWorkingHrs"
+                            style="@style/MyCustomRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="Working Hrs" />
+
+                        <com.milkyway.gbusiness.utils.MyRadioButton
+                            android:id="@+id/rbSocialMedia"
+                            style="@style/MyCustomRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="Social Media" />
+
+                        <com.milkyway.gbusiness.utils.MyRadioButton
+                            android:id="@+id/rbSellerLink"
+                            style="@style/MyCustomRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+
+                            android:text="Seller Links" />
+
+                        <com.milkyway.gbusiness.utils.MyRadioButton
+                            android:id="@+id/rbReview"
+                            style="@style/MyCustomRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="Reviews" />
+
+                        <com.milkyway.gbusiness.utils.MyRadioButton
+                            android:id="@+id/rbPhotos"
+                            style="@style/MyCustomRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="Blog" />
+                    </RadioGroup>
+                </HorizontalScrollView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/layoutAboutUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvTitleBusinessAboutUs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="4dp"
+                                android:text="Flower Petal Boutique"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tvDescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:justificationMode="inter_word"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="4dp"
+                                android:text="The Liceo College of Medicine is the largest and ultra-modern University based in the Philippines. It is one of the most economical universities in the Philippines."
+                                android:textColor="@color/black"
+                                android:textSize="13sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/tvTitleBusinessAboutUs" />
+
+                            <ImageView
+                                android:id="@+id/ivLocationAboutUs"
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="15dp"
+                                android:src="@drawable/ic_address_loc"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+                            <TextView
+                                android:id="@+id/tvLocationAboutUs"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:text="1601 SW State Route 150, Lee's Summit, MO 64082"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/ivLocationAboutUs"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/ivLocationAboutUs"
+                                app:layout_constraintTop_toTopOf="@+id/ivLocationAboutUs" />
+
+                            <ImageView
+                                android:id="@+id/ivMobileAboutUs"
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:src="@drawable/ic_phone_call"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/tvLocationAboutUs" />
+
+                            <TextView
+                                android:id="@+id/tvMobileAboutUs"
+                                android:layout_width="95dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text="+1 816-600-3055"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/ivMobileAboutUs"
+                                app:layout_constraintStart_toEndOf="@+id/ivMobileAboutUs"
+                                app:layout_constraintTop_toTopOf="@+id/ivMobileAboutUs" />
+
+
+                            <ImageView
+                                android:id="@+id/ivBusinessHrs"
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="8dp"
+                                android:src="@drawable/ic_time"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/tvMobileAboutUs" />
+
+                            <TextView
+                                android:id="@+id/tvBusinessHrsAboutUs"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text="2022-04-15 23:41:31"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/ivBusinessHrs"
+                                app:layout_constraintStart_toEndOf="@+id/ivBusinessHrs"
+                                app:layout_constraintTop_toTopOf="@+id/ivBusinessHrs" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/layoutAlsoListed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingVertical="5dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.45"
+                                android:paddingStart="8dp"
+                                android:text="Business Services"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvBusinessServices"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:listitem="@layout/recyclerview_item_business_service_list" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/layoutWorkingHrs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingVertical="5dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.45"
+                                android:paddingStart="30dp"
+                                android:text="Days"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.55"
+                                android:paddingEnd="10dp"
+                                android:text="Business Working Hours"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <!--<View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="@color/greyLight" />-->
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvBusinessHours"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:listitem="@layout/recyclerview_item_business_hrs" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/layoutSocialMedia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvSocialMedia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:listitem="@layout/recyclerview_item_social_media" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/layoutSellerLinks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvSellerLink"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:listitem="@layout/recyclerview_item_seller_links" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/layoutReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp"
+                        android:visibility="gone">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:id="@+id/tvTitleQuery"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="4dp"
+                                android:text="Review"
+                                android:textColor="@color/black"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/layoutOne"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/tvTitleQuery">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.50"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="5dp"
+                                        android:paddingHorizontal="5dp"
+                                        android:paddingVertical="4dp"
+                                        android:text="Name"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        tools:layout_editor_absoluteY="102dp" />
+
+                                    <EditText
+                                        android:id="@+id/etNameReview"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="5dp"
+                                        android:layout_marginTop="0dp"
+                                        android:background="@drawable/bg_white_subdomain"
+                                        android:gravity="center|start"
+                                        android:hint="Enter name here"
+                                        android:paddingHorizontal="10dp"
+                                        android:paddingVertical="8dp"
+                                        android:text=""
+                                        android:textColorHint="@color/grey"
+                                        android:textSize="14sp"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@+id/tvTitleAttachFile" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.50"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="5dp"
+                                        android:paddingHorizontal="5dp"
+                                        android:paddingVertical="4dp"
+                                        android:text="Email"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        tools:layout_editor_absoluteY="102dp" />
+
+                                    <EditText
+                                        android:id="@+id/etEmailReview"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="5dp"
+                                        android:layout_marginTop="0dp"
+                                        android:background="@drawable/bg_white_subdomain"
+                                        android:gravity="center|start"
+                                        android:hint="Enter email here"
+                                        android:paddingHorizontal="10dp"
+                                        android:paddingVertical="8dp"
+                                        android:text=""
+                                        android:textColorHint="@color/grey"
+                                        android:textSize="14sp"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@+id/tvTitleAttachFile" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/layoutTwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/layoutOne">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.50"
+                                    android:orientation="vertical"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="5dp"
+                                        android:paddingHorizontal="5dp"
+                                        android:paddingVertical="4dp"
+                                        android:text="Phone"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        tools:layout_editor_absoluteY="102dp" />
+
+                                    <EditText
+                                        android:id="@+id/etMobileReview"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="5dp"
+                                        android:layout_marginTop="0dp"
+                                        android:background="@drawable/bg_white_subdomain"
+                                        android:gravity="center|start"
+                                        android:hint="Enter phone here"
+                                        android:paddingHorizontal="10dp"
+                                        android:paddingVertical="8dp"
+                                        android:text=""
+                                        android:textColorHint="@color/grey"
+                                        android:textSize="14sp"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@+id/tvTitleAttachFile" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.50"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="5dp"
+                                        android:paddingHorizontal="5dp"
+                                        android:paddingVertical="4dp"
+                                        android:text="Reviews"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        tools:layout_editor_absoluteY="102dp" />
+
+                                    <RatingBar
+                                        android:id="@+id/ratingBarReview"
+                                        style="@style/RatingBarReview"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="5dp"
+                                        android:background="@drawable/bg_white_subdomain"
+                                        android:gravity="center"
+                                        android:isIndicator="false"
+                                        android:numStars="5"
+                                        android:progressTint="@color/colorYellow"
+                                        android:rating="4.0"
+                                        android:stepSize="1.0"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@+id/tvTitleAttachFile" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/layoutThee"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/layoutTwo">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:paddingHorizontal="5dp"
+                                    android:paddingVertical="4dp"
+                                    android:text="Comment"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    tools:layout_editor_absoluteY="102dp" />
+
+                                <EditText
+                                    android:id="@+id/etCommentReview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/bg_white_subdomain"
+                                    android:gravity="start|top"
+                                    android:hint="Please comment here..."
+                                    android:justificationMode="inter_word"
+                                    android:lineSpacingExtra="5sp"
+                                    android:minHeight="60dp"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="5dp"
+                                    android:text=""
+                                    android:textColorHint="@color/grey"
+                                    android:textSize="14sp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/tvTitleAttachFile" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnSubmitReview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Submit"
+                                android:visibility="visible"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/layoutThee" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvReviews"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            tools:listitem="@layout/recyclerview_item_reviews" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_white_subdomain"
+                android:paddingBottom="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvTitlePayment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="4dp"
+                        android:text="Mode of Payments"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitlePayment">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvPaymentGateway"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tvQrNotFound"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingVertical="10dp"
+                            android:text="Payment QR Code are not found."
+                            android:textColor="@color/grey"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_white_subdomain"
+                android:paddingBottom="5dp">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvTitleWantToSay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="4dp"
+                        android:text="Want to say something"
+                        android:textColor="@color/black"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/etQuery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_white_subdomain"
+                        android:gravity="start|top"
+                        android:hint="Please write here..."
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="5sp"
+                        android:minHeight="60dp"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="5dp"
+                        android:textSize="14sp"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitleWantToSay"
+                        tools:layout_editor_absoluteX="10dp" />
+
+                    <TextView
+                        android:id="@+id/tvTitleAttachFile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="4dp"
+                        android:text="Attach file here"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/etQuery" />
+
+                    <TextView
+                        android:id="@+id/tvFileName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/bg_white_subdomain"
+                        android:drawableRight="@drawable/ic_choose_file"
+                        android:gravity="center|start"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="4dp"
+                        android:hint="No File Chosen"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitleAttachFile" />
+
+                    <Button
+                        android:id="@+id/btnSubmitQuery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Submit"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvFileName" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

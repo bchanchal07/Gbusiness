@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/bottomNavFragmentHome"
+        android:icon="@mipmap/home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/bottomNavFragmentEarning"
+        android:icon="@mipmap/earning"
+        android:title="@string/earning"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/bottomNavFragmentProfile"
+        android:icon="@mipmap/profile"
+        android:title="@string/profile" />
+
+</menu>

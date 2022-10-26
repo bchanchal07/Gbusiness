@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <ImageView
+            android:id="@+id/myOtpBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="15dp"
+            android:src="@drawable/ic_back_24" />
+
+        <TextView
+            android:id="@+id/tolbar_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/myOtpBack"
+            android:text="@string/mobile_verification"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:src="@mipmap/google" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Thank You for Choosing Us!" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Enter OTP"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/otpFieldOne"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/EditTextbackcolor"
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/otpFieldTwo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:background="@color/EditTextbackcolor"
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/otpFieldThree"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:background="@color/EditTextbackcolor"
+
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/otpFieldFour"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:background="@color/EditTextbackcolor"
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/otpFieldFive"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:background="@color/EditTextbackcolor"
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/otpFieldSix"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="4dp"
+                android:background="@color/EditTextbackcolor"
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/otpSubmitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/background_gradient"
+            android:outlineAmbientShadowColor="@color/colorPrimaryTint"
+            android:outlineSpotShadowColor="@color/colorPrimaryTint"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="25dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_gradent"
+                android:padding="10dp"
+                android:text="submit"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/otpResendOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Resend OTP"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+</RelativeLayout>

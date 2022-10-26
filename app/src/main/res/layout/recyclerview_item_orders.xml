@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#74E3E3E3"
+        android:stretchColumns="1,2,3,4,5,6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow >
+
+            <TextView
+                android:id="@+id/tvServices"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.60"
+                android:background="@drawable/cell_back_table"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="abc.co.in"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:background="@drawable/cell_back_table"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="domain desc"
+                android:textColor="@color/black"
+                android:textSize="8sp" />
+
+            <Spinner
+                android:id="@+id/spinnerYrDuration"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.90"
+                android:gravity="center"
+                android:background="@drawable/drop_down_style"
+                android:padding="3dp"
+                android:dropDownWidth="100dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/tvYrlyPrice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.90"
+                android:background="@drawable/cell_back_table"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Rs 1200"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvTtlPrice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.10"
+                android:background="@drawable/cell_back_table"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Rs 2400"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivActionDelete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.60"
+                android:background="@drawable/cell_back_table"
+                android:gravity="center"
+                android:padding="4dp"
+                android:src="@drawable/ic_remove_cart_item" />
+
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

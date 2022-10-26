@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".fragments.BookSubDomainFragment">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <ImageView
+            android:id="@+id/myBookDomainBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="15dp"
+            android:src="@drawable/ic_back_24" />
+
+        <TextView
+            android:id="@+id/tolbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/myBookDomainBack"
+            android:text="Search Subdomain"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_back_domain" />
+
+        <com.milkyway.gbusiness.utils.ScrollViewText
+            android:id="@+id/tvSubdomainFoundNotFound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:elevation="16dp"
+            android:singleLine="true"
+            android:text="WITH GLOBAL BUSINESS YOU ARE FREE TO BUILD YOUR WEBSITE AS PER YOUR NEED. NO EXPERIENCE REQUIRED, AND EXPENSES ARE LOW TOO."
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layoutEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSubdomainFoundNotFound"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boader">
+
+            <EditText
+                android:id="@+id/bookDomainSearchEdt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="10dp"
+                android:hint="@string/search_subdomain"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/greyLight"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSearchSubdomainn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:background="@drawable/button_gradent"
+                android:clickable="false"
+                android:enabled="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Search Subdomain"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layoutSubdomainAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutEditText"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="10dp"
+            android:visibility="gone"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/layoutSubdomainAvailable1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutEditText"
+                android:background="#65FFF5F5"
+                android:orientation="vertical"
+                android:paddingVertical="5dp">
+
+                <TextView
+                    android:id="@+id/tvMsgSubdomain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:minHeight="35dp"
+                    android:paddingStart="10dp"
+                    android:text="anjvin.gbusiness.co is available"
+                    android:textColor="#007100"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layoutBookNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutSubdomainAvailable"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="10dp"
+            android:visibility="gone"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_gradient"
+                android:orientation="horizontal"
+                android:paddingVertical="5dp">
+
+                <TextView
+                    android:id="@+id/searchDomainName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.70"
+                    android:drawablePadding="10dp"
+                    android:gravity="center|start"
+                    android:minHeight="35dp"
+                    android:paddingStart="10dp"
+                    android:text="anjvin.com"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal"
+                    android:typeface="sans" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnBookSubdomain"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0.30"
+                    android:background="@drawable/button_bg_red"
+                    android:drawableTint="@color/white"
+                    android:text="Book Now"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layoutFacility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutBookNow"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#74E3E3E3"
+                android:stretchColumns="1,2,3">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.60"
+                        android:background="@drawable/cell_back_table"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="$0/YEAR"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.22"
+                        android:background="@drawable/cell_back_table"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:src="@drawable/logo" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.18"
+                        android:background="@drawable/cell_back_table"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="OTHERS"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.60"
+                        android:background="@drawable/cell_back_table_white"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="1 Year Free Hosting"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.22"
+                        android:background="@drawable/cell_back_table_white"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_double_check" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.18"
+                        android:background="@drawable/cell_back_table_white"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.60"
+                        android:background="@drawable/cell_back_table"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="1 Year Free Sub Domain Name"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.22"
+                        android:background="@drawable/cell_back_table"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_double_check" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.18"
+                        android:background="@drawable/cell_back_table"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.60"
+                        android:background="@drawable/cell_back_table_white"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Free SSL Certificate"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.22"
+                        android:background="@drawable/cell_back_table_white"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_double_check" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.18"
+                        android:background="@drawable/cell_back_table_white"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.60"
+                        android:background="@drawable/cell_back_table"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Spam-Free"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.22"
+                        android:background="@drawable/cell_back_table"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_double_check" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.18"
+                        android:background="@drawable/cell_back_table"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.60"
+                        android:background="@drawable/cell_back_table_white"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Free Email Address"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.22"
+                        android:background="@drawable/cell_back_table_white"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_double_check" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.18"
+                        android:background="@drawable/cell_back_table_white"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.60"
+                        android:background="@drawable/cell_back_table"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="100% Commission Free"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.22"
+                        android:background="@drawable/cell_back_table"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_double_check" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.18"
+                        android:background="@drawable/cell_back_table"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.60"
+                        android:background="@drawable/cell_back_table_white"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Free Support"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.22"
+                        android:background="@drawable/cell_back_table_white"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_double_check" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.18"
+                        android:background="@drawable/cell_back_table_white"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.60"
+                        android:background="@drawable/cell_back_table"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Priority Response"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.22"
+                        android:background="@drawable/cell_back_table"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_double_check" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.18"
+                        android:background="@drawable/cell_back_table"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSearchSubdomain"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutFacility"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_gradent"
+            android:gravity="center"
+            android:text="@string/search_subdomain"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</RelativeLayout>

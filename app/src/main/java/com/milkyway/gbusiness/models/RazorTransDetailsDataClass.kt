@@ -1,0 +1,30 @@
+package com.milkyway.gbusiness.models
+
+data class RazorTransDetailsDataClass(
+    val amount: Int,
+    val amount_refunded: Int,
+    val bank: String,
+    val captured: Boolean,
+    val card: Card,
+    val card_id: String,
+    val contact: String,
+    val created_at: Int,
+    val currency: String,
+    val description: String,
+    val email: String,
+    val entity: String,
+    val error_code: Any,
+    val error_description: Any,
+    val fee: Int,
+    val id: String,
+    val international: Boolean,
+    val invoice_id: Any,
+    val method: String,
+    val notes: NotesX,
+    val order_id: String,
+    val refund_status: Any,
+    val status: String,
+    val tax: Int,
+    val vpa: Any,
+    val wallet: Any
+)

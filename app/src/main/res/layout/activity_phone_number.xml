@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".activities.PhoneNumberActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/g_logo" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Enter Phone"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background_normal"
+            app:defaultCode="91"
+            app:defaultNameCode="IN" />
+
+        <EditText
+            android:id="@+id/EdgetphonNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="@string/enter_mobile_no"
+            android:inputType="number"
+            android:padding="15dp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tvUserProfession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:drawable/editbox_background_normal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:src="@android:drawable/arrow_down_float" />
+
+        <TextView
+            android:id="@+id/userProfileTvProfessionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="@string/select_profession" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edRefCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:gravity="center"
+        android:hint="@string/ref_code"
+        android:padding="10dp"
+        android:textColorHint="@color/bg_screen2" />
+
+    <Button
+        android:id="@+id/mobileverificationSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_gradent"
+        android:text="@string/submit"
+        android:textColor="@color/white" />
+
+</LinearLayout>

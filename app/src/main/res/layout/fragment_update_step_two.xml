@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragments.BusinessListEditFragment">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <ImageView
+            android:id="@+id/editBusinessListingBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="15dp"
+            android:src="@drawable/ic_back_24" />
+
+        <TextView
+            android:id="@+id/tolbar_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/editBusinessListingBack"
+            android:text="Update Gallery For your Business"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <libs.mjn.fieldset.FieldSetView
+                    android:id="@+id/fsvLayoutGalleryTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="35dp"
+                    app:fsv_borderAlpha="0.75"
+                    app:fsv_borderColor="@color/grey"
+                    app:fsv_borderRadius="5dp"
+                    app:fsv_borderWidth="1.5dp"
+                    app:fsv_legend="Gallery Business"
+                    app:fsv_legendColor="@color/grey"
+                    app:fsv_legendFont="lobster.ttf"
+                    app:fsv_legendPosition="left"
+                    app:fsv_legendSize="12sp"
+                    tools:layout_editor_absoluteX="40dp">
+
+                    <EditText
+                        android:id="@+id/et_gallery_tilte"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Gallery Business Title"
+                        android:inputType="textWebEditText"
+                        android:maxLines="1"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorHintGrey"
+                        android:textSize="14sp" />
+                </libs.mjn.fieldset.FieldSetView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingEnd="10dp"
+                    android:text="Gallery Images"
+                    android:textColor="@color/button_bg_black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_show_image_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:background="@color/transparent_color"
+                    android:visibility="visible" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_add_new_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:background="@color/transparent_color"
+                    android:visibility="gone"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/addPic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/add_photo" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_update_step_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_bg_red"
+                    android:drawableEnd="@drawable/ic_double_arrow_18"
+                    android:drawableTint="@color/white"
+                    android:paddingEnd="10dp"
+                    android:text="Update"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

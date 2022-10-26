@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".fragments.EarningFragment">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <ImageView
+            android:id="@+id/myEarningBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="15dp"
+            android:src="@drawable/ic_back_24" />
+
+        <TextView
+            android:id="@+id/tolbar_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/myEarningBack"
+            android:text="@string/earning"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+
+    </RelativeLayout>
+    <!--<ImageView
+        android:id="@+id/myEarningBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_arrow_back_black_24dp" />
+
+    <TextView
+        android:id="@+id/tolbar_back"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_toEndOf="@+id/myEarningBack"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:text="@string/earning"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/boader"
+            android:padding="3dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dummy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:gravity="center"
+                    android:text="@string/g_business_wallet"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/myWalletBalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:gravity="center"
+                    android:text="@string/g_business_wallet" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layoutWalletHistory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.40"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/myVoletHistory"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:text="@string/wallet_history" />
+
+                <ImageView
+                    android:id="@+id/imageWalletHistory"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:padding="6dp"
+                    android:src="@mipmap/wallet" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/boader"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tvEarningRefCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.80"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/ref_code" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/tvCopyRefCode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.20"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/copy" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:cardUseCompatPadding="true">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layoutEarningTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvEarningTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.70"
+                        android:background="@drawable/bg_gradient"
+                        android:gravity="center_horizontal|center"
+                        android:padding="5dp"
+                        android:text="Total\nEarning \n$0"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvEarningTotalBtm"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.30"
+                        android:background="@drawable/bg_gradient_dark"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="View"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:cardUseCompatPadding="true">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layoutEarningDirect"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvEarningDirect"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.70"
+                        android:background="@drawable/bg_gradient"
+                        android:gravity="center_horizontal|center"
+                        android:padding="5dp"
+                        android:text="Direct\nEarning \n$0"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvEarningDirectBtm"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.30"
+                        android:background="@drawable/bg_gradient_dark"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="View"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:cardUseCompatPadding="true">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layoutEarningGlobal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvEarningGlobal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.70"
+                        android:background="@drawable/bg_gradient"
+                        android:gravity="center_horizontal|center"
+                        android:padding="5dp"
+                        android:text="Global\nEarning \n$0"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvEarningGlobalBtm"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.30"
+                        android:background="@drawable/bg_gradient_dark"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="View"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:clickable="true"
+                app:cardCornerRadius="15dp"
+                app:cardUseCompatPadding="true">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layoutEarningMyDirectPeoples"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvMyDirects"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.70"
+                        android:background="@drawable/bg_gradient"
+                        android:gravity="center_horizontal|center"
+                        android:padding="5dp"
+                        android:text="My\nDirects"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvMyDirectsBtm"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.30"
+                        android:background="@drawable/bg_gradient_dark"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="View"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gradient"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:text="Selec Date"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="0.40"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="#000000"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1dp"
+                        app:fsv_legend="From Date"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="10sp">
+
+                        <TextView
+                            android:id="@+id/earningFromDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:text="From Date"
+                            android:textColor="@color/browser_actions_title_color"
+                            android:textSize="12sp" />
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="0.40"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="#000000"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1dp"
+                        app:fsv_legend="To Date"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="10sp">
+
+                        <TextView
+                            android:id="@+id/earningToDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:text="From Date"
+                            android:textColor="@color/browser_actions_title_color"
+                            android:textSize="12sp" />
+                    </libs.mjn.fieldset.FieldSetView>
+
+
+                    <TextView
+                        android:id="@+id/earningGoBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_margin="8dp"
+                        android:layout_weight="0.20"
+                        android:background="@drawable/button_gradent"
+                        android:gravity="center"
+                        android:src="@drawable/com_facebook_button_like_icon_selected"
+                        android:text="Go"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_gradient_dark"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.30"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:text="References"
+                        android:textColor="#590000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/greyLight" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.20"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:text="Amount"
+                        android:textColor="#590000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/greyLight" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:text="E-Type"
+                        android:textColor="#590000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/greyLight" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:text="Date"
+                        android:textColor="#590000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewEarning"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <!--</androidx.core.widget.NestedScrollView>-->
+</RelativeLayout>

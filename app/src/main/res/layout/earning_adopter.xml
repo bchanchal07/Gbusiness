@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/earningRef"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Ref."
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/earningAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Amunt"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/earningType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="E-type"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/earningDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Date"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/layoutEarningAdaptor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/earningRef"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Ref."
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyLight" />
+
+        <TextView
+            android:id="@+id/earningAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Amount"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyLight" />
+
+        <TextView
+            android:id="@+id/earningType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="E-Type"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyLight" />
+
+        <TextView
+            android:id="@+id/earningDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Date"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+    <!--  <LinearLayout android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="6dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content">
+
+          <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/earningDate"
+
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="12/02/2019"/>
+
+          <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/earningDirect"
+                    android:textSize="15dp"
+                    android:gravity="center"
+
+                    android:textColor="@color/black"
+                    android:text="$ 0"/>
+          <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/earningGlobal"
+                    android:textSize="15dp"
+                    android:gravity="center"
+
+                    android:textColor="@color/black"
+                    android:text="$ 0"/>
+
+
+      </LinearLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/greyLight" />
+
+</LinearLayout>

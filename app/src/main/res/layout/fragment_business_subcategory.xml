@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragments.BusinessSubcategoryFragment">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <ImageView
+            android:id="@+id/mySubCatDetailsBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="15dp"
+            android:src="@drawable/ic_back_24" />
+
+        <TextView
+            android:id="@+id/tolbar_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/mySubCatDetailsBack"
+            android:text="@string/sub_category"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <!--<androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/boader">-->
+
+    <!--<SearchView
+        android:id="@+id/searchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:queryHint="Search Software Category" />-->
+
+    <!--</androidx.appcompat.widget.LinearLayoutCompat>-->
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/cvSubCatHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginHorizontal="8dp"
+        android:elevation="2dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/layoutSubCat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivSubCatImage"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tvSubCatTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="#9CFFE9E9"
+                android:paddingVertical="2dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvSubCatHeader"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/search_box_container"
+            layout="@layout/search_header_layout" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSubCatDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingHorizontal="5dp"
+            tools:listitem="@layout/recyclerview_item_sub_category" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <TextView
+        android:id="@+id/no_search_results_found_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_search_results_found"
+        android:textAppearance="?attr/textAppearanceHeadline4"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+</RelativeLayout>

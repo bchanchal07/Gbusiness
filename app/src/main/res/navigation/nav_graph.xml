@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.milkyway.gbusiness.ui.main.MainFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_earningFragment"
+            app:destination="@id/earningFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_bookYourDomainFragment"
+            app:destination="@id/searchSubDomainFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_mySiteFragment"
+            app:destination="@id/mySiteFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_servicesFragment"
+            app:destination="@id/servicesFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_myCartFrament"
+            app:destination="@id/myCartFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_paymentORInvoice2"
+            app:destination="@id/paymentORInvoice2" />
+        <action
+            android:id="@+id/action_mainFragment_to_withDarawlFagment"
+            app:destination="@id/withdrawalFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_withDrawalHistory"
+            app:destination="@id/withDrawalHistory" />
+        <action
+            android:id="@+id/action_mainFragment_to_myOrderFragment"
+            app:destination="@id/myOrderFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_securityQuestionFragment"
+            app:destination="@id/securityQuestionFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_supportFragment"
+            app:destination="@id/supportFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_notificationOnGbusniess"
+            app:destination="@id/notificationOnGbusniess" />
+        <action
+            android:id="@+id/action_mainFragment_to_myCategoryFragment2"
+            app:destination="@id/myCategoryFragment" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_myBusinessPageFragment"
+            app:destination="@id/myBusinessPageFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/earningFragment"
+        android:name="com.milkyway.gbusiness.fragments.EarningFragment"
+        android:label="Earning"
+        tools:layout="@layout/fragment_earning">
+        <action
+            android:id="@+id/action_earningFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_earningFragment_to_walletHistory"
+            app:destination="@id/walletHistory" />
+        <action
+            android:id="@+id/action_earningFragment_to_myDirectsPeoples"
+            app:destination="@id/myDirectsPeoples" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.milkyway.gbusiness.fragments.ProfileFragment"
+        android:label="profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_OTPfragment"
+            app:destination="@id/OTPfragment" />
+        <!--  // <action android:id="@+id/action_profileFragment_to_mainFragment" app:destination="@id/mainFragment"/>-->
+
+        <action
+            android:id="@+id/action_profileFragment_to_profileConfigration"
+            app:destination="@id/profileConfigration" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchSubDomainFragment"
+        android:name="com.milkyway.gbusiness.fragments.BookSubDomainFragment"
+        android:label="Book your SubDomain"
+        tools:layout="@layout/fragment_book_sub_domain">
+        <action
+            android:id="@+id/action_bookYourDomainFragment_to_domainPriceDetail"
+            app:destination="@id/domainPriceDetail" />
+        <action
+            android:id="@+id/action_bookYourDomainFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchDomainFragment"
+        android:name="com.milkyway.gbusiness.fragments.BookDomainFragment"
+        android:label="Book your Domain"
+        tools:layout="@layout/fragment_book_domain">
+        <action
+            android:id="@+id/action_searchDomainFragment_to_cartItemFragment"
+            app:destination="@id/cartItemFragment" />
+        <action
+            android:id="@+id/action_searchDomainFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartItemFragment"
+        android:name="com.milkyway.gbusiness.fragments.CartItemFragment"
+        android:label="Domain Item Cart"
+        tools:layout="@layout/fragment_cart_item">
+        <action
+            android:id="@+id/action_cartItemFragment_to_orderSummaryFragment"
+            app:destination="@id/orderSummaryFragment" />
+        <action
+            android:id="@+id/action_cartItemFragment_to_searchDomainFragment"
+            app:destination="@id/searchDomainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/orderSummaryFragment"
+        android:name="com.milkyway.gbusiness.fragments.OrderSummaryFragment"
+        android:label="Order Item Cart"
+        tools:layout="@layout/fragment_order_summary">
+        <action
+            android:id="@+id/action_orderSummaryFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_orderSummaryFragment_to_cartItemFragment"
+            app:destination="@id/cartItemFragment" />
+        <action
+            android:id="@+id/action_orderSummaryFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_orderSummaryFragment_to_paymentOrInvoiceWebView"
+            app:destination="@id/paymentOrInvoiceWebView" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mySiteFragment"
+        android:name="com.milkyway.gbusiness.fragments.MySiteFragment"
+        android:label="My Site"
+        tools:layout="@layout/fragment_my_site">
+
+        <action
+            android:id="@+id/action_mySiteFragment_to_paymentOrInvoiceWebView"
+            app:destination="@id/paymentOrInvoiceWebView" />
+
+        <action
+            android:id="@+id/action_mySiteFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_mySiteFragment_to_trashLisFragment"
+            app:destination="@id/trashLisFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/myCategoryFragment"
+        android:name="com.milkyway.gbusiness.fragments.BusinessCategoryFragment"
+        android:label="Business Category"
+        tools:layout="@layout/fragment_business_category">
+        <action
+            android:id="@+id/action_myCategoryFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_myCategoryFragment_to_mySubCategoryFragment"
+            app:destination="@id/mySubCategoryFragment" />
+        <action
+            android:id="@+id/action_myCategoryFragment_to_myCategoryDetailsFragment"
+            app:destination="@id/myCategoryDetailsFragment" />
+        <!--<action
+            android:id="@+id/action_myCategoryFragment_to_myCategoryDetailsFragment"
+            app:destination="@id/myCategoryDetailsFragment" />-->
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/mySubCategoryFragment"
+        android:name="com.milkyway.gbusiness.fragments.BusinessSubcategoryFragment"
+        android:label="Business Sub Category"
+        tools:layout="@layout/fragment_business_subcategory">
+        <action
+            android:id="@+id/action_mySubCategoryFragment_to_myCategoryFragment"
+            app:destination="@id/myCategoryFragment" />
+
+        <action
+            android:id="@+id/action_mySubCategoryFragment_to_myCategoryDetailsFragment"
+            app:destination="@id/myCategoryDetailsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/myBusinessPageFragment"
+        android:name="com.milkyway.gbusiness.fragments.BusinessPageFragment"
+        android:label="Business Page"
+        tools:layout="@layout/fragment_business_page">
+        <action
+            android:id="@+id/action_myBusinessPageFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+
+    </fragment>
+
+    <fragment android:id="@+id/step_1_BusinessListFragment"
+        android:name="com.milkyway.gbusiness.fragments.Step1BusinessListFragment"
+        android:label="Upload Payment Method for your Business"
+        tools:layout="@layout/fragment_step_1_business_list">
+
+        <action
+            android:id="@+id/action_stepOneFragment_to_myBusinessListFragment"
+            app:destination="@id/myBusinessListFragment" />
+
+        <action
+            android:id="@+id/action_stepOneFragment_to_updateStepOneFragment"
+            app:destination="@id/updateStepOneFragment" />
+
+    </fragment>
+
+    <fragment android:id="@+id/updateStepOneFragment"
+        android:name="com.milkyway.gbusiness.fragments.UpdateStepOneFragment"
+        android:label="Pending Payment method for Business"
+        tools:layout="@layout/fragment_update_step_one">
+
+        <action android:id="@+id/action_updateStepOneFragment_to_StepOneBusinessListFragment"
+            app:destination="@+id/step_1_BusinessListFragment"/>
+
+    </fragment>
+
+    <fragment android:id="@+id/step_2_BusinessListFragment"
+        android:name="com.milkyway.gbusiness.fragments.Step2BusinessListFragment"
+        android:label="Upload Gallery for your Business"
+        tools:layout="@layout/fragment_step_2_business_list">
+
+        <action
+            android:id="@+id/action_stepTwoBusinessListFragment_to_myBusinessListFragment"
+            app:destination="@id/myBusinessListFragment" />
+
+        <action
+            android:id="@+id/action_stepTwoBusinessListFragment_to_updateStepTwoFragment"
+            app:destination="@id/updateStepTwoFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/updateStepTwoFragment"
+        android:name="com.milkyway.gbusiness.fragments.UpdateStepTwoFragment"
+        android:label="Update Gallery for your Business"
+        tools:layout="@layout/fragment_update_step_two">
+
+        <action android:id="@+id/action_updateStepTwoFragment_to_StepTwoBusinessListFragment"
+            app:destination="@+id/step_2_BusinessListFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/myBusinessListFragment"
+        android:name="com.milkyway.gbusiness.fragments.BusinessListFragment"
+        android:label="Business Listing"
+        tools:layout="@layout/fragment_business_list">
+        <action
+            android:id="@+id/action_myBusinessListFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_myBusinessListFragment_to_editBusinessListFragment"
+            app:destination="@id/editBusinessListFragment" />
+        <action
+            android:id="@+id/action_myBusinessListFragment_to_createBusinessListFragment"
+            app:destination="@id/createBusinessListFragment" />
+
+        <action
+            android:id="@+id/action_myBusinessListFragment_to_stepOneBusinessListFragment"
+            app:destination="@id/step_1_BusinessListFragment" />
+
+        <action
+            android:id="@+id/action_myBusinessListFragment_to_step_2_BusinessListFragment"
+            app:destination="@id/step_2_BusinessListFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/editBusinessListFragment"
+        android:name="com.milkyway.gbusiness.fragments.BusinessListEditFragment"
+        android:label="Edit Business Listing"
+        tools:layout="@layout/fragment_business_list_edit">
+
+        <action
+            android:id="@+id/action_editBusinessListFragment_to_myBusinessListFragment"
+            app:destination="@id/myBusinessListFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/myBusinessListingFragment"
+        android:name="com.milkyway.gbusiness.fragments.BusinessListingFragment"
+        android:label="Business Listing Fragment"
+        tools:layout="@layout/fragment_business_listing">
+
+        <action
+            android:id="@+id/action_myBusinessListingFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_myBusinessListingFragment_to_paymentOrInvoiceWebView"
+            app:destination="@id/paymentOrInvoiceWebView" />
+
+        <action
+            android:id="@+id/action_myBusinessListingFragment_to_businessListingDetailsFragment"
+            app:destination="@id/businessListingDetailsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/businessListingDetailsFragment"
+        android:name="com.milkyway.gbusiness.fragments.BusinessListingDetailsFragment"
+        android:label="Business Listing Details"
+        tools:layout="@layout/fragment_business_listing_details">
+
+        <action
+            android:id="@+id/action_myBusinessListingDetailsFragment_to_businessListingFragment"
+            app:destination="@id/myBusinessListingFragment" />
+        <action
+            android:id="@+id/action_businessListingDetailsFragment_to_paymentOrInvoiceWebView"
+            app:destination="@id/paymentOrInvoiceWebView" />
+        <action
+            android:id="@+id/action_businessListingDetailsFragment_to_businessSubdomainWebsiteFragment"
+            app:destination="@id/businessSubdomainWebsiteFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/businessSubdomainWebsiteFragment"
+        android:name="com.milkyway.gbusiness.fragments.SubDomainWebsiteFragment"
+        android:label="Business Subdomain Website"
+        tools:layout="@layout/fragment_sub_domain_website">
+
+        <action
+            android:id="@+id/action_businessSubdomainFragment_to_businessListingDetailsFragment"
+            app:destination="@id/businessListingDetailsFragment" />
+        <action
+            android:id="@+id/action_subDomainWebsiteFragment_to_paymentOrInvoiceWebView"
+            app:destination="@id/paymentOrInvoiceWebView" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/socialMediaFragment"
+        android:name="com.milkyway.gbusiness.fragments.SocialMediaFragment"
+        android:label="Social Media Fragment"
+        tools:layout="@layout/fragment_social_media">
+
+        <!--<action
+            android:id="@+id/action_socialMediaFragment_to_paymentOrInvoiceWebView"
+            app:destination="@id/paymentOrInvoiceWebView" />-->
+        <action
+            android:id="@+id/action_socialMediaFragment_to_paymentOrInvoiceWebView"
+            app:destination="@id/paymentOrInvoiceWebView"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/createBusinessListFragment"
+        android:name="com.milkyway.gbusiness.fragments.BusinessListCreateFragment"
+        android:label="Create Business Listing"
+        tools:layout="@layout/fragment_business_list_create">
+
+        <action
+            android:id="@+id/action_createBusinessListFragment_to_myBusinessListFragment"
+            app:destination="@id/myBusinessListFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/myCategoryDetailsFragment"
+        android:name="com.milkyway.gbusiness.fragments.BusinessCatDetailsFragment"
+        android:label="Business Category Details"
+        tools:layout="@layout/fragment_business_cat_details">
+        <action
+            android:id="@+id/action_myCatDetailsFragment_to_mySubCategoryFragment"
+            app:destination="@id/mySubCategoryFragment" />
+        <action
+            android:id="@+id/action_myCatDetailsFragment_to_paymentOrInvoiceWebView"
+            app:destination="@id/paymentOrInvoiceWebView" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/servicesFragment"
+        android:name="com.milkyway.gbusiness.fragments.ServicesFragment"
+        android:label="Services"
+        tools:layout="@layout/fragment_services">
+        <action
+            android:id="@+id/action_servicesFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_servicesFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/domainPriceDetail"
+        android:name="com.milkyway.gbusiness.fragments.DomainPriceDetail"
+        android:label="fragment_domain_price_detail"
+        tools:layout="@layout/fragment_domain_price_detail">
+        <action
+            android:id="@+id/action_domainPriceDetail_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_domainPriceDetail_to_bookYourDomainFragment"
+            app:destination="@id/searchSubDomainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/myCartFragment"
+        android:name="com.milkyway.gbusiness.fragments.MyCartFragment"
+        android:label="MyCartFragment">
+        <action
+            android:id="@+id/action_myCartFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_myCartFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.milkyway.gbusiness.fragments.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment">
+
+        <action
+            android:id="@+id/action_paymentFragment_to_CCavanuPaymentWebview"
+            app:destination="@id/CCavanuPaymentWebview" />
+        <action
+            android:id="@+id/action_paymentFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_paymentFragment_to_PaymentOrInvoiceWebView"
+            app:destination="@id/paymentOrInvoiceWebView" />
+        <action
+            android:id="@+id/action_paymentFragment_to_paymentStatusFragment"
+            app:destination="@id/paymentStatusFragment" />
+        <action
+            android:id="@+id/action_paymentFragment_to_servicesFragment"
+            app:destination="@id/servicesFragment" />
+        <action
+            android:id="@+id/action_paymentFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentORInvoice2"
+        android:name="com.milkyway.gbusiness.fragments.PaymentORInvoice"
+        android:label="fragment_payment_orinvoice"
+        tools:layout="@layout/fragment_payment_orinvoice">
+        <action
+            android:id="@+id/action_paymentORInvoice2_to_paymentOrInvoiceWebView"
+            app:destination="@id/paymentOrInvoiceWebView" />
+        <action
+            android:id="@+id/action_paymentORInvoice2_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_paymentORInvoice2_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/withdrawalFragment"
+        android:name="com.milkyway.gbusiness.fragments.WithdrawalFragment"
+        android:label="fragment_with_darawl_fagment"
+        tools:layout="@layout/fragment_with_darawl_fagment">
+        <action
+            android:id="@+id/action_withDarawlFagment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/withDrawalHistory"
+        android:name="com.milkyway.gbusiness.fragments.WithDrawalHistory"
+        android:label="WithDrawalHistory">
+        <action
+            android:id="@+id/action_withDrawalHistory_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/myOrderFragment"
+        android:name="com.milkyway.gbusiness.fragments.DomainOrderFragment"
+        android:label="MyOrderFragment">
+        <action
+            android:id="@+id/action_myOrderFragment_to_myOrderSubDomainList"
+            app:destination="@id/myORderDomainList" />
+        <action
+            android:id="@+id/action_myOrderFragment_to_paymentOrInvoiceWebView"
+            app:destination="@id/paymentOrInvoiceWebView" />
+        <action
+            android:id="@+id/action_myOrderFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/myORderDomainList"
+        android:name="com.milkyway.gbusiness.fragments.BookedSubdomainFragment"
+        android:label="fragment_my_order_domain_list"
+        tools:layout="@layout/fragment_booked_sub_domain_list">
+        <action
+            android:id="@+id/action_myORderDomainList_to_myOrderFragment"
+            app:destination="@id/myOrderFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentOrInvoiceWebView"
+        android:name="com.milkyway.gbusiness.fragments.PaymentOrInvoiceWebView"
+        android:label="PaymentOrInvoiceWebView">
+
+        <action
+            android:id="@+id/paymentOrInvoiceWebView_to_mySiteFragment"
+            app:destination="@+id/mySiteFragment" />
+        <action
+            android:id="@+id/paymentOrInvoiceWebView_to_myCategoryDetailsFragment"
+            app:destination="@+id/myCategoryDetailsFragment" />
+        <action
+            android:id="@+id/paymentOrInvoiceWebView_to_paymentORInvoice2"
+            app:destination="@+id/paymentORInvoice2" />
+        <action
+            android:id="@+id/paymentOrInvoiceWebView_to_profileFragment"
+            app:destination="@+id/profileFragment" />
+
+        <action
+            android:id="@+id/paymentOrInvoiceWebView_to_myBusinessListingFragment"
+            app:destination="@+id/myBusinessListingFragment" />
+        <action
+            android:id="@+id/paymentOrInvoiceWebView_to_myBusinessListingDetailsFragment"
+            app:destination="@+id/businessListingDetailsFragment" />
+        <action
+            android:id="@+id/paymentOrInvoiceWebView_to_subDomainWebsiteFragment"
+            app:destination="@+id/businessSubdomainWebsiteFragment" />
+        <action
+            android:id="@+id/paymentOrInvoiceWebView_to_myOrderFragment"
+            app:destination="@+id/myOrderFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/securityQuestionFragment"
+        android:name="com.milkyway.gbusiness.fragments.SecurityQuestionFragment"
+        android:label="SecurityQuestionFragment">
+        <action
+            android:id="@+id/action_securityQuestionFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="com.milkyway.gbusiness.fragments.SupportFragment"
+        android:label="fragment_support"
+        tools:layout="@layout/fragment_support">
+        <action
+            android:id="@+id/action_supportFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_supportFragment_to_addTicketFragment"
+            app:destination="@id/addTicketFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addTicketFragment"
+        android:name="com.milkyway.gbusiness.fragments.AddTicketFragment"
+        android:label="fragment_add_ticket"
+        tools:layout="@layout/fragment_add_ticket">
+        <action
+            android:id="@+id/action_addTicketFragment_to_supportFragment"
+            app:destination="@id/supportFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/trashLisFragment"
+        android:name="com.milkyway.gbusiness.fragments.TrashLisFragment"
+        android:label="fragment_trash_lis"
+        tools:layout="@layout/fragment_trash_lis">
+        <action
+            android:id="@+id/action_trashLisFragment_to_mySiteFragment"
+            app:destination="@id/mySiteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/walletHistory"
+        android:name="com.milkyway.gbusiness.fragments.WalletHistory"
+        android:label="WalletHistory">
+        <action
+            android:id="@+id/action_walletHistory_to_earningFragment"
+            app:destination="@id/earningFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationOnGbusniess"
+        android:name="com.milkyway.gbusiness.fragments.NotificationOnGbusniess"
+        android:label="NotificationOnGbusniess">
+        <action
+            android:id="@+id/action_notificationOnGbusniess_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentStatusFragment"
+        android:name="com.milkyway.gbusiness.fragments.PaymentStatusFragment"
+        android:label="fragment_payment_status"
+        tools:layout="@layout/fragment_payment_status">
+        <action
+            android:id="@+id/action_paymentStatusFragment_to_mainFragment"
+            app:destination="@+id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileConfigration"
+        android:name="com.milkyway.gbusiness.fragments.ProfileConfigration"
+        android:label="fragment_profile_configration"
+
+        tools:layout="@layout/fragment_profile_configration">
+        <action
+            android:id="@+id/action_profileConfigration_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_profileConfigration_to_paymentOrInvoiceWebView"
+            app:destination="@id/paymentOrInvoiceWebView" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CCavanuPaymentWebview"
+        android:name="com.milkyway.gbusiness.fragments.CCavanuPaymentWebview"
+        android:label="CCavanuPaymentWebview">
+
+        <action
+            android:id="@+id/CCavanuPaymentWebview_to_mainFragment"
+            app:destination="@+id/mainFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/OTPfragment"
+        android:name="com.milkyway.gbusiness.fragments.OTPfragment"
+        android:label="OTPfragment">
+
+        <action
+            android:id="@+id/action_OTPfragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/myDirectsPeoples"
+        android:name="com.milkyway.gbusiness.fragments.MyDirectsPeoples"
+        android:label="fragment_my_directs_peoples"
+        tools:layout="@layout/fragment_my_directs_peoples">
+        <action
+            android:id="@+id/action_myDirectsPeoples_to_earningFragment"
+            app:destination="@id/earningFragment" />
+    </fragment>
+
+
+</navigation>

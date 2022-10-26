@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "464513323730",
+    "firebase_url": "https://demosignin-7e51e.firebaseio.com",
+    "project_id": "demosignin-7e51e",
+    "stor age_bucket": "demosignin-7e51e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464513323730:android:f6e7e12cb6b5e1be",
+        "android_client_info": {
+          "package_name": "com.milkyway.gbusiness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464513323730-5i25ht2cc089ajcbuq74r4t9e98a1gtu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.milkyway.gbusiness",
+            "certificate_hash": "b4143f6fdc483e1763b278ef9cab276c0b4f37cd"
+          }
+        },
+        {
+          "client_id": "464513323730-4o7cddf73sgfhcj7oveh6oibfdkusb90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmqAE4rNOCOyNo7fBBkCOLwzdWAe0BKVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464513323730-4o7cddf73sgfhcj7oveh6oibfdkusb90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

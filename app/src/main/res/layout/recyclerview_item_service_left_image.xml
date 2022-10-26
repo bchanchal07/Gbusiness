@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:animateLayoutChanges="true"
+                app:iss_auto_cycle="true"
+                app:iss_delay="0"
+                app:iss_period="1000"
+                app:iss_selected_dot="@android:color/transparent"
+                app:iss_unselected_dot="@android:color/transparent" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/dimen_8"
+                android:paddingVertical="1dp">
+
+                <TextView
+                    android:id="@+id/serviceAdpTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:maxLines="2"
+                    android:padding="1dp"
+                    android:text="XXX"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="13dp" />
+
+                <View
+                    android:id="@+id/viewSeparator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/serviceAdpTitle"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/greyLight" />
+
+                <TextView
+                    android:id="@+id/serviceAdpSubTittle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/serviceAdpbtn"
+                    android:layout_below="@+id/viewSeparator"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:text="XXX"
+                    android:textColor="@color/black"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/serviceAdpbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="20dp"
+                    android:backgroundTint="#c5213c"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:text="Order Now"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_weight="0.25"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        android:clickable="true"
+        app:cardUseCompatPadding="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_horizontal|center"
+                android:padding="10dp"
+                android:layout_weight="0.75"
+                android:background="@drawable/bg_gradient"
+                android:text="Total\nEarning \n$0"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_gradient_dark"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="0.25"
+                android:text="View"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_weight="0.25"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        android:clickable="true"
+        app:cardUseCompatPadding="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_horizontal|center"
+                android:padding="10dp"
+                android:layout_weight="0.75"
+                android:background="@drawable/bg_gradient"
+                android:text="Direct\nEarning \n$0"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_gradient_dark"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="0.25"
+                android:text="View"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_weight="0.25"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        android:clickable="true"
+        app:cardUseCompatPadding="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_horizontal|center"
+                android:padding="10dp"
+                android:layout_weight="0.75"
+                android:background="@drawable/bg_gradient"
+                android:text="Global\nEarning \n$0"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_gradient_dark"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="0.25"
+                android:text="View"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_weight="0.25"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        android:clickable="true"
+        app:cardUseCompatPadding="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_horizontal|center"
+                android:padding="10dp"
+                android:layout_weight="0.75"
+                android:background="@drawable/bg_gradient"
+                android:text="My\nDirects"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_gradient_dark"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="0.25"
+                android:text="View"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

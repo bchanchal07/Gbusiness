@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragments.BusinessListEditFragment">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <ImageView
+            android:id="@+id/editBusinessListingBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="15dp"
+            android:src="@drawable/ic_back_24" />
+
+        <TextView
+            android:id="@+id/tolbar_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/editBusinessListingBack"
+            android:text="@string/step_2_business_list"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <libs.mjn.fieldset.FieldSetView
+                    android:id="@+id/fsvLayoutGalleryTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="35dp"
+                    app:fsv_borderAlpha="0.75"
+                    app:fsv_borderColor="@color/grey"
+                    app:fsv_borderRadius="5dp"
+                    app:fsv_borderWidth="1.5dp"
+                    app:fsv_legend="Gallery Business"
+                    app:fsv_legendColor="@color/grey"
+                    app:fsv_legendFont="lobster.ttf"
+                    app:fsv_legendPosition="left"
+                    app:fsv_legendSize="12sp"
+                    tools:layout_editor_absoluteX="40dp">
+
+                    <EditText
+                        android:id="@+id/et_gallery_tilte"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Gallery Business Title"
+                        android:inputType="textWebEditText"
+                        android:maxLines="1"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorHintGrey"
+                        android:textSize="14sp" />
+                </libs.mjn.fieldset.FieldSetView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingEnd="10dp"
+                    android:text="Gallery Images"
+                    android:textColor="@color/button_bg_black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_show_image_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:background="@color/transparent_color"
+                    android:visibility="visible" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/addPic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/add_photo" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_submit_step_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_bg_red"
+                    android:drawableEnd="@drawable/ic_double_arrow_18"
+                    android:drawableTint="@color/white"
+                    android:paddingEnd="10dp"
+                    android:text="SUBMIT"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_show_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="8dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_show_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_gradient"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Gallery Business"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_down_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/ic_down_arrow" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_hide_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:visibility="gone"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_hide_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_gradient"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Gallery Business"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/iv_up_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/ic_up_arrow" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_item_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/transparent_color"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="No Record Found"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

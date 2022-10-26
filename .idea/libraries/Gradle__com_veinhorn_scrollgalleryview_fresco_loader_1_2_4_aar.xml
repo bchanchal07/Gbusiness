@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.veinhorn.scrollgalleryview:fresco-loader:1.2.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a4c2903788219f9144babc678d2e81c8/fresco-loader-1.2.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a4c2903788219f9144babc678d2e81c8/fresco-loader-1.2.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a4c2903788219f9144babc678d2e81c8/fresco-loader-1.2.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.veinhorn.scrollgalleryview/fresco-loader/1.2.4/47b476d23808d1546f1e7edf14bbd452ca716a82/fresco-loader-1.2.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.veinhorn.scrollgalleryview/fresco-loader/1.2.4/688faae9b9f4ce08c44c044c7b107b991d9dc486/fresco-loader-1.2.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

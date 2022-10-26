@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".fragments.CartItemFragment">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="#3BFF1100">
+
+        <ImageView
+            android:id="@+id/myOrderItemBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="15dp"
+            android:src="@drawable/ic_back_24" />
+
+        <TextView
+            android:id="@+id/tolbar_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/myOrderItemBack"
+            android:text="@string/order"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivHeaderImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/g_logo" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivHeaderImage"
+        android:layout_marginTop="20dp"
+        android:stretchColumns="1,2,3,4,5,6">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvServices"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.6"
+                android:background="@drawable/header_back_table"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Services"
+                android:textColor="@color/black"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:background="@drawable/header_back_table"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDuration"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.90"
+                android:background="@drawable/header_back_table"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Register"
+                android:textColor="@color/black"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvYrlyPrice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.90"
+                android:background="@drawable/header_back_table"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Price\nYearly"
+                android:textColor="@color/black"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTtlPrice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.10"
+                android:background="@drawable/header_back_table"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Total\nPrice"
+                android:textColor="@color/black"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAction"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.60"
+                android:background="@drawable/header_back_table"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Action"
+                android:textColor="@color/black"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDomainOrderItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/recyclerview_item_orders" />
+
+        <TextView
+            android:id="@+id/tvTotalAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingVertical="6dp"
+            android:paddingEnd="40dp"
+            android:text="Payable Amount : "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@color/grey"/>
+
+    </TableLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPayNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout"
+        android:layout_marginHorizontal="120dp"
+        android:layout_marginVertical="25dp"
+        android:background="@drawable/button_bg_blue"
+        android:drawableEnd="@drawable/ic_double_arrow_18"
+        android:drawableTint="@color/white"
+        android:paddingHorizontal="5dp"
+        android:text="Place Order Now"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</RelativeLayout>

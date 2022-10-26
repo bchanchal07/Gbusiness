@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tvTransIdLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Transaction ID"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPaymentAndInvoiceTransID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Trans_1265412"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layoutInvoiceID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toStartOf="@+id/layoutPayDate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTransIdLabel">
+
+                <TextView
+                    android:id="@+id/tvInvoiceIdLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Invoice ID" />
+
+                <TextView
+                    android:id="@+id/tvPaymentAndInvoiceID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="12sp"
+                    android:text="1236125"
+                    android:textColor="@color/black" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layoutPayDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/layoutInvoiceID"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/layoutInvoiceID"
+                app:layout_constraintTop_toTopOf="@+id/layoutInvoiceID">
+
+                <TextView
+                    android:id="@+id/tvPayDateLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Payment Date" />
+
+                <TextView
+                    android:id="@+id/tvPaymentAndInvoiceDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textAlignment="textEnd"
+                    android:textSize="12sp"
+                    android:text="1236125"
+                    android:textColor="@color/black" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layoutPayMode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toStartOf="@+id/layoutPayStatus"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutInvoiceID">
+
+                <TextView
+                    android:id="@+id/tvPayModeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Payment\nMode" />
+
+                <TextView
+                    android:id="@+id/tvPaymentAndInvoicePayMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:textSize="12sp"
+                    android:text="Razor Pay"
+                    android:textColor="@color/black" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layoutPayStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/layoutPayMode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/layoutPayMode"
+                app:layout_constraintTop_toTopOf="@+id/layoutPayMode">
+
+                <TextView
+                    android:id="@+id/tvPayStatusLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Payment\nStatus" />
+
+                <TextView
+                    android:id="@+id/tvPaymentAndInvoiceStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:textSize="12sp"
+                   android:gravity="end"
+                    android:text="Completed"
+                    android:textColor="@color/green"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layoutAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toStartOf="@+id/layoutAction"
+                app:layout_constraintHorizontal_bias="0.14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutPayMode">
+
+                <TextView
+                    android:id="@+id/tvAmountLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:text="Amount" />
+
+                <TextView
+                    android:id="@+id/tvPaymentAndInvoicePaymentAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="$ 15"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layoutAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/layoutAmount"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/layoutAmount"
+                app:layout_constraintTop_toTopOf="@+id/layoutAmount">
+
+                <TextView
+                    android:id="@+id/tvPaymentAndInvoiceView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_gradent"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="3dp"
+                    android:text="View Invoice"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPaymentAndInvoiceDowmload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/button_gradent"
+                    android:drawableRight="@drawable/ic_file_download_18dp"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/white"
+                    android:paddingStart="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="3dp"
+                    android:text="Download"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"
+                android:padding="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Trans ID." />
+
+                <TextView
+                    android:id="@+id/tvPaymentAndInvoiceTransID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="01" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="3dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvPaymentAndInvoiceID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Invoice"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tvPaymentAndInvoiceDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Date(16/08/2000)"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="3dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvPaymentAndInvoicePayMode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="paymode ( paypal )"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/tvPaymentAndInvoiceStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/buttonRedcolor"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="status ( comp )"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:padding="3dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/tvPaymentAndInvoicePaymentAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Amount ($67)"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/tvPaymentAndInvoiceView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:text="View"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/tvPaymentAndInvoiceDowmload"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_file_download_black_24dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </LinearLayout>-->
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

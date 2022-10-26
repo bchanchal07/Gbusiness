@@ -1,0 +1,231 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.GBusiness" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:statusBarColor">@color/fui_buttonShadow</item>
+        <item name="popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+
+    </style>
+    //Custome Radio Button
+
+    <style name="MyCustomRadioButton" parent="@android:style/TextAppearance">
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selectable_text_color_checked_state</item>
+        <item name="android:background">@drawable/selectable_text_bg_color_checked_state</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">#F8F8F8</item>
+
+    </style>
+
+    //date picker spinner style
+
+    <style name="MyDatePickerSpinnerStyle" parent="@android:style/Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:calendarViewShown">false</item>
+        <item name="colorControlNormal">#d50000</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Theme_Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.GBusiness">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:windowActionBarOverlay">false</item>
+
+    </style>
+    //button style
+
+    <style name="ButtonStyle" parent="android:style/Widget.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:background">@drawable/button_gradent</item>
+    </style>
+
+    //rating bar
+
+    <style name="RatingBar" parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:maxHeight">40dp</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="RatingBarReview" parent="Widget.AppCompat.RatingBar.Indicator">
+        <item name="android:minHeight">15dp</item>
+        <item name="android:maxHeight">40dp</item>
+
+    </style>
+
+    //logout popup
+
+    <style name="logout_button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/bg_select_btn</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="alert_button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/bg_select_btn_ok</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyleBig" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowAnimationStyle">@style/AnimationDialogWindow</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.8</item>
+    </style>
+
+    <style name="AnimationDialogWindow">
+        <item name="android:windowEnterAnimation">@anim/dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+
+    <style name="ParmieryButton" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+
+    <!--for alertDialog-->
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/NeutralButtonStyle</item>
+    </style>
+
+    <style name="AnimationsForDailog">
+        <item name="android:windowEnterAnimation">@anim/zoomin</item>
+        <item name="android:windowExitAnimation">@anim/zoomout</item>
+    </style>
+
+    <style name="CustomDialogManualQty" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="actionMenuTextColor">@color/colorAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="bottome_dialog_animation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#f00</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#E1D2F4</item>
+        <item name="android:background">@color/fui_transparent</item>
+    </style>
+
+    <style name="NeutralButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#E1D2F4</item>
+        <item name="android:background">@color/fui_transparent</item>
+    </style>
+
+    //TextInputLayout
+
+    <style name="Cut" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="Rounded" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">30dp</item>
+    </style>
+
+    <style name="MyTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/text_input_layout_stroke_color</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:textColor">@color/buttonRedcolor</item>
+        <!--<item name="android:colorBackground">@android:color/black</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:colorControlActivated">@android:color/black</item>
+        <item name="android:colorControlNormal">@android:color/black</item>
+        <item name="android:colorControlHighlight">@android:color/black</item>
+        <item name="android:backgroundTint">@android:color/black</item>
+        <item name="android:colorAccent">@android:color/black</item>-->
+    </style>
+
+    //TextInputEditText
+
+    <style name="MyTextInputEditText" parent="ThemeOverlay.MaterialComponents.TextInputEditText">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:colorBackground">@android:color/black</item>
+        <item name="android:colorControlActivated">@android:color/black</item>
+        <item name="android:colorControlNormal">@android:color/holo_red_dark</item>
+        <item name="android:colorControlHighlight">@android:color/black</item>
+        <item name="android:backgroundTint">@android:color/black</item>
+        <item name="android:colorAccent">@android:color/black</item>
+    </style>
+
+    //CardView
+
+    <style name="ProfileCardView" parent="Base.CardView">
+
+        <item name="cardCornerRadius">10dp</item>
+        <item name="cardBackgroundColor">#65FFFFFF</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CircularDeterminateProgressBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/circle</item>
+    </style>
+
+    <style name="Widget.AppTheme.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.AppTheme.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+</resources>

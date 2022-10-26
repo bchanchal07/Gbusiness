@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <ImageView
+            android:id="@+id/editBusinessListingBack"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:padding="15dp"
+            android:src="@drawable/ic_back_24" />
+
+        <TextView
+            android:id="@+id/tolbar_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/editBusinessListingBack"
+            android:text="@string/step_1_business_list"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QR Code Image"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:ignore="MissingConstraints" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutLogo"
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/ivBusinessPaymentView"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_not_available" />
+
+                    <ImageView
+                        android:id="@+id/ivImageSelect"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignBottom="@+id/ivBusinessPaymentView"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/g_camera" />
+
+                </RelativeLayout>
+
+                <libs.mjn.fieldset.FieldSetView
+                    android:id="@+id/fsvLayoutPaymentTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="35dp"
+                    app:fsv_borderAlpha="0.75"
+                    app:fsv_borderColor="@color/grey"
+                    app:fsv_borderRadius="5dp"
+                    app:fsv_borderWidth="1.5dp"
+                    app:fsv_legend="@string/payment_title"
+                    app:fsv_legendColor="@color/grey"
+                    app:fsv_legendFont="lobster.ttf"
+                    app:fsv_legendPosition="left"
+                    app:fsv_legendSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@+id/layoutLogo"
+                    tools:layout_editor_absoluteX="40dp">
+
+                    <EditText
+                        android:id="@+id/et_payment_tilte"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Payment Method title"
+                        android:inputType="textWebEditText"
+                        android:maxLines="1"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorHintGrey"
+                        android:textSize="14sp" />
+                </libs.mjn.fieldset.FieldSetView>
+
+                <libs.mjn.fieldset.FieldSetView
+                    android:id="@+id/fsvBusinessPaymentEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="25dp"
+                    app:fsv_borderAlpha="0.75"
+                    app:fsv_borderColor="@color/grey"
+                    app:fsv_borderRadius="5dp"
+                    app:fsv_borderWidth="1.5dp"
+                    app:fsv_legend="@string/payment_email"
+                    app:fsv_legendColor="@color/grey"
+                    app:fsv_legendFont="lobster.ttf"
+                    app:fsv_legendPosition="left"
+                    app:fsv_legendSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@+id/fsvLayoutPaymentTitle"
+                    tools:layout_editor_absoluteX="40dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_payment_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Payment Email"
+                            android:inputType="textWebEditText"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/colorHintGrey"
+                            android:textSize="14sp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </libs.mjn.fieldset.FieldSetView>
+
+                <libs.mjn.fieldset.FieldSetView
+                    android:id="@+id/fsvBusinessPaymentUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="25dp"
+                    app:fsv_borderAlpha="0.75"
+                    app:fsv_borderColor="@color/grey"
+                    app:fsv_borderRadius="5dp"
+                    app:fsv_borderWidth="1.5dp"
+                    app:fsv_legend="@string/payment_url"
+                    app:fsv_legendColor="@color/grey"
+                    app:fsv_legendFont="lobster.ttf"
+                    app:fsv_legendPosition="left"
+                    app:fsv_legendSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@+id/fsvBusinessPaymentEmail"
+                    tools:layout_editor_absoluteX="40dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_payment_url"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Payment Url"
+                            android:inputType="textWebEditText"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/colorHintGrey"
+                            android:textSize="14sp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </libs.mjn.fieldset.FieldSetView>
+
+                <libs.mjn.fieldset.FieldSetView
+                    android:id="@+id/fsvPaymentBankDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="25dp"
+                    app:fsv_borderAlpha="0.75"
+                    app:fsv_borderColor="@color/grey"
+                    app:fsv_borderRadius="5dp"
+                    app:fsv_borderWidth="1.5dp"
+                    app:fsv_legend="@string/bank_detail"
+                    app:fsv_legendColor="@color/grey"
+                    app:fsv_legendFont="lobster.ttf"
+                    app:fsv_legendPosition="left"
+                    app:fsv_legendSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@+id/fsvBusinessPaymentUrl"
+                    tools:layout_editor_absoluteX="10dp">
+
+                    <EditText
+                        android:id="@+id/et_payment_bank_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Bank details"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorHintGrey"
+                        android:textSize="14sp" />
+                </libs.mjn.fieldset.FieldSetView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_submit_step_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_bg_red"
+                    android:drawableEnd="@drawable/ic_double_arrow_18"
+                    android:drawableTint="@color/white"
+                    android:paddingEnd="10dp"
+                    android:text="SUBMIT"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/fsvPaymentBankDetail"
+                    tools:layout_editor_absoluteX="10dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:elevation="20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_show_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="3dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="8dp">
+                    <LinearLayout
+                        android:id="@+id/ll_show_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_gradient">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Payment Method for Business"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                        <ImageView
+                            android:id="@+id/iv_down_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/ic_down_arrow"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_hide_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="3dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="15dp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="8dp">
+                    <LinearLayout
+                        android:id="@+id/ll_hide_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_gradient">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Payment Method for Business"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                        <ImageView
+                            android:id="@+id/iv_up_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/ic_up_arrow"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_item_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/transparent_color"/>
+
+                <TextView
+                    android:id="@+id/tv_blank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="No Record Found"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

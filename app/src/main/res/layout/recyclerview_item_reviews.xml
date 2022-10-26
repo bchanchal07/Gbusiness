@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutDomainRv"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00C84949"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivUserImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_back_domain"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="User Name"
+                android:textColor="@color/com_facebook_blue"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivUserImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvUserEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="abc@xyz.com"
+                android:textColor="@color/grey"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivUserImage"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+            <RatingBar
+                android:id="@+id/ratingBarReviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/RatingBar"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="4"
+                android:progressTint="@color/colorYellow"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@+id/ivUserImage"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserEmail" />
+
+            <TextView
+                android:id="@+id/tvReviewComment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:ellipsize="end"
+                android:justificationMode="inter_word"
+                android:maxLines="3"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp"
+                android:text="Kj flakdjflakjd lfkajdlfaskdadkjflakdj flakdjf lakdfj lakdfjkladj"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivUserImage" />
+
+            <View
+                android:id="@+id/viewSeparator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="4dp"
+                android:background="@color/greyLight"
+                app:layout_constraintTop_toBottomOf="@+id/tvReviewComment" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

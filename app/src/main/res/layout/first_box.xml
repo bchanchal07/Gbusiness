@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/firsImageBOx"
+        android:src="@drawable/gbusniess_domain"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/boxCancel"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_cancel_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/investButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firsImageBOx"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:backgroundTint="@color/buttonRedcolor"
+        android:text="@string/invest"
+        android:textAlignment="center"
+
+
+        android:typeface="sans" />
+ <!--   </LinearLayout>-->
+
+</RelativeLayout>

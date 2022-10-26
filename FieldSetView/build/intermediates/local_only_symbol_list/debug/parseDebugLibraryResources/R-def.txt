@@ -1,0 +1,32 @@
+R_DEF: Internal format may change without notice
+local
+attr? fsv_borderAlpha
+attr? fsv_borderColor
+attr? fsv_borderRadius
+attr? fsv_borderWidth
+attr? fsv_legend
+attr? fsv_legendColor
+attr? fsv_legendDirection
+attr? fsv_legendFont
+attr? fsv_legendIcon
+attr? fsv_legendIconTint
+attr? fsv_legendMarginLeft
+attr? fsv_legendMarginRight
+attr? fsv_legendPadding
+attr? fsv_legendPaddingLeft
+attr? fsv_legendPaddingRight
+attr? fsv_legendPosition
+attr? fsv_legendSize
+id center
+id fieldsetview_container
+id fieldsetview_frame
+id fieldsetview_legend
+id fieldsetview_legendContainer
+id fieldsetview_legendIcon
+id left
+id ltr
+id right
+id rtl
+layout fsv_fieldsetview
+string app_name
+styleable FieldSetView fsv_borderColor fsv_borderWidth fsv_borderRadius fsv_borderAlpha fsv_legend fsv_legendIcon fsv_legendIconTint fsv_legendSize fsv_legendColor fsv_legendFont fsv_legendMarginLeft fsv_legendMarginRight fsv_legendPadding fsv_legendPaddingLeft fsv_legendPaddingRight fsv_legendPosition fsv_legendDirection

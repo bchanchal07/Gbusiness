@@ -1,0 +1,265 @@
+<resources>
+    <string name="app_name">G business</string>
+    <!--//434674754056120
+    //1588678377935170-->
+    <string name="facebook_app_id">2280980258618195</string>
+    <string name="fb_login_protocol_scheme">fb2280980258618195</string>
+
+    <string name="razorpay_test_key">rzp_test_Gv3wViqaGKhLio</string>
+    <string name="razorpay_test_secret">fv9Ecn2XwmxIxe0rbyvqGz0k</string>
+
+    <string name="razorpay_live_key">rzp_live_qZl14ZaFGphjhz</string>
+    <string name="razorpay_live_secret">Axy88XZtnfVJzpOhLvF7LOKN</string>
+
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
+    <string name="share">Share &amp; Earn</string>
+
+    <string name="text_new_user">No Account yet?</string>
+    <string name="text_create_one">Create New User</string>
+    <string name="text_login">Login</string>
+    <string name="text_sign_up">Sign Up</string>
+    <string name="text_already_member">Already a member?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="discuss_about_header">Select Question</string>
+    <string name="app_service_name" translatable="false">MessageService</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--TODO: by PAWAN-->
+
+    <string name="showError">SomeThing Went Wrong ! Try Later</string>
+    <string name="active">Activate</string>
+    <string name="activated">Activated</string>
+    <string name="create">Create</string>
+    <string name="created">Created</string>
+
+    <!--<Live>-->
+    <string name="configClintID">AdPqT75Bupur0gIMKw7ESr5URvgtRtlqiry53xUO4hWg24TmPusfyBPws56whyeI7UirHp4LlR5wOq36</string>
+    <string name="secID">ELGdx52-2Caagvv5yftzAFm1so3-uzEt-JbSXJJtiELy3MCiH4aH6QF9KVXoFh_oPl0xjKbY_LEEwDby</string>
+
+    <!--<sandbox>-->
+    <!-- <string name="configClintID">Af7eYMHAKHmCjIdIIxWhCRFDPYoLxhesJSavVk1P_t1Z92qbOSaJWlHPMk3jqqNSgJU5JDF0yqZPwuhT</string>
+    <string name="secID">EPDFat_vBoSMrfB-srhxOXtyWZRO7sPMr4z33Ifc_a7qnmGd_j3C2aKKfebPR5x_7q7fqg-P4YTJlyRU</string>-->
+    <string name="earning">Earning</string>
+    <string name="g_business_wallet">G Business Wallet</string>
+    <string name="wallet_history">Wallet History</string>
+    <string name="ref_code">Referral Code</string>
+    <string name="earn_from_connections">Earn From Connections</string>
+    <string name="search_domain">Search Domain</string>
+    <string name="book_now">Book now</string>
+    <string name="copy">Copy</string>
+    <string name="invest">Invest</string>
+    <string name="cancel">Cancel</string>
+    <string name="my_site">My Site</string>
+    <string name="total_purchase">Total Purchase</string>
+    <string name="services">Services</string>
+
+    <string name="submit">Submit</string>
+    <string name="select_profession">Select Profession</string>
+    <string name="enter_mobile_no">enter mobile no.</string>
+    <string name="coupon_code">Coupon Code</string>
+    <string name="paymant">Payment</string>
+    <string name="or">-------------------- OR --------------------</string>
+    <string name="logout">Are you sure to logout from this app?</string>
+    <string name="log_out">Logout</string>
+    <string name="otp">OTP</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="domain_order">Domain Order</string>
+    <string name="domain_list">Domain List</string>
+    <string name="subdomain_list">Sub Domain Booked List</string>
+    <string name="cart">G-Business Cart</string>
+    <string name="notification">Notification</string>
+    <string name="withdrawal">Withdrawal</string>
+    <string name="withdrawal_history">Withdrawal History</string>
+    <string name="payments_and_invoice"><![CDATA[Payments & Invoice]]></string>
+    <string name="security_question">Security Questions</string>
+    <string name="support">General Support</string>
+    <string name="category">Business Category</string>
+    <string name="category_det">Business Category Details</string>
+    <string name="txt_cat_popup">Need Help Selecting The Right Software?</string>
+    <string name="get_expert_assistance">Get Expert Assistance</string>
+    <string name="save_time_money"><![CDATA[Save Time & Money]]></string>
+    <string name="less_mistake">Less Mistake</string>
+    <string name="easy_to_use">Easy to Use</string>
+    <string name="discover_top_business"><![CDATA[Discover top Business Software & Service Partners]]></string>
+    <string name="business_page">Business Page</string>
+    <string name="business_listing">Business Listing</string>
+    <string name="mobile_verification">Mobile verification</string>
+    <string name="no_search_results_found">No Results Found</string>
+    <string name="internal_storage">Internal Storage</string>
+    <string name="name_error">Name field can\'t be blank.</string>
+    <string name="query_error">Query field can\'t be blank.</string>
+    <string name="mobile_error">Mobile field can\'t be blank.</string>
+    <string name="email_error">Email field can\'t be blank.</string>
+    <string name="rs">\u20B9</string>
+    <string name="ok">OK</string>
+    <string name="order">Domain Order Summary</string>
+    <string name="sub_category">Sub Category</string>
+    <string name="directory">Business Directory</string>
+    <string name="sub_domain_list">Subdomain List</string>
+    <string name="search_subdomain">Search Subdomain</string>
+    <string name="update_business_list">Update Business Listing</string>
+    <string name="create_business_list">Create Business Listing</string>
+    <string name="step_1_business_list">Step_1 Upload Payment Method</string>
+    <string name="step_2_business_list">Step_2 Upload Gallery For your Business</string>
+    <string name="add_ticket">Add Support Ticket</string>
+    <string name="business_listing_det">Business List Details</string>
+    <string name="business_subdomain">Business Subdomain</string>
+    <string name="business_list">Business List</string>
+    <string name="payment_title">Payment Title <font color='#FF0000'>*</font> </string>
+    <string name="payment_email">Payment Email <font color='#FF0000'>*</font> </string>
+    <string name="payment_url">Payment URL <font color='#FF0000'>*</font> </string>
+    <string name="bank_detail">Payment Bank Details <font color='#FF0000'>*</font> </string>
+
+    <string-array name="register_year">
+        <item>1 Year</item>
+        <item>2 Year</item>
+        <item>3 Year</item>
+        <item>4 Year</item>
+        <item>5 Year</item>
+        <item>6 Year</item>
+        <item>7 Year</item>
+        <item>8 Year</item>
+        <item>9 Year</item>
+        <item>10 Year</item>
+    </string-array>
+    <string-array name="mood_array">
+        <item>Accepted</item>
+        <item>Accomplished</item>
+        <item>Aggravated</item>
+        <item>Alone</item>
+        <item>Amused</item>
+        <item>Angry</item>
+        <item>Annoyed</item>
+        <item>Anxious</item>
+        <item>Apathetic</item>
+        <item>Ashamed</item>
+        <item>Awake</item>
+        <item>Bewildered</item>
+        <item>Bitchy</item>
+        <item>Bittersweet</item>
+        <item>Blah</item>
+        <item>Blank</item>
+        <item>Blissful</item>
+        <item>Bored</item>
+        <item>Bouncy</item>
+        <item>Calm</item>
+        <item>Cheerful</item>
+        <item>Chipper</item>
+        <item>Cold</item>
+        <item>Complacent</item>
+        <item>Confused</item>
+        <item>Content</item>
+        <item>Cranky</item>
+        <item>Crappy</item>
+        <item>Crazy</item>
+        <item>Crushed</item>
+        <item>Curious</item>
+        <item>Cynical</item>
+        <item>Dark</item>
+        <item>Depressed</item>
+        <item>Determined</item>
+        <item>Devious</item>
+        <item>Dirty</item>
+        <item>Disappointed</item>
+        <item>Discontent</item>
+        <item>Ditzy</item>
+        <item>Dorky</item>
+        <item>Drained</item>
+        <item>Drunk</item>
+        <item>Ecstatic</item>
+        <item>Energetic</item>
+        <item>Enraged</item>
+        <item>Enthralled</item>
+        <item>Envious</item>
+        <item>Exanimate</item>
+        <item>Excited</item>
+        <item>Exhausted</item>
+        <item>Flirty</item>
+        <item>Frustrated</item>
+        <item>Full</item>
+        <item>Geeky</item>
+        <item>Giddy</item>
+        <item>Giggly</item>
+        <item>Gloomy</item>
+        <item>Good</item>
+        <item>Grateful</item>
+        <item>Groggy</item>
+        <item>Grumpy</item>
+        <item>Guilty</item>
+        <item>Happy</item>
+        <item>High</item>
+        <item>Hopeful</item>
+        <item>Hot</item>
+        <item>Hungry</item>
+        <item>Hyper</item>
+        <item>Impressed</item>
+        <item>Indescribable</item>
+        <item>Indifferent</item>
+        <item>Infuriated</item>
+        <item>Irate</item>
+        <item>Irritated</item>
+        <item>Jealous</item>
+        <item>Jubilant</item>
+        <item>Lazy</item>
+        <item>Lethargic</item>
+        <item>Listless</item>
+        <item>Lonely</item>
+        <item>Loved</item>
+        <item>Mad</item>
+        <item>Melancholy</item>
+        <item>Mellow</item>
+        <item>Mischievous</item>
+        <item>Moody</item>
+        <item>Morose</item>
+        <item>Naughty</item>
+        <item>Nerdy</item>
+        <item>NotSpecified</item>
+        <item>Numb</item>
+        <item>Okay</item>
+        <item>Optimistic</item>
+        <item>Peaceful</item>
+        <item>Pessimistic</item>
+        <item>Pissedoff</item>
+        <item>Pleased</item>
+        <item>Predatory</item>
+        <item>Quixotic</item>
+        <item>Recumbent</item>
+        <item>Refreshed</item>
+        <item>Rejected</item>
+        <item>Rejuvenated</item>
+        <item>Relaxed</item>
+        <item>Relieved</item>
+        <item>Restless</item>
+        <item>Rushed</item>
+        <item>Sad</item>
+        <item>Satisfied</item>
+        <item>Shocked</item>
+        <item>Sick</item>
+        <item>Silly</item>
+        <item>Sleepy</item>
+        <item>Smart</item>
+        <item>Stressed</item>
+        <item>Surprised</item>
+        <item>Sympathetic</item>
+        <item>Thankful</item>
+        <item>Tired</item>
+        <item>Touched</item>
+        <item>Uncomfortable</item>
+        <item>Weird</item>
+
+    </string-array>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>
