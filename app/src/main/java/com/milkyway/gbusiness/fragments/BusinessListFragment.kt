@@ -55,6 +55,7 @@ class BusinessListFragment : Fragment(), BusinessUserAddListAdapter.BtnClickList
     private lateinit var voiceSearchImageView: ImageView
     private lateinit var scrollView: ScrollView
     private var expendableList: ExpandableListView? = null
+    //todo skjnvksdnvk
 
     companion object {
         // TODO: Rename and change types and number of parameters
