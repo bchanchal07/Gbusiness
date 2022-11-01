@@ -256,7 +256,7 @@ class BusinessListEditFragment : Fragment() {
 
                         override fun onFailure(call: Call<BusinessListEditResponse>, t: Throwable) {
                             CommonUtil.hideDialog(mContext)
-                            CommonUtil.toast(R.string.showError.toString(), mContext)
+                            CommonUtil.toast(t.toString(), mContext)
                             CommonUtil.logi(t.localizedMessage.toString())
                         }
 

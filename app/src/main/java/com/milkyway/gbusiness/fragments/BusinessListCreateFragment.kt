@@ -5,6 +5,7 @@ import android.content.Context
 import android.net.Uri
 import android.os.Bundle
 import android.text.TextUtils
+import android.util.Log
 import android.view.*
 import android.widget.*
 import androidx.activity.result.ActivityResult
@@ -16,10 +17,10 @@ import com.leo.searchablespinner.SearchableSpinner
 import com.leo.searchablespinner.interfaces.OnItemSelectListener
 import com.milkyway.gbusiness.R
 import com.milkyway.gbusiness.activities.MainActivity
-import com.milkyway.gbusiness.retrofit.GbusinessService
-import com.milkyway.gbusiness.models.*
 import com.milkyway.gbusiness.extension.setLocalImage
+import com.milkyway.gbusiness.models.*
 import com.milkyway.gbusiness.retrofit.AppConstants
+import com.milkyway.gbusiness.retrofit.GbusinessService
 import com.milkyway.gbusiness.utils.CommonUtil
 import com.milkyway.gbusiness.utils.FileUtils
 import kotlinx.android.synthetic.main.dlg_get_quote.view.*
@@ -57,6 +58,7 @@ class BusinessListCreateFragment : Fragment() {
     private lateinit var etBusinessNameCreate: EditText
     private lateinit var etEmailCreate: EditText
     private lateinit var etWebUrlCreate: EditText
+    private lateinit var etSellerUrlCreate: EditText
     private lateinit var etAboutUsPageCreate: EditText
     private lateinit var listData: BusinessListingResponse.Data
     private lateinit var searchableSpinnerCategory: SearchableSpinner
@@ -157,6 +159,7 @@ class BusinessListCreateFragment : Fragment() {
         tvBusinessSubcategoryCreate = view.findViewById(R.id.tvBusinessSubcategoryCreate)
         etEmailCreate = view.findViewById(R.id.etEmailCreate)
         etWebUrlCreate = view.findViewById(R.id.etWebUrlCreate)
+        etSellerUrlCreate = view.findViewById(R.id.etSellerUrlCreate)
         etAboutUsPageCreate = view.findViewById(R.id.etAboutUsPageCreate)
         btnCreateBusinessData = view.findViewById(R.id.btnCreateBusinessList)
 
@@ -165,6 +168,13 @@ class BusinessListCreateFragment : Fragment() {
 
         searchableSpinnerSubcategory = SearchableSpinner(requireActivity())
         searchableSpinnerSubcategory.windowTitle = "Select/Search Subcategory"
+
+        var businessName = etBusinessNameCreate.getText().toString()
+        val arr: List<String> = businessName.split(" ")
+
+        val firstWord = arr[0] //the
+
+        Log.e("first_word------", firstWord.toString())
 
         callCategoryApi()
     }
@@ -290,6 +300,7 @@ class BusinessListCreateFragment : Fragment() {
             val bName = etBusinessNameCreate.text.toString().trim()
             val bEmail = etEmailCreate.text.toString().trim()
             val bWebUrl = etWebUrlCreate.text.toString().trim()
+            val bSellerUrl = etSellerUrlCreate.text.toString().trim()
             val bAboutUs = etAboutUsPageCreate.text.toString().trim()
 
             val rbUserID: RequestBody = if (userID!!.isNotEmpty()) RequestBody.create("text/plain".toMediaTypeOrNull(), userID) else RequestBody.create("text/plain".toMediaTypeOrNull(), "")
@@ -303,7 +314,8 @@ class BusinessListCreateFragment : Fragment() {
             if (CommonUtil.checkNetwork(mContext)) {
                 val apiServices = GbusinessService.create(mContext)
                 apiServices.createBusinessListData("Bearer " + CommonUtil.getPreferencesString(mContext, AppConstants.TOKEN),
-                    rbUserID, rbName, rbMail, rbWebUrl, rbAboutUs, rbSelectedCatID, rbSelectedSubCatID, filePhotoLogo!!)
+                    rbUserID, rbName,filePhotoLogo!!, rbMail, null!!, null!! , rbWebUrl,  rbSelectedCatID, rbSelectedSubCatID,null!!, null!!, null!!,
+                    null!!, null!!, null!!, null!!, null!!, null!!,null!!, rbAboutUs)
                     .enqueue(object : Callback<BusinessListEditResponse> {
                         override fun onResponse(call: Call<BusinessListEditResponse>, response: Response<BusinessListEditResponse>) {
                             val updateListResponse = response.body()

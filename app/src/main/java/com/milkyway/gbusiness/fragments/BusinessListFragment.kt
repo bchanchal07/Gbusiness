@@ -55,6 +55,8 @@ class BusinessListFragment : Fragment(), BusinessUserAddListAdapter.BtnClickList
     private lateinit var voiceSearchImageView: ImageView
     private lateinit var scrollView: ScrollView
     private var expendableList: ExpandableListView? = null
+
+//    var dialog: Dialog = Dialog(mContext)
     //todo skjnvksdnvk
 
     companion object {
@@ -83,6 +85,7 @@ class BusinessListFragment : Fragment(), BusinessUserAddListAdapter.BtnClickList
     private fun clickListener(view: View) {
         myBusinessListBack.setOnClickListener {
             MainActivity.navController.navigate(R.id.action_myBusinessListFragment_to_mainFragment)
+//            dialog.hide()
         }
 
         btnAddNewList.setOnClickListener {
@@ -195,7 +198,7 @@ class BusinessListFragment : Fragment(), BusinessUserAddListAdapter.BtnClickList
     override fun onBtnClick(position: Int, list: BusinessListingResponse.Data) {
         val inflater = requireActivity().layoutInflater
         val PopupView: View = inflater.inflate(R.layout.show_bottom_action_layout, null)
-        val dialog = Dialog(requireActivity(), R.style.CustomDialogManualQty)
+        var dialog = Dialog(requireActivity(), R.style.CustomDialogManualQty)
         val window = dialog.window
         val layoutParams = window!!.attributes
         layoutParams.gravity = Gravity.BOTTOM

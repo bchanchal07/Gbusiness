@@ -264,6 +264,40 @@
                 </libs.mjn.fieldset.FieldSetView>
 
                 <libs.mjn.fieldset.FieldSetView
+                    android:id="@+id/fsvLayoutSellerUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="25dp"
+                    app:fsv_borderAlpha="0.75"
+                    app:fsv_borderColor="@color/grey"
+                    app:fsv_borderRadius="5dp"
+                    app:fsv_borderWidth="1.5dp"
+                    app:fsv_legend="Seller Url"
+                    app:fsv_legendColor="@color/grey"
+                    app:fsv_legendFont="lobster.ttf"
+                    app:fsv_legendPosition="left"
+                    app:fsv_legendSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@+id/fsvLayoutWebUrl"
+                    tools:layout_editor_absoluteX="40dp">
+
+                    <EditText
+                        android:id="@+id/etSellerUrlCreate"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@android:color/transparent"
+                        android:hint="eg. https://www.xyz.com/sellerpage"
+                        android:inputType="textWebEditText"
+                        android:maxLines="1"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/colorHintGrey"
+                        android:textSize="14sp" />
+                </libs.mjn.fieldset.FieldSetView>
+
+                <libs.mjn.fieldset.FieldSetView
                     android:id="@+id/fsvLayoutAboutUs"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -278,7 +312,7 @@
                     app:fsv_legendFont="lobster.ttf"
                     app:fsv_legendPosition="left"
                     app:fsv_legendSize="12sp"
-                    app:layout_constraintTop_toBottomOf="@+id/fsvLayoutWebUrl"
+                    app:layout_constraintTop_toBottomOf="@+id/fsvLayoutSellerUrl"
                     tools:layout_editor_absoluteX="10dp">
 
                     <EditText

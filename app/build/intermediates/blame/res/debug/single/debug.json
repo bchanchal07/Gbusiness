@@ -1,23 +1,23 @@
 [
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_book_sub_domain.xml.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\layout\\fragment_book_sub_domain.xml"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_earning.xml.flat",
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\layout\\fragment_earning.xml"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_book_sub_domain.xml.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\layout\\fragment_book_sub_domain.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_material_ic_menu_arrow_down_black_24dp.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\drawable\\material_ic_menu_arrow_down_black_24dp.xml"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_tunisia.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\f518fe9dbc3c0db111b477968c88e1d8\\jetified-CountryCodePickerProject-2.0.0\\res\\drawable-nodpi-v4\\flag_tunisia.png"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_recyclerview_item_business_service_list.xml.flat",
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\layout\\recyclerview_item_business_service_list.xml"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_tunisia.png.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\f518fe9dbc3c0db111b477968c88e1d8\\jetified-CountryCodePickerProject-2.0.0\\res\\drawable-nodpi-v4\\flag_tunisia.png"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_photos.xml.flat",
@@ -32,16 +32,16 @@
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\49967bf20e693a0efe1aaf1e3a6470c6\\jetified-facebook-common-5.15.3\\res\\drawable-xhdpi-v4\\com_facebook_close.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_clockface_view.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\layout\\material_clockface_view.xml"
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_unselected_bg_text_item.xml.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable\\unselected_bg_text_item.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fui_ic_facebook_white_22dp.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\6164a3d9f52b8435fcb31b8ceb5cc746\\jetified-firebase-ui-auth-4.3.1\\res\\drawable\\fui_ic_facebook_white_22dp.xml"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_unselected_bg_text_item.xml.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable\\unselected_bg_text_item.xml"
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_material_clockface_view.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\layout\\material_clockface_view.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_card_bg_4_gradient.xml.flat",
@@ -76,20 +76,20 @@
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\df96f9318ece49ae41a3dd70f6dd2a52\\ImagePicker-2.1.13\\res\\xml\\image_picker_provider_paths.xml"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_business_category.xml.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\layout\\fragment_business_category.xml"
-    },
-    {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_extended_fab_state_list_animator.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\animator\\mtrl_extended_fab_state_list_animator.xml"
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_elift_banner.png.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xhdpi\\elift_banner.png"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\font_montserrat_thin_italic.ttf.flat",
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\font\\montserrat_thin_italic.ttf"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_elift_banner.png.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xhdpi\\elift_banner.png"
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_extended_fab_state_list_animator.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\animator\\mtrl_extended_fab_state_list_animator.xml"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_business_category.xml.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\layout\\fragment_business_category.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_withdrawal_history.png.flat",
@@ -212,12 +212,12 @@
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\mipmap-hdpi\\profile.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_file_download_black_24dp.xml.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable\\ic_file_download_black_24dp.xml"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_error_24.png.flat",
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\9313e13dbf3d48875e0c43cff4acc318\\MDToast-1.0.0\\res\\drawable-hdpi-v4\\ic_error_24.png"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_file_download_black_24dp.xml.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable\\ic_file_download_black_24dp.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\color_m3_card_ripple_color.xml.flat",
@@ -244,12 +244,12 @@
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\mipmap-xxhdpi\\share_earn.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_text.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\layout\\design_layout_tab_text.xml"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_m3_chip_checked_circle.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\drawable\\ic_m3_chip_checked_circle.xml"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_text.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\layout\\design_layout_tab_text.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_buttom.png.flat",
@@ -264,24 +264,24 @@
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\da2081b3a956c1d8f46eb5c2ea0aa811\\appcompat-1.4.1\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_g_logomain.png.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable\\g_logomain.png"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_alibaba.png.flat",
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xxhdpi\\ic_alibaba.png"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_g_logomain.png.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable\\g_logomain.png"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_toolbar.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\da2081b3a956c1d8f46eb5c2ea0aa811\\appcompat-1.4.1\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_password.png.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\mipmap-xhdpi\\password.png"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_saint_lucia.png.flat",
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\f518fe9dbc3c0db111b477968c88e1d8\\jetified-CountryCodePickerProject-2.0.0\\res\\drawable-nodpi-v4\\flag_saint_lucia.png"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_password.png.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\mipmap-xhdpi\\password.png"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_remove_cart_item.png.flat",
@@ -396,20 +396,20 @@
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\da2081b3a956c1d8f46eb5c2ea0aa811\\appcompat-1.4.1\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_linkedin_share.png.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xhdpi\\ic_linkedin_share.png"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_amazon.png.flat",
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-ldpi\\ic_amazon.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\da2081b3a956c1d8f46eb5c2ea0aa811\\appcompat-1.4.1\\res\\layout\\abc_action_bar_up_container.xml"
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_linkedin_share.png.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xhdpi\\ic_linkedin_share.png"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_nepal.png.flat",
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\f518fe9dbc3c0db111b477968c88e1d8\\jetified-CountryCodePickerProject-2.0.0\\res\\drawable-nodpi-v4\\flag_nepal.png"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\da2081b3a956c1d8f46eb5c2ea0aa811\\appcompat-1.4.1\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_instagram.png.flat",
@@ -440,24 +440,24 @@
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\color\\mtrl_calendar_selected_range.xml"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_haiti.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\f518fe9dbc3c0db111b477968c88e1d8\\jetified-CountryCodePickerProject-2.0.0\\res\\drawable-nodpi-v4\\flag_haiti.png"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\dbf24c818b558cebe2b8110953d45875\\play-services-base-17.0.0\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\dbf24c818b558cebe2b8110953d45875\\play-services-base-17.0.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_haiti.png.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\f518fe9dbc3c0db111b477968c88e1d8\\jetified-CountryCodePickerProject-2.0.0\\res\\drawable-nodpi-v4\\flag_haiti.png"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ucrop_crop.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\220954a6034bacd8cfe2c2d6abad43a5\\ucrop-2.2.7\\res\\drawable\\ucrop_crop.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_domain_icon.png.flat",
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\mipmap-mdpi\\domain_icon.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ucrop_crop.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\220954a6034bacd8cfe2c2d6abad43a5\\ucrop-2.2.7\\res\\drawable\\ucrop_crop.xml"
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\dbf24c818b558cebe2b8110953d45875\\play-services-base-17.0.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_cio_paypal_logo.png.flat",
@@ -476,12 +476,12 @@
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\FieldSetView\\build\\intermediates\\packaged_res\\debug\\layout\\fsv_fieldsetview.xml"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\color-v31_m3_dynamic_dark_default_color_secondary_text.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\color-v31\\m3_dynamic_dark_default_color_secondary_text.xml"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_register_email_layout.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\6164a3d9f52b8435fcb31b8ceb5cc746\\jetified-firebase-ui-auth-4.3.1\\res\\layout\\fui_register_email_layout.xml"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\color-v31_m3_dynamic_dark_default_color_secondary_text.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\color-v31\\m3_dynamic_dark_default_color_secondary_text.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_swaziland.png.flat",
@@ -504,20 +504,20 @@
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\9313e13dbf3d48875e0c43cff4acc318\\MDToast-1.0.0\\res\\drawable-hdpi-v4\\ic_warning_24.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_double_check.png.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-ldpi\\ic_double_check.png"
-    },
-    {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_playstore.png.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-mdpi\\ic_playstore.png"
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_idp_button_google.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\6164a3d9f52b8435fcb31b8ceb5cc746\\jetified-firebase-ui-auth-4.3.1\\res\\layout\\fui_idp_button_google.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\2b1be35a9b4d7799bacd46e2aa4c9a2f\\core-1.7.0\\res\\layout-v21\\notification_action.xml"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_idp_button_google.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\6164a3d9f52b8435fcb31b8ceb5cc746\\jetified-firebase-ui-auth-4.3.1\\res\\layout\\fui_idp_button_google.xml"
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_playstore.png.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-mdpi\\ic_playstore.png"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_double_check.png.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-ldpi\\ic_double_check.png"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_dlg_custom_progress.xml.flat",
@@ -548,16 +548,16 @@
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\9313e13dbf3d48875e0c43cff4acc318\\MDToast-1.0.0\\res\\drawable-mdpi-v4\\ic_check_circle_24.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_email.png.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-hdpi\\ic_email.png"
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_right.xml.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\anim\\slide_in_right.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_otp.xml.flat",
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\layout\\activity_otp.xml"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in_right.xml.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\anim\\slide_in_right.xml"
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_email.png.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-hdpi\\ic_email.png"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -580,12 +580,12 @@
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\layout\\mtrl_layout_snackbar_include.xml"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_confirmation_code_layout.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\6164a3d9f52b8435fcb31b8ceb5cc746\\jetified-firebase-ui-auth-4.3.1\\res\\layout\\fui_confirmation_code_layout.xml"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_google.png.flat",
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\mipmap-xxhdpi\\google.png"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_confirmation_code_layout.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\6164a3d9f52b8435fcb31b8ceb5cc746\\jetified-firebase-ui-auth-4.3.1\\res\\layout\\fui_confirmation_code_layout.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4_ic_fingerprint_success_pf.png.flat",
@@ -604,12 +604,12 @@
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_withdrawal_amount.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\color_material_timepicker_clockface.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\color\\material_timepicker_clockface.xml"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\color_m3_default_color_primary_text.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\color\\m3_default_color_primary_text.xml"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\color_material_timepicker_clockface.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\color\\material_timepicker_clockface.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_messenger_bubble_small_white.png.flat",
@@ -656,12 +656,12 @@
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\f518fe9dbc3c0db111b477968c88e1d8\\jetified-CountryCodePickerProject-2.0.0\\res\\drawable-nodpi-v4\\flag_cocos.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_credit_card.png.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-ldpi\\ic_credit_card.png"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_loader_layout.xml.flat",
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\layout\\custom_loader_layout.xml"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_credit_card.png.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-ldpi\\ic_credit_card.png"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_up_arrow.png.flat",
@@ -696,16 +696,16 @@
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\layout\\recyclerview_item_cart.xml"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_country.png.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xxhdpi\\ic_country.png"
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_french_polynesia.png.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\f518fe9dbc3c0db111b477968c88e1d8\\jetified-CountryCodePickerProject-2.0.0\\res\\drawable-nodpi-v4\\flag_french_polynesia.png"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\font_lato_light.ttf.flat",
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\font\\lato_light.ttf"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_french_polynesia.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\f518fe9dbc3c0db111b477968c88e1d8\\jetified-CountryCodePickerProject-2.0.0\\res\\drawable-nodpi-v4\\flag_french_polynesia.png"
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_country.png.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xxhdpi\\ic_country.png"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -724,16 +724,16 @@
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_country.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_mexico.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\f518fe9dbc3c0db111b477968c88e1d8\\jetified-CountryCodePickerProject-2.0.0\\res\\drawable-nodpi-v4\\flag_mexico.png"
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_recyclerview_item_support.xml.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\layout\\recyclerview_item_support.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_material_ic_keyboard_arrow_left_black_24dp.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\drawable\\material_ic_keyboard_arrow_left_black_24dp.xml"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_recyclerview_item_support.xml.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\layout\\recyclerview_item_support.xml"
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_mexico.png.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\f518fe9dbc3c0db111b477968c88e1d8\\jetified-CountryCodePickerProject-2.0.0\\res\\drawable-nodpi-v4\\flag_mexico.png"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_egypt.png.flat",
@@ -848,12 +848,12 @@
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\9313e13dbf3d48875e0c43cff4acc318\\MDToast-1.0.0\\res\\drawable-xxxhdpi-v4\\ic_check_circle_24.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_facebook.png.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_facebook.png"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_logout.png.flat",
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_logout.png"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_facebook.png.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_facebook.png"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_expanded_menu_layout.xml.flat",
@@ -884,12 +884,12 @@
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\color\\m3_button_ripple_color.xml"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_iraq.png.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\f518fe9dbc3c0db111b477968c88e1d8\\jetified-CountryCodePickerProject-2.0.0\\res\\drawable-nodpi-v4\\flag_iraq.png"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_address_loc.png.flat",
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_address_loc.png"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_flag_iraq.png.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\f518fe9dbc3c0db111b477968c88e1d8\\jetified-CountryCodePickerProject-2.0.0\\res\\drawable-nodpi-v4\\flag_iraq.png"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_delete.png.flat",
@@ -940,12 +940,12 @@
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xxhdpi\\ic_linkedin_share.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rzp_green_button.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\5901890575e973343400d46aa28efe9e\\checkout-1.5.13\\res\\drawable\\rzp_green_button.xml"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\da2081b3a956c1d8f46eb5c2ea0aa811\\appcompat-1.4.1\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rzp_green_button.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\5901890575e973343400d46aa28efe9e\\checkout-1.5.13\\res\\drawable\\rzp_green_button.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_track_material.xml.flat",
@@ -972,12 +972,12 @@
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\anim\\dialog_out.xml"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_up_arrow.png.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xhdpi\\ic_up_arrow.png"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_logo.png.flat",
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xhdpi\\logo.png"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_up_arrow.png.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xhdpi\\ic_up_arrow.png"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_splash_gradient.xml.flat",
@@ -1032,12 +1032,12 @@
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xhdpi\\ic_ebay.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_left_corner_color_green.xml.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable\\bg_left_corner_color_green.xml"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_compaign.png.flat",
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-ldpi\\ic_compaign.png"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_left_corner_color_green.xml.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable\\bg_left_corner_color_green.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_dark_focused.xml.flat",
@@ -1048,12 +1048,12 @@
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\da2081b3a956c1d8f46eb5c2ea0aa811\\appcompat-1.4.1\\res\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_card_bg_3_gradient.xml.flat",
-        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable\\card_bg_3_gradient.xml"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_spinner.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\da2081b3a956c1d8f46eb5c2ea0aa811\\appcompat-1.4.1\\res\\color\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable_card_bg_3_gradient.xml.flat",
+        "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable\\card_bg_3_gradient.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\font_lato_black_italic.ttf.flat",
@@ -1080,16 +1080,16 @@
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xxhdpi\\gbusiness_icon.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_ucrop_activity_photobox.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\220954a6034bacd8cfe2c2d6abad43a5\\ucrop-2.2.7\\res\\layout\\ucrop_activity_photobox.xml"
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_tint.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\dbf24c818b558cebe2b8110953d45875\\play-services-base-17.0.0\\res\\color\\common_google_signin_btn_tint.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_bottom_sheet_options.xml.flat",
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\layout\\fragment_bottom_sheet_options.xml"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_tint.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\dbf24c818b558cebe2b8110953d45875\\play-services-base-17.0.0\\res\\color\\common_google_signin_btn_tint.xml"
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_ucrop_activity_photobox.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\220954a6034bacd8cfe2c2d6abad43a5\\ucrop-2.2.7\\res\\layout\\ucrop_activity_photobox.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\color-v31_m3_dynamic_highlighted_text.xml.flat",
@@ -1148,24 +1148,24 @@
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\f518fe9dbc3c0db111b477968c88e1d8\\jetified-CountryCodePickerProject-2.0.0\\res\\drawable-nodpi-v4\\flag_syria.png"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\color_material_slider_active_tick_marks_color.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\color\\material_slider_active_tick_marks_color.xml"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_facebook.png.flat",
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xxhdpi\\ic_facebook.png"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\color_material_slider_active_tick_marks_color.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\767d9da9882961ea7d6a77f9ef815825\\material-1.6.1\\res\\color\\material_slider_active_tick_marks_color.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_out.xml.flat",
         "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\da2081b3a956c1d8f46eb5c2ea0aa811\\appcompat-1.4.1\\res\\anim\\abc_fade_out.xml"
     },
     {
-        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_ucrop_controls.xml.flat",
-        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\220954a6034bacd8cfe2c2d6abad43a5\\ucrop-2.2.7\\res\\layout\\ucrop_controls.xml"
-    },
-    {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_elift_banner.png.flat",
         "source": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\src\\main\\res\\drawable-xxxhdpi\\elift_banner.png"
+    },
+    {
+        "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\layout_ucrop_controls.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-2\\files-2.1\\220954a6034bacd8cfe2c2d6abad43a5\\ucrop-2.2.7\\res\\layout\\ucrop_controls.xml"
     },
     {
         "merged": "D:\\Chanchal-Bhasker\\Android_App\\GBusinessApp\\Gbusiness31522\\Gbusiness\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_stroke_color_selector.xml.flat",
