@@ -8,7 +8,7 @@ import com.milkyway.gbusiness.R
 import com.milkyway.gbusiness.retrofit.GbusinessService
 import com.milkyway.gbusiness.models.ForgetPasswordDataClass
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import kotlinx.android.synthetic.main.activity_change_password.*
 import retrofit2.Call
 import retrofit2.Callback

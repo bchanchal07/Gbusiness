@@ -29,7 +29,7 @@ import com.milkyway.gbusiness.models.BusinessEnquiryResponse
 import com.milkyway.gbusiness.models.CategoryDataDetailsClass
 import com.milkyway.gbusiness.retrofit.AppConstants
 import com.milkyway.gbusiness.retrofit.AppConstants.SPEECH_REQUEST_CODE
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import id.ionbit.ionalert.IonAlert
 import kotlinx.android.synthetic.main.dlg_error_msg.view.*
 import kotlinx.android.synthetic.main.dlg_get_quote.view.*

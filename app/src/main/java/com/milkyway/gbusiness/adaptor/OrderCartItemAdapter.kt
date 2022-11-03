@@ -12,7 +12,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.milkyway.gbusiness.R
 import com.milkyway.gbusiness.models.SearchDomainDataDetailsClass
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import kotlinx.android.synthetic.main.recyclerview_item_orders.view.*
 import java.math.RoundingMode
 import java.text.DecimalFormat

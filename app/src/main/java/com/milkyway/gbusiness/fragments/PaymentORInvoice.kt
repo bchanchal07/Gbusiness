@@ -20,7 +20,7 @@ import com.milkyway.gbusiness.retrofit.GbusinessService
 import com.milkyway.gbusiness.api.OnClickServices
 import com.milkyway.gbusiness.models.PaymentINvoiceDataClass
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

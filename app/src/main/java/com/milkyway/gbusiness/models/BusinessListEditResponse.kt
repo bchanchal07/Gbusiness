@@ -1,27 +1,32 @@
 package com.milkyway.gbusiness.models
 
-
-import com.google.gson.annotations.SerializedName
-
 data class BusinessListEditResponse(
     val `data`: Data,
-    val message: String, // Business Details Updated Successfully
-    val success: Boolean // true
+    val message: String,
+    val success: Boolean,
 ) {
     data class Data(
-        @SerializedName("business_about_us")
-        val businessAboutUs: String, // This is the test webservices.
-        @SerializedName("business_email")
-        val businessEmail: String, // info@xyz.in
-        @SerializedName("business_logo")
-        val businessLogo: String, // effc299a1addb07e7089f9b269c31f2f.png
-        @SerializedName("business_name")
-        val businessName: String, // IT Professional
-        @SerializedName("business_web_url")
-        val businessWebUrl: String, // https://www.abc.in/
-        @SerializedName("category_id")
-        val categoryId: String, // 9
-        @SerializedName("sub_category_id")
-        val subCategoryId: String // 175
+        val user_id: String,
+        val business_about_us: String,
+        val business_email: String,
+        val business_logo: String,
+        val business_name: String,
+        val url_slug: String,
+        val sub_domain: String,
+        val business_phone: String,
+        val business_web_url: String,
+        val category_id: String,
+        val sub_category_id: String,
+        val country_id: String,
+        val state_id: String,
+        val city: String,
+        val zip_code: String,
+        val address: String,
+        val seller_url: String,
+        val facebook_url: String,
+        val twitter_url: String,
+        val instagram_url: String,
+        val linkedin_url: String,
+        val business_type: String
     )
 }

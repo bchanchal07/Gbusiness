@@ -26,8 +26,8 @@ import com.milkyway.gbusiness.retrofit.GbusinessService
 import com.milkyway.gbusiness.models.AddTicketResponse
 import com.milkyway.gbusiness.models.IssueSpinnerResponse
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
-import com.milkyway.gbusiness.utils.FileUtils
+import com.milkyway.gbusiness.global.CommonUtil
+import com.milkyway.gbusiness.global.FileUtils
 import kotlinx.android.synthetic.main.dlg_new_ticket.view.*
 import libs.mjn.fieldset.FieldSetView
 import okhttp3.MediaType.Companion.toMediaTypeOrNull

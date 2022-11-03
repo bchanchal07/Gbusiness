@@ -28,8 +28,8 @@ import com.milkyway.gbusiness.adaptor.Step_1_BusinessListItemsAdpater
 import com.milkyway.gbusiness.extension.setLocalImage
 import com.milkyway.gbusiness.retrofit.AppConstants
 import com.milkyway.gbusiness.retrofit.GbusinessService
-import com.milkyway.gbusiness.utils.CommonUtil
-import com.milkyway.gbusiness.utils.FileUtils
+import com.milkyway.gbusiness.global.CommonUtil
+import com.milkyway.gbusiness.global.FileUtils
 import dev.mortezaom.mdtoast.MDToast
 import id.ionbit.ionalert.IonAlert
 import okhttp3.MediaType.Companion.toMediaTypeOrNull

@@ -9,7 +9,6 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.os.Bundle
-import android.os.Environment
 import android.provider.MediaStore
 import android.util.Log
 import android.view.LayoutInflater
@@ -35,8 +34,8 @@ import com.milkyway.gbusiness.adaptor.GalleryImageAdapter
 import com.milkyway.gbusiness.adaptor.StepTwoGalleryImagesAdapter
 import com.milkyway.gbusiness.retrofit.AppConstants
 import com.milkyway.gbusiness.retrofit.GbusinessService
-import com.milkyway.gbusiness.utils.CommonUtil
-import com.milkyway.gbusiness.utils.FileUtils
+import com.milkyway.gbusiness.global.CommonUtil
+import com.milkyway.gbusiness.global.FileUtils
 import dev.mortezaom.mdtoast.MDToast
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody

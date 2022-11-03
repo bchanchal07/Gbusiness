@@ -39,8 +39,8 @@ import com.milkyway.gbusiness.models.LogInErrorClass
 import com.milkyway.gbusiness.models.SignUpDataClass
 import com.milkyway.gbusiness.extension.launchActivity
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
-import com.milkyway.gbusiness.utils.CommonUtil.Companion.checkNetwork
+import com.milkyway.gbusiness.global.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil.Companion.checkNetwork
 import id.ionbit.ionalert.IonAlert
 import io.fabric.sdk.android.Fabric
 import kotlinx.android.synthetic.main.activity_login.*

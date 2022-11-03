@@ -28,7 +28,7 @@ import com.milkyway.gbusiness.firebaseimpl.AutoLoginService
 import com.milkyway.gbusiness.firebaseimpl.RazorpayResultReceiver
 import com.milkyway.gbusiness.retrofit.AppConstants
 import com.milkyway.gbusiness.retrofit.AppConstants.SPEECH_REQUEST_CODE
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

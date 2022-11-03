@@ -9,7 +9,7 @@ import com.bumptech.glide.Glide
 import com.milkyway.gbusiness.R
 import com.milkyway.gbusiness.retrofit.GbusinessService
 import com.milkyway.gbusiness.models.BusinessListingResponse
-import com.milkyway.gbusiness.utils.DateTimeUtils
+import com.milkyway.gbusiness.global.DateTimeUtils
 import kotlinx.android.synthetic.main.recyclerview_item_business_list.view.*
 
 class BusinessListAdaptor(private val mCtx: Context, private val businessList: List<BusinessListingResponse.Data>, ) : RecyclerView.Adapter<BusinessListAdaptor.MyViewHolder>() {

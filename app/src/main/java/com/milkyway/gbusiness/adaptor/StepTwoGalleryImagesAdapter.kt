@@ -6,11 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.milkyway.gbusiness.R
-import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.retrofit.GbusinessService
-import com.milkyway.gbusiness.utils.CommonUtil
 import de.hdodenhof.circleimageview.CircleImageView
 
 class StepTwoGalleryImagesAdapter(private val context: Context, private val list: ArrayList<*>): RecyclerView.Adapter<StepTwoGalleryImagesAdapter.ViewHolder>() {

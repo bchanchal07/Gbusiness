@@ -14,7 +14,7 @@ import android.view.ViewGroup
 import android.widget.PopupWindow
 import android.widget.RelativeLayout
 import android.widget.TextView
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import kotlinx.android.synthetic.main.activity_phone_number.*
 import com.hbb20.CountryCodePicker
 import androidx.recyclerview.widget.DividerItemDecoration

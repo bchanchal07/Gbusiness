@@ -29,8 +29,8 @@ import com.milkyway.gbusiness.api.GBusinessSearchDomainService
 import com.milkyway.gbusiness.models.SearchDomainDataClass
 import com.milkyway.gbusiness.models.SearchDomainDataDetailsClass
 import com.milkyway.gbusiness.models.SearchDomainErrorDataClass
-import com.milkyway.gbusiness.utils.CommonUtil
-import com.milkyway.gbusiness.utils.CustomLoader
+import com.milkyway.gbusiness.global.CommonUtil
+import com.milkyway.gbusiness.global.CustomLoader
 import org.json.JSONObject
 import retrofit2.Call
 import retrofit2.Callback

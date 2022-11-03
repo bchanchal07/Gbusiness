@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.milkyway.gbusiness.R
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import com.milkyway.gbusiness.models.DataXXXXXXXXXXXXXXXXXXXX
 import kotlinx.android.synthetic.main.recyclerview_item_wallet_history.view.*
 

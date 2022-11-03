@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.milkyway.gbusiness.R
 import com.milkyway.gbusiness.models.DomainOrderResponse
-import com.milkyway.gbusiness.utils.DateTimeUtils
+import com.milkyway.gbusiness.global.DateTimeUtils
 
 class DomainOrderAdapter(
     private val context: Context,

@@ -8,7 +8,7 @@ import android.view.View
 import android.widget.CheckBox
 import androidx.core.view.isVisible
 import com.milkyway.gbusiness.R
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import com.milkyway.gbusiness.retrofit.GbusinessService
 import com.milkyway.gbusiness.models.ForgetPasswordDataClass
 import kotlinx.android.synthetic.main.activity_forgot.*

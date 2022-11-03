@@ -21,16 +21,16 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int ic_check_circle_24 = 0x7f0801fa;
-        public static final int ic_error_24 = 0x7f080214;
-        public static final int ic_info_24 = 0x7f08021e;
-        public static final int ic_warning_24 = 0x7f08025e;
+        public static final int ic_check_circle_24 = 0x7f0801fb;
+        public static final int ic_error_24 = 0x7f080215;
+        public static final int ic_info_24 = 0x7f08021f;
+        public static final int ic_warning_24 = 0x7f08025f;
     }
     public static final class id {
         private id() {}
 
-        public static final int icon = 0x7f0a02e1;
-        public static final int text = 0x7f0a0586;
+        public static final int icon = 0x7f0a02f9;
+        public static final int text = 0x7f0a059e;
     }
     public static final class layout {
         private layout() {}

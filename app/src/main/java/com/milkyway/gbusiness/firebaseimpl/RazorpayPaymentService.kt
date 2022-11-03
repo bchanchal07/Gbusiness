@@ -15,8 +15,8 @@ import com.milkyway.gbusiness.models.RazorTransDetailsDataClass
 import com.milkyway.gbusiness.fragments.PaymentFragment
 import com.milkyway.gbusiness.fragments.PaymentStatusFragment.Companion.payStatusResult
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
-import com.milkyway.gbusiness.utils.DateTimeUtils
+import com.milkyway.gbusiness.global.CommonUtil
+import com.milkyway.gbusiness.global.DateTimeUtils
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import io.realm.Realm

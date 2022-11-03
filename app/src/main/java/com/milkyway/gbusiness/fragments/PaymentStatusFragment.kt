@@ -23,7 +23,7 @@ import com.milkyway.gbusiness.firebaseimpl.RealmStorageModelClass
 import com.milkyway.gbusiness.fragments.PaymentFragment.Companion.invoic_id
 import com.milkyway.gbusiness.fragments.PaymentFragment.Companion.totalPrice
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import io.realm.Realm
 import java.text.SimpleDateFormat
 import java.util.*

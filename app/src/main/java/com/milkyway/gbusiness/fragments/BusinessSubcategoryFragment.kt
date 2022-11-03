@@ -24,7 +24,7 @@ import com.milkyway.gbusiness.retrofit.GbusinessService
 import com.milkyway.gbusiness.models.SubCategoryDataClass
 import com.milkyway.gbusiness.retrofit.AppConstants
 import com.milkyway.gbusiness.retrofit.AppConstants.SPEECH_REQUEST_CODE
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_business_cat_details.*
 import retrofit2.Call

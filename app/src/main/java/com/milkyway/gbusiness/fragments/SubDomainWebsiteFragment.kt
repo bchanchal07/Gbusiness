@@ -34,9 +34,9 @@ import com.milkyway.gbusiness.adaptor.*
 import com.milkyway.gbusiness.retrofit.GbusinessService
 import com.milkyway.gbusiness.models.*
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
-import com.milkyway.gbusiness.utils.FileUtils
-import com.milkyway.gbusiness.utils.MyRadioButton
+import com.milkyway.gbusiness.global.CommonUtil
+import com.milkyway.gbusiness.global.FileUtils
+import com.milkyway.gbusiness.global.MyRadioButton
 import com.squareup.picasso.Picasso
 import id.ionbit.ionalert.IonAlert
 import kotlinx.android.synthetic.main.activity_sign_up.*

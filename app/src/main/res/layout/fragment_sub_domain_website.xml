@@ -506,7 +506,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <com.milkyway.gbusiness.utils.MyRadioButton
+                        <com.milkyway.gbusiness.global.MyRadioButton
                             android:id="@+id/rbAboutUs"
                             style="@style/MyCustomRadioButton"
                             android:layout_width="wrap_content"
@@ -514,7 +514,7 @@
                             android:checked="true"
                             android:text="About Business" />
 
-                        <com.milkyway.gbusiness.utils.MyRadioButton
+                        <com.milkyway.gbusiness.global.MyRadioButton
                             android:id="@+id/rbAlsoListed"
                             style="@style/MyCustomRadioButton"
                             android:layout_width="wrap_content"
@@ -522,7 +522,7 @@
                             android:layout_marginHorizontal="5dp"
                             android:text="Also Listed" />
 
-                        <com.milkyway.gbusiness.utils.MyRadioButton
+                        <com.milkyway.gbusiness.global.MyRadioButton
                             android:id="@+id/rbWorkingHrs"
                             style="@style/MyCustomRadioButton"
                             android:layout_width="wrap_content"
@@ -530,7 +530,7 @@
                             android:layout_marginHorizontal="5dp"
                             android:text="Working Hrs" />
 
-                        <com.milkyway.gbusiness.utils.MyRadioButton
+                        <com.milkyway.gbusiness.global.MyRadioButton
                             android:id="@+id/rbSocialMedia"
                             style="@style/MyCustomRadioButton"
                             android:layout_width="wrap_content"
@@ -538,7 +538,7 @@
                             android:layout_marginHorizontal="5dp"
                             android:text="Social Media" />
 
-                        <com.milkyway.gbusiness.utils.MyRadioButton
+                        <com.milkyway.gbusiness.global.MyRadioButton
                             android:id="@+id/rbSellerLink"
                             style="@style/MyCustomRadioButton"
                             android:layout_width="wrap_content"
@@ -546,7 +546,7 @@
 
                             android:text="Seller Links" />
 
-                        <com.milkyway.gbusiness.utils.MyRadioButton
+                        <com.milkyway.gbusiness.global.MyRadioButton
                             android:id="@+id/rbReview"
                             style="@style/MyCustomRadioButton"
                             android:layout_width="wrap_content"
@@ -554,7 +554,7 @@
                             android:layout_marginHorizontal="5dp"
                             android:text="Reviews" />
 
-                        <com.milkyway.gbusiness.utils.MyRadioButton
+                        <com.milkyway.gbusiness.global.MyRadioButton
                             android:id="@+id/rbPhotos"
                             style="@style/MyCustomRadioButton"
                             android:layout_width="wrap_content"

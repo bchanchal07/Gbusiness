@@ -19,7 +19,7 @@ import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.milkyway.gbusiness.R
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import kotlinx.android.synthetic.main.activity_intro.*
 
 

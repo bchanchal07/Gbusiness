@@ -42,7 +42,7 @@ import com.milkyway.gbusiness.models.DashboardData
 import com.milkyway.gbusiness.models.EarningDataClass
 import com.milkyway.gbusiness.models.LogoutDataClass
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import kotlinx.android.synthetic.main.dlg_logout.view.*
 import retrofit2.Call
 import retrofit2.Callback

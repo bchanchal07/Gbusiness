@@ -24,7 +24,7 @@ import com.milkyway.gbusiness.api.OnServiceAdapterClick
 import com.milkyway.gbusiness.models.SendEnqueyAndBuyDataClass
 import com.milkyway.gbusiness.models.ServicesDataClass
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

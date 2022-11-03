@@ -16,7 +16,7 @@ import com.milkyway.gbusiness.R
 import com.milkyway.gbusiness.adaptor.DomainCartItemAdapter
 import com.milkyway.gbusiness.models.SearchDomainDataDetailsClass
 import com.milkyway.gbusiness.extension.alert
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import kotlinx.android.synthetic.main.fragment_business_cat_details.*
 
 /**

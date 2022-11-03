@@ -20,7 +20,7 @@ import com.milkyway.gbusiness.activities.MainActivity
 import com.milkyway.gbusiness.adaptor.SocialMediaIconsAdaptor
 import com.milkyway.gbusiness.retrofit.GbusinessService
 import com.milkyway.gbusiness.models.*
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import com.squareup.picasso.Picasso
 import retrofit2.Call
 import retrofit2.Callback

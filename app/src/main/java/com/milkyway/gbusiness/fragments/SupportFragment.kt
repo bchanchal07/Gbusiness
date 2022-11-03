@@ -34,8 +34,8 @@ import com.milkyway.gbusiness.models.DataXXXXXXXXXXXXXXX
 import com.milkyway.gbusiness.models.IssueSpinnerResponse
 import com.milkyway.gbusiness.models.UserQueryListDataClass
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
-import com.milkyway.gbusiness.utils.FileUtils
+import com.milkyway.gbusiness.global.CommonUtil
+import com.milkyway.gbusiness.global.FileUtils
 import kotlinx.android.synthetic.main.dlg_get_quote.view.ivCancel
 import kotlinx.android.synthetic.main.dlg_new_ticket.view.*
 import retrofit2.Call

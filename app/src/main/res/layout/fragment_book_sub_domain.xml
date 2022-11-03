@@ -50,7 +50,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/img_back_domain" />
 
-        <com.milkyway.gbusiness.utils.ScrollViewText
+        <com.milkyway.gbusiness.global.ScrollViewText
             android:id="@+id/tvSubdomainFoundNotFound"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

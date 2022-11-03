@@ -7,7 +7,7 @@ import com.google.gson.GsonBuilder
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import com.milkyway.gbusiness.activities.LoginActivity
 import com.milkyway.gbusiness.api.UnsafeOkHttpClient
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

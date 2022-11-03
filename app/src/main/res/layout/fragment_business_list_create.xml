@@ -45,7 +45,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             android:orientation="vertical">
 
 
@@ -54,303 +53,729 @@
                 android:layout_height="match_parent"
                 android:padding="20dp">
 
-                <RelativeLayout
-                    android:id="@+id/layoutLogo"
-                    android:layout_width="175dp"
-                    android:layout_height="175dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                    <ImageView
-                        android:id="@+id/ivBusinessLogoCreate"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_centerInParent="true"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/img_not_available" />
+                    <RelativeLayout
+                        android:id="@+id/layoutLogo"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_gravity="center_horizontal">
 
-                    <ImageView
-                        android:id="@+id/ivCameraCreate"
-                        android:layout_width="35dp"
+                        <ImageView
+                            android:id="@+id/ivBusinessLogoCreate"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_centerInParent="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_not_available" />
+
+                        <ImageView
+                            android:id="@+id/ivCameraCreate"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_alignBottom="@+id/ivBusinessLogoCreate"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/g_camera" />
+
+                    </RelativeLayout>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:id="@+id/fsvLayoutBusinessName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginVertical="30dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="@color/grey"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1.5dp"
+                        app:fsv_legend="Business Name"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp"
+                        tools:layout_editor_absoluteX="40dp">
+
+                        <EditText
+                            android:id="@+id/etBusinessNameCreate"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:background="@android:color/transparent"
+                            android:hint="eg. GBusiness"
+                            android:inputType="textWebEditText"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/colorHintGrey"
+                            android:textSize="14sp" />
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:id="@+id/fsvLayoutSubdomainUrl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="@color/grey"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1.5dp"
+                        app:fsv_legend="GBusiness Subdomain Url"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/layoutLogo"
+                        tools:layout_editor_absoluteX="40dp">
+
+                        <EditText
+                            android:id="@+id/etBusinessSubdomainUrl"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:background="@android:color/transparent"
+                            android:hint="eg.xyz.gbusiness.co"
+                            android:inputType="textWebEditText"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/colorHintGrey"
+                            android:textSize="14sp" />
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:orientation="horizontal">
+
+                        <libs.mjn.fieldset.FieldSetView
+                            android:id="@+id/fsvBusinessCountry"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginRight="5dp"
+                            app:fsv_borderAlpha="0.75"
+                            app:fsv_borderColor="@color/grey"
+                            app:fsv_borderRadius="5dp"
+                            app:fsv_borderWidth="1.5dp"
+                            app:fsv_legend="Business Country"
+                            app:fsv_legendColor="@color/grey"
+                            app:fsv_legendFont="lobster.ttf"
+                            app:fsv_legendPosition="left"
+                            app:fsv_legendSize="12sp"
+                            app:layout_constraintTop_toBottomOf="@+id/fsvLayoutBusinessName"
+                            tools:layout_editor_absoluteX="40dp">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvBusinessCountry"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableRight="@drawable/ic_down_arrow"
+                                    android:drawablePadding="10dp"
+                                    android:hint="Select the Country"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="3dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/colorHintGrey" />
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </libs.mjn.fieldset.FieldSetView>
+
+                        <libs.mjn.fieldset.FieldSetView
+                            android:id="@+id/fsvBusinessState"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginLeft="5dp"
+                            app:fsv_borderAlpha="0.75"
+                            app:fsv_borderColor="@color/grey"
+                            app:fsv_borderRadius="5dp"
+                            app:fsv_borderWidth="1.5dp"
+                            app:fsv_legend="Business State"
+                            app:fsv_legendColor="@color/grey"
+                            app:fsv_legendFont="lobster.ttf"
+                            app:fsv_legendPosition="left"
+                            app:fsv_legendSize="12sp"
+                            app:layout_constraintTop_toBottomOf="@+id/fsvLayoutBusinessName"
+                            tools:layout_editor_absoluteX="40dp">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvBusinessState"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableRight="@drawable/ic_down_arrow"
+                                    android:drawablePadding="10dp"
+                                    android:hint="Select State"
+                                    android:paddingHorizontal="10dp"
+                                    android:paddingVertical="3dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="@color/colorHintGrey" />
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        </libs.mjn.fieldset.FieldSetView>
+
+                    </LinearLayout>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:id="@+id/fsvBusinessCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="25dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="@color/grey"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1.5dp"
+                        app:fsv_legend="Business City"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/layoutLogo"
+                        tools:layout_editor_absoluteX="40dp">
+
+                        <EditText
+                            android:id="@+id/etBusinessCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Please enter the city name"
+                            android:inputType="textWebEditText"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/colorHintGrey"
+                            android:textSize="14sp" />
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:id="@+id/fsvZipCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="25dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="@color/grey"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1.5dp"
+                        app:fsv_legend="Zip Code"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/layoutLogo"
+                        tools:layout_editor_absoluteX="40dp">
+
+                        <EditText
+                            android:id="@+id/etBusinessZipCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:background="@android:color/transparent"
+                            android:hint="e.g. 201301"
+                            android:inputType="textWebEditText"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/colorHintGrey"
+                            android:textSize="14sp" />
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:id="@+id/fsvBusinessAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="25dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="@color/grey"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1.5dp"
+                        app:fsv_legend="Business Address"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/layoutLogo"
+                        tools:layout_editor_absoluteX="40dp">
+
+                        <EditText
+                            android:id="@+id/etBusinessAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:gravity="top|left"
+                            android:hint="Enter Address...."
+                            android:inputType="textMultiLine"
+                            android:minHeight="60dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:singleLine="false"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/colorHintGrey"
+                            android:textSize="14sp" />
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:id="@+id/fsvBusinessCategoryCreate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="25dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="@color/grey"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1.5dp"
+                        app:fsv_legend="Business Categories"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/fsvLayoutBusinessName"
+                        tools:layout_editor_absoluteX="40dp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvBusinessCategoryCreate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableRight="@drawable/ic_down_arrow"
+                                android:drawablePadding="10dp"
+                                android:hint="Select Category"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="3dp"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/colorHintGrey" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:id="@+id/fsvBusinessSubcategoryCreate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginVertical="25dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="@color/grey"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1.5dp"
+                        app:fsv_legend="Business Subcategories"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/fsvBusinessCategoryCreate"
+                        tools:layout_editor_absoluteX="40dp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvBusinessSubcategoryCreate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableRight="@drawable/ic_down_arrow"
+                                android:drawablePadding="10dp"
+                                android:hint="Select Subcategory"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="3dp"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/colorHintGrey" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:id="@+id/fsvLayoutEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="@color/grey"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1.5dp"
+                        app:fsv_legend="E-mail"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/fsvBusinessSubcategoryCreate"
+                        tools:layout_editor_absoluteX="10dp">
+
+                        <EditText
+                            android:id="@+id/etEmailCreate"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:background="@android:color/transparent"
+                            android:hint="eg. example@mail.com"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/colorHintGrey"
+                            android:textSize="14sp" />
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="25dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="@color/grey"
+                        app:fsv_borderRadius="25dp"
+                        app:fsv_borderWidth="2dp"
+                        app:fsv_legend="Mobile Number"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="10sp">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <com.hbb20.CountryCodePicker
+                                android:id="@+id/cCPickerBusinessListing"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:defaultCode="91"
+                                app:defaultNameCode="IN"
+                                app:textSize="12sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etMobileBusinessListing"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:hint="Mobile"
+                                android:inputType="phone"
+                                android:maxLines="1"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@android:color/black"
+                                android:textColorHint="@color/grey"
+                                android:textSize="14sp" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:id="@+id/fsvLayoutWebUrl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginVertical="25dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="@color/grey"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1.5dp"
+                        app:fsv_legend="Web Url"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/fsvLayoutEmail"
+                        tools:layout_editor_absoluteX="40dp">
+
+                        <EditText
+                            android:id="@+id/etWebUrlCreate"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:background="@android:color/transparent"
+                            android:hint="eg. https://www.text.com"
+                            android:inputType="textWebEditText"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/colorHintGrey"
+                            android:textSize="14sp" />
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Optional :"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/button_bg_black"
+                        tools:ignore="MissingConstraints"/>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:id="@+id/fsvLayoutSellerUrl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="15dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="@color/grey"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1.5dp"
+                        app:fsv_legend="Seller Url"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/fsvLayoutWebUrl"
+                        tools:layout_editor_absoluteX="40dp">
+
+                        <EditText
+                            android:id="@+id/etSellerUrlCreate"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:background="@android:color/transparent"
+                            android:hint="eg. https://www.xyz.com/sellerpage"
+                            android:inputType="textWebEditText"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/colorHintGrey"
+                            android:textSize="14sp" />
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:id="@+id/fsvLayoutFacebookUrl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="15dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="@color/grey"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1.5dp"
+                        app:fsv_legend="Facebook Url"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/fsvLayoutWebUrl"
+                        tools:layout_editor_absoluteX="40dp">
+
+                        <EditText
+                                android:id="@+id/etFacebookUrlCreate"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Please enter the facebook business url."
+                            android:inputType="textWebEditText"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/colorHintGrey"
+                            android:textSize="14sp" />
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:id="@+id/fsvLayoutTwitterUrl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="15dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="@color/grey"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1.5dp"
+                        app:fsv_legend="Twitter Url"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/fsvLayoutFacebookUrl"
+                        tools:layout_editor_absoluteX="40dp">
+
+                        <EditText
+                            android:id="@+id/etTwitterUrlCreate"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Please enter the Twitter business url."
+                            android:inputType="textWebEditText"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/colorHintGrey"
+                            android:textSize="14sp" />
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:id="@+id/fsvLayoutInstagramUrl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="15dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="@color/grey"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1.5dp"
+                        app:fsv_legend="Instagram Url"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/fsvLayoutTwitterUrl"
+                        tools:layout_editor_absoluteX="40dp">
+
+                        <EditText
+                            android:id="@+id/etInstagramUrlCreate"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Please enter the Instagram business url."
+                            android:inputType="textWebEditText"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/colorHintGrey"
+                            android:textSize="14sp" />
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:id="@+id/fsvLayoutLinkedinUrl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="15dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="@color/grey"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1.5dp"
+                        app:fsv_legend="Linkedin Url"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/fsvLayoutInstagramUrl"
+                        tools:layout_editor_absoluteX="40dp">
+
+                        <EditText
+                            android:id="@+id/etLinkedinUrlCreate"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Please enter the Linkedin business url."
+                            android:inputType="textWebEditText"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/colorHintGrey"
+                            android:textSize="14sp" />
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <libs.mjn.fieldset.FieldSetView
+                        android:id="@+id/fsvLayoutAboutUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="20dp"
+                        app:fsv_borderAlpha="0.75"
+                        app:fsv_borderColor="@color/grey"
+                        app:fsv_borderRadius="5dp"
+                        app:fsv_borderWidth="1.5dp"
+                        app:fsv_legend="About Us"
+                        app:fsv_legendColor="@color/grey"
+                        app:fsv_legendFont="lobster.ttf"
+                        app:fsv_legendPosition="left"
+                        app:fsv_legendSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/fsvLayoutSellerUrl"
+                        tools:layout_editor_absoluteX="10dp">
+
+                        <EditText
+                            android:id="@+id/etAboutUsPageCreate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:gravity="top|left"
+                            android:hint="Enter Text Here...."
+                            android:inputType="textMultiLine"
+                            android:minHeight="60dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:singleLine="false"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/colorHintGrey"
+                            android:textSize="14sp" />
+                    </libs.mjn.fieldset.FieldSetView>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnCreateBusinessList"
+                        android:layout_width="match_parent"
                         android:layout_height="35dp"
-                        android:layout_alignBottom="@+id/ivBusinessLogoCreate"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:src="@drawable/g_camera" />
-
-                </RelativeLayout>
-
-                <libs.mjn.fieldset.FieldSetView
-                    android:id="@+id/fsvLayoutBusinessName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="15dp"
-                    android:layout_marginVertical="35dp"
-                    app:fsv_borderAlpha="0.75"
-                    app:fsv_borderColor="@color/grey"
-                    app:fsv_borderRadius="5dp"
-                    app:fsv_borderWidth="1.5dp"
-                    app:fsv_legend="Business Name"
-                    app:fsv_legendColor="@color/grey"
-                    app:fsv_legendFont="lobster.ttf"
-                    app:fsv_legendPosition="left"
-                    app:fsv_legendSize="12sp"
-                    app:layout_constraintTop_toBottomOf="@+id/layoutLogo"
-                    tools:layout_editor_absoluteX="40dp">
-
-                    <EditText
-                        android:id="@+id/etBusinessNameCreate"
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:background="@android:color/transparent"
-                        android:hint="eg. GBusiness"
-                        android:inputType="textWebEditText"
-                        android:maxLines="1"
-                        android:paddingStart="10dp"
+                        android:layout_marginHorizontal="100dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/button_bg_red"
+                        android:drawableEnd="@drawable/ic_double_arrow_18"
+                        android:drawableTint="@color/white"
                         android:paddingEnd="10dp"
-                        android:singleLine="true"
-                        android:textColor="@color/black"
-                        android:textColorHint="@color/colorHintGrey"
-                        android:textSize="14sp" />
-                </libs.mjn.fieldset.FieldSetView>
+                        android:text="SUBMIT"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toBottomOf="@+id/fsvLayoutAboutUs"
+                        tools:layout_editor_absoluteX="10dp" />
 
-                <libs.mjn.fieldset.FieldSetView
-                    android:id="@+id/fsvBusinessCategoryCreate"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="15dp"
-                    android:layout_marginVertical="25dp"
-                    app:fsv_borderAlpha="0.75"
-                    app:fsv_borderColor="@color/grey"
-                    app:fsv_borderRadius="5dp"
-                    app:fsv_borderWidth="1.5dp"
-                    app:fsv_legend="Business Categories"
-                    app:fsv_legendColor="@color/grey"
-                    app:fsv_legendFont="lobster.ttf"
-                    app:fsv_legendPosition="left"
-                    app:fsv_legendSize="12sp"
-                    app:layout_constraintTop_toBottomOf="@+id/fsvLayoutBusinessName"
-                    tools:layout_editor_absoluteX="40dp">
-
-                    <androidx.appcompat.widget.LinearLayoutCompat
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/tvBusinessCategoryCreate"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableRight="@drawable/ic_down_arrow"
-                            android:drawablePadding="10dp"
-                            android:hint="Select Category"
-                            android:paddingHorizontal="10dp"
-                            android:paddingVertical="3dp"
-                            android:singleLine="true"
-                            android:textColor="@color/black"
-                            android:textColorHint="@color/colorHintGrey" />
-
-                    </androidx.appcompat.widget.LinearLayoutCompat>
-
-                </libs.mjn.fieldset.FieldSetView>
-
-                <libs.mjn.fieldset.FieldSetView
-                    android:id="@+id/fsvBusinessSubcategoryCreate"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="15dp"
-                    android:layout_marginVertical="25dp"
-                    app:fsv_borderAlpha="0.75"
-                    app:fsv_borderColor="@color/grey"
-                    app:fsv_borderRadius="5dp"
-                    app:fsv_borderWidth="1.5dp"
-                    app:fsv_legend="Business Subcategories"
-                    app:fsv_legendColor="@color/grey"
-                    app:fsv_legendFont="lobster.ttf"
-                    app:fsv_legendPosition="left"
-                    app:fsv_legendSize="12sp"
-                    app:layout_constraintTop_toBottomOf="@+id/fsvBusinessCategoryCreate"
-                    tools:layout_editor_absoluteX="40dp">
-
-                    <androidx.appcompat.widget.LinearLayoutCompat
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/tvBusinessSubcategoryCreate"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableRight="@drawable/ic_down_arrow"
-                            android:drawablePadding="10dp"
-                            android:hint="Select Subcategory"
-                            android:paddingHorizontal="10dp"
-                            android:paddingVertical="3dp"
-                            android:singleLine="true"
-                            android:textColor="@color/black"
-                            android:textColorHint="@color/colorHintGrey" />
-
-                    </androidx.appcompat.widget.LinearLayoutCompat>
-
-                </libs.mjn.fieldset.FieldSetView>
-
-                <libs.mjn.fieldset.FieldSetView
-                    android:id="@+id/fsvLayoutEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="15dp"
-                    android:layout_marginVertical="25dp"
-                    app:fsv_borderAlpha="0.75"
-                    app:fsv_borderColor="@color/grey"
-                    app:fsv_borderRadius="5dp"
-                    app:fsv_borderWidth="1.5dp"
-                    app:fsv_legend="E-mail"
-                    app:fsv_legendColor="@color/grey"
-                    app:fsv_legendFont="lobster.ttf"
-                    app:fsv_legendPosition="left"
-                    app:fsv_legendSize="12sp"
-                    app:layout_constraintTop_toBottomOf="@+id/fsvBusinessSubcategoryCreate"
-                    tools:layout_editor_absoluteX="10dp">
-
-                    <EditText
-                        android:id="@+id/etEmailCreate"
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:background="@android:color/transparent"
-                        android:hint="eg. example@mail.com"
-                        android:inputType="textEmailAddress"
-                        android:maxLines="1"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:singleLine="true"
-                        android:textColor="@color/black"
-                        android:textColorHint="@color/colorHintGrey"
-                        android:textSize="14sp" />
-                </libs.mjn.fieldset.FieldSetView>
-
-                <libs.mjn.fieldset.FieldSetView
-                    android:id="@+id/fsvLayoutWebUrl"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="15dp"
-                    android:layout_marginVertical="25dp"
-                    app:fsv_borderAlpha="0.75"
-                    app:fsv_borderColor="@color/grey"
-                    app:fsv_borderRadius="5dp"
-                    app:fsv_borderWidth="1.5dp"
-                    app:fsv_legend="Web Url"
-                    app:fsv_legendColor="@color/grey"
-                    app:fsv_legendFont="lobster.ttf"
-                    app:fsv_legendPosition="left"
-                    app:fsv_legendSize="12sp"
-                    app:layout_constraintTop_toBottomOf="@+id/fsvLayoutEmail"
-                    tools:layout_editor_absoluteX="40dp">
-
-                    <EditText
-                        android:id="@+id/etWebUrlCreate"
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:background="@android:color/transparent"
-                        android:hint="eg. https://www.text.com"
-                        android:inputType="textWebEditText"
-                        android:maxLines="1"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:singleLine="true"
-                        android:textColor="@color/black"
-                        android:textColorHint="@color/colorHintGrey"
-                        android:textSize="14sp" />
-                </libs.mjn.fieldset.FieldSetView>
-
-                <libs.mjn.fieldset.FieldSetView
-                    android:id="@+id/fsvLayoutSellerUrl"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="15dp"
-                    android:layout_marginVertical="25dp"
-                    app:fsv_borderAlpha="0.75"
-                    app:fsv_borderColor="@color/grey"
-                    app:fsv_borderRadius="5dp"
-                    app:fsv_borderWidth="1.5dp"
-                    app:fsv_legend="Seller Url"
-                    app:fsv_legendColor="@color/grey"
-                    app:fsv_legendFont="lobster.ttf"
-                    app:fsv_legendPosition="left"
-                    app:fsv_legendSize="12sp"
-                    app:layout_constraintTop_toBottomOf="@+id/fsvLayoutWebUrl"
-                    tools:layout_editor_absoluteX="40dp">
-
-                    <EditText
-                        android:id="@+id/etSellerUrlCreate"
-                        android:layout_width="match_parent"
-                        android:layout_height="25dp"
-                        android:background="@android:color/transparent"
-                        android:hint="eg. https://www.xyz.com/sellerpage"
-                        android:inputType="textWebEditText"
-                        android:maxLines="1"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:singleLine="true"
-                        android:textColor="@color/black"
-                        android:textColorHint="@color/colorHintGrey"
-                        android:textSize="14sp" />
-                </libs.mjn.fieldset.FieldSetView>
-
-                <libs.mjn.fieldset.FieldSetView
-                    android:id="@+id/fsvLayoutAboutUs"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="15dp"
-                    android:layout_marginVertical="25dp"
-                    app:fsv_borderAlpha="0.75"
-                    app:fsv_borderColor="@color/grey"
-                    app:fsv_borderRadius="5dp"
-                    app:fsv_borderWidth="1.5dp"
-                    app:fsv_legend="About Us"
-                    app:fsv_legendColor="@color/grey"
-                    app:fsv_legendFont="lobster.ttf"
-                    app:fsv_legendPosition="left"
-                    app:fsv_legendSize="12sp"
-                    app:layout_constraintTop_toBottomOf="@+id/fsvLayoutSellerUrl"
-                    tools:layout_editor_absoluteX="10dp">
-
-                    <EditText
-                        android:id="@+id/etAboutUsPageCreate"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/transparent"
-                        android:gravity="top|left"
-                        android:hint="Enter Text Here...."
-                        android:inputType="textMultiLine"
-                        android:minHeight="60dp"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:singleLine="false"
-                        android:textAlignment="gravity"
-                        android:textColor="@color/black"
-                        android:textColorHint="@color/colorHintGrey"
-                        android:textSize="14sp" />
-                </libs.mjn.fieldset.FieldSetView>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btnCreateBusinessList"
-                    android:layout_width="match_parent"
-                    android:layout_height="35dp"
-                    android:layout_marginHorizontal="100dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/button_bg_red"
-                    android:drawableEnd="@drawable/ic_double_arrow_18"
-                    android:drawableTint="@color/white"
-                    android:paddingEnd="10dp"
-                    android:text="SUBMIT"
-                    android:textColor="@color/white"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    app:layout_constraintTop_toBottomOf="@+id/fsvLayoutAboutUs"
-                    tools:layout_editor_absoluteX="10dp" />
+                </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
         </LinearLayout>
+
     </ScrollView>
+
 </RelativeLayout>

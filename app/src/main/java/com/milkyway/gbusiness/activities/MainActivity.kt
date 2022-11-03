@@ -31,7 +31,7 @@ import com.milkyway.gbusiness.firebaseimpl.RealmStorageModelClass
 import com.milkyway.gbusiness.fragments.PaymentFragment
 import com.milkyway.gbusiness.ui.main.MainFragment
 import com.milkyway.gbusiness.ui.main.MainFragment.Companion.REQUEST_ID_MULTIPLE_PERMISSIONS
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import com.razorpay.PaymentData
 import com.razorpay.PaymentResultWithDataListener
 import io.realm.Realm

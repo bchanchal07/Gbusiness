@@ -23,7 +23,7 @@ import com.milkyway.gbusiness.models.ProfileDataErrorResponse
 import com.milkyway.gbusiness.models.ProfileDetailaDataClass
 import com.milkyway.gbusiness.models.RazorPayOrderId
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import com.paypal.android.sdk.payments.PayPalConfiguration
 import com.paypal.android.sdk.payments.PayPalPayment
 import com.paypal.android.sdk.payments.PayPalService

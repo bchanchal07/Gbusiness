@@ -7,7 +7,7 @@ import android.util.Log
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import com.milkyway.gbusiness.R
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import com.milkyway.gbusiness.retrofit.GbusinessService
 import com.milkyway.gbusiness.api.PayPalRazorpayClient
 import com.milkyway.gbusiness.models.sendPayalCredentailsToServerDataClass

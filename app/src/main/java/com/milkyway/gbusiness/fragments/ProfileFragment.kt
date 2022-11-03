@@ -35,7 +35,7 @@ import com.milkyway.gbusiness.retrofit.GbusinessService
 import com.milkyway.gbusiness.api.RecyclerviewCallbacks
 import com.milkyway.gbusiness.models.*
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
 import id.ionbit.ionalert.IonAlert
@@ -574,7 +574,6 @@ class ProfileFragment : Fragment() {
     }
 
     private fun updateMobileNumber() {
-
         if (CommonUtil.checkNetwork(mContext)) {
             val updatedMobileNumber = userProfileTvUserPhone.text.toString().trim()
             if (!updatedMobileNumber.isNullOrEmpty()) {
@@ -730,7 +729,6 @@ class ProfileFragment : Fragment() {
 
     private fun userProfileUpdateApi(selectedCountryId: Int, selectedStateId: Int, firstName: String, lastName: String, city: String, zipCode: String, address: String) {
         if (CommonUtil.checkNetwork(mContext)) {
-
             var countryId = ""
             var stateId = ""
             countryId = if (selectedCountryId == 0)
@@ -746,33 +744,11 @@ class ProfileFragment : Fragment() {
             CommonUtil.showDialog(mContext)
             val apiService = GbusinessService.create(mContext)
             if (userID != null) {
-                apiService.getuserUpdate(
-                    "Bearer " + CommonUtil.getPreferencesString(mContext, AppConstants.TOKEN),
-                    "application/json",
-                    userID,
-                    firstName,
-                    lastName,
-                    userProfessionID!!,
-                    countryId,
-                    stateId,
-                    city,
-                    zipCode,
-                    address
-                )
+                apiService.getuserUpdate("Bearer " + CommonUtil.getPreferencesString(mContext, AppConstants.TOKEN),
+                    "application/json", userID, firstName, lastName, userProfessionID!!, countryId, stateId, city, zipCode, address)
                     .enqueue(object : Callback<UpdateUserDetailsDataClass> {
-                        override fun onFailure(call: Call<UpdateUserDetailsDataClass>, t: Throwable) {
-
+                        override fun onResponse(call: Call<UpdateUserDetailsDataClass>, response: Response<UpdateUserDetailsDataClass>, ) {
                             CommonUtil.hideDialog(mContext)
-                            CommonUtil.toast(R.string.showError.toString(), mContext)
-                            CommonUtil.logi(t.localizedMessage.toString())
-                        }
-
-                        override fun onResponse(
-                            call: Call<UpdateUserDetailsDataClass>,
-                            response: Response<UpdateUserDetailsDataClass>,
-                        ) {
-                            CommonUtil.hideDialog(mContext)
-
                             Log.i("TAGad", response.body()?.success.toString())
                             val getData = response.body()
                             if (response.isSuccessful) {
@@ -786,6 +762,12 @@ class ProfileFragment : Fragment() {
                                     ResourcesCompat.getFont(requireActivity(), R.font.helvetica_regular))
                             }
                             CommonUtil.logi(getData.toString())
+                        }
+
+                        override fun onFailure(call: Call<UpdateUserDetailsDataClass>, t: Throwable) {
+                            CommonUtil.hideDialog(mContext)
+                            CommonUtil.toast(R.string.showError.toString(), mContext)
+                            CommonUtil.logi(t.localizedMessage.toString())
                         }
 
                     })
@@ -807,7 +789,6 @@ class ProfileFragment : Fragment() {
     }
 
     private fun getProfissionLayout() {
-
         dismissPopup()
         filterPopup = showAlertFilter()
         filterPopup?.isOutsideTouchable = true
@@ -948,6 +929,7 @@ class ProfileFragment : Fragment() {
         }
         if (getData.data.country != null)
             CommonUtil.saveStringPreferences(mContext, AppConstants.COUNTRY_ID, getData.data.country)
+
         if (getData.data.state != null)
             CommonUtil.saveStringPreferences(mContext, AppConstants.STATE_ID, getData.data.state)
 
@@ -984,6 +966,7 @@ class ProfileFragment : Fragment() {
         }
         if (getData.message != null) CommonUtil.toast(getData.message, mContext)
         callGetCountriesApi(getData.data.country, getData.data.state)
+
     }
 
     //todo call api to getList of profession list of user

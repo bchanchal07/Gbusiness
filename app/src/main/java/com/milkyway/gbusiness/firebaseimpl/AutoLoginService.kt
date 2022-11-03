@@ -11,7 +11,7 @@ import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import com.milkyway.gbusiness.retrofit.ApiCall
 import com.milkyway.gbusiness.models.AutoLoginWhmcsResponse
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

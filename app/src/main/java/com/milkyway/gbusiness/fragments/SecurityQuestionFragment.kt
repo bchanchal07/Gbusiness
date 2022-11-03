@@ -16,7 +16,7 @@ import com.milkyway.gbusiness.models.DataXXXXXXXXXXXX
 import com.milkyway.gbusiness.models.QuestionListDataClass
 import com.milkyway.gbusiness.models.UpdateUserDetailsDataClass
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

@@ -28,7 +28,7 @@ import com.milkyway.gbusiness.adaptor.BusinessListingAdaptor
 import com.milkyway.gbusiness.retrofit.GbusinessService
 import com.milkyway.gbusiness.models.*
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import id.ionbit.ionalert.IonAlert
 import kotlinx.android.synthetic.main.dlg_error_msg.view.*
 import kotlinx.android.synthetic.main.dlg_get_quote.view.*

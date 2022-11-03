@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.milkyway.gbusiness.R
 import com.milkyway.gbusiness.api.ProfileConfigrationListener
 import com.milkyway.gbusiness.models.DomainX
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import kotlinx.android.synthetic.main.adpter_profile_config.view.*
 
 class ProfileConfigrationAdaptor(

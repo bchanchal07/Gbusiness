@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextUtils
 import android.view.LayoutInflater
+import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
@@ -20,6 +21,7 @@ import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.github.drjacky.imagepicker.ImagePicker
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.android.material.textfield.TextInputEditText
 import com.leo.searchablespinner.SearchableSpinner
 import com.leo.searchablespinner.interfaces.OnItemSelectListener
 import com.milkyway.gbusiness.R
@@ -31,8 +33,10 @@ import com.milkyway.gbusiness.models.CategoryDataClass
 import com.milkyway.gbusiness.models.SubCategoryDataClass
 import com.milkyway.gbusiness.extension.setLocalImage
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
-import com.milkyway.gbusiness.utils.FileUtils
+import com.milkyway.gbusiness.global.CommonUtil
+import com.milkyway.gbusiness.global.CustomDatePickers
+import com.milkyway.gbusiness.global.DateTimeUtils
+import com.milkyway.gbusiness.global.FileUtils
 import kotlinx.android.synthetic.main.dlg_new_ticket.view.*
 import kotlinx.android.synthetic.main.recyclerview_business_listing.*
 import kotlinx.android.synthetic.main.recyclerview_item_business_listing.*
@@ -55,7 +59,6 @@ class BusinessListEditFragment : Fragment() {
 
     lateinit var mContext: Context
     private lateinit var editBusinessListingBack: ImageView
-
     private lateinit var ivBusinessLogoUpdate: ImageView
     private lateinit var ivCameraUpdate: ImageView
     private lateinit var fsvBusinessCategoryUpdate: FieldSetView
@@ -67,6 +70,21 @@ class BusinessListEditFragment : Fragment() {
     private lateinit var etEmailUpdate: EditText
     private lateinit var etWebUrlUpdate: EditText
     private lateinit var etAboutUsPageUpdate: EditText
+    private lateinit var etBusinessEstablishDateUpdate: EditText
+    private lateinit var etBusinessSubdomainUrl: EditText
+    private lateinit var fsvBusinessCountry: FieldSetView
+    private lateinit var fsvBusinessState: FieldSetView
+    private lateinit var tvBusinessCountry: TextView
+    private lateinit var tvBusinessState: TextView
+    private lateinit var etBusinessCity: EditText
+    private lateinit var etBusinessZipCode: EditText
+    private lateinit var etBusinessAddress: EditText
+    private lateinit var etMobileBusinessListing: TextInputEditText
+    private lateinit var etSellerUrlCreate: EditText
+    private lateinit var fsvLayoutFacebookUrl: FieldSetView
+    private lateinit var fsvLayoutTwitterUrl: FieldSetView
+    private lateinit var fsvLayoutInstagramUrl: FieldSetView
+    private lateinit var fsvLayoutLinkedinUrl: FieldSetView
     private lateinit var listData: BusinessListingResponse.Data
     private lateinit var searchableSpinnerCategory: SearchableSpinner
     private lateinit var searchableSpinnerSubcategory: SearchableSpinner
@@ -87,7 +105,6 @@ class BusinessListEditFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     override fun onCreateView(
@@ -154,29 +171,55 @@ class BusinessListEditFragment : Fragment() {
         }
     }
 
-    private val logoImageLauncher =
-        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
-            if (it.resultCode == Activity.RESULT_OK) {
-                val uri = it.data?.data!!
-                mBusinessLogoImageUri = uri
-                ivBusinessLogoUpdate.setLocalImage(uri, true)
-            } else parseError(it)
-        }
+    private fun initializeView(view: View) {
+        editBusinessListingBack = view.findViewById(R.id.editBusinessListingBack)
+        ivBusinessLogoUpdate = view.findViewById(R.id.ivBusinessLogoUpdate)
+        ivCameraUpdate = view.findViewById(R.id.ivCameraUpdate)
+        etBusinessNameUpdate = view.findViewById(R.id.etBusinessNameUpdate)
+        fsvBusinessCategoryUpdate = view.findViewById(R.id.fsvBusinessCategoryUpdate)
+        fsvBusinessSubcategoryUpdate = view.findViewById(R.id.fsvBusinessSubcategoryUpdate)
+        tvBusinessCategoryUpdate = view.findViewById(R.id.tvBusinessCategoryUpdate)
+        tvBusinessSubcategoryUpdate = view.findViewById(R.id.tvBusinessSubcategoryUpdate)
+        etEmailUpdate = view.findViewById(R.id.etEmailUpdate)
+        etWebUrlUpdate = view.findViewById(R.id.etWebUrlUpdate)
+        etAboutUsPageUpdate = view.findViewById(R.id.etAboutUsPageUpdate)
+        btnUpdateBusinessData = view.findViewById(R.id.btnUpdateBusinessListUpdate)
+        etBusinessEstablishDateUpdate = view.findViewById(R.id.etBusinessEstablishDateUpdate)
+        etBusinessSubdomainUrl = view.findViewById(R.id.etBusinessSubdomainUrl)
+        fsvBusinessCountry = view.findViewById(R.id.fsvBusinessCountry)
+        fsvBusinessState = view.findViewById(R.id.fsvBusinessState)
+        tvBusinessCountry = view.findViewById(R.id.tvBusinessCountry)
+        tvBusinessState = view.findViewById(R.id.tvBusinessState)
+        etBusinessCity = view.findViewById(R.id.etBusinessCity)
+        etBusinessZipCode = view.findViewById(R.id.etBusinessZipCode)
+        etBusinessAddress = view.findViewById(R.id.etBusinessAddress)
+        etMobileBusinessListing = view.findViewById(R.id.etMobileBusinessListing)
+        etSellerUrlCreate = view.findViewById(R.id.etSellerUrlCreate)
+        fsvLayoutFacebookUrl = view.findViewById(R.id.fsvLayoutFacebookUrl)
+        fsvLayoutTwitterUrl = view.findViewById(R.id.fsvLayoutTwitterUrl)
+        fsvLayoutInstagramUrl = view.findViewById(R.id.fsvLayoutInstagramUrl)
+        fsvLayoutLinkedinUrl = view.findViewById(R.id.fsvLayoutLinkedinUrl)
 
-    private fun parseError(activityResult: ActivityResult) {
-        if (activityResult.resultCode == ImagePicker.RESULT_ERROR) {
-            Toast.makeText(requireActivity(), ImagePicker.getError(activityResult.data), Toast.LENGTH_SHORT).show()
-        } else {
-            Toast.makeText(requireActivity(), "Task Cancelled", Toast.LENGTH_SHORT).show()
-        }
-    }
+        searchableSpinnerCategory = SearchableSpinner(requireActivity())
+        searchableSpinnerCategory.windowTitle = "Select/Search Category"
 
-    private fun pickBusinessLogo(view: View) {
-        ImagePicker.with(requireActivity())
-            .crop()
-            .cropOval()
-            .maxResultSize(512, 512, true)
-            .createIntentFromDialog { logoImageLauncher.launch(it) }
+        searchableSpinnerSubcategory = SearchableSpinner(requireActivity())
+        searchableSpinnerSubcategory.windowTitle = "Select/Search Subcategory"
+
+        val args = arguments ?: return
+        listData = args.getSerializable("list") as BusinessListingResponse.Data
+        setDefaultData(listData)
+        callCategoryApi()
+
+        etBusinessEstablishDateUpdate.setOnTouchListener(object : View.OnTouchListener{
+            override fun onTouch(p0: View?, p1: MotionEvent?): Boolean {
+                var customDatePickers : CustomDatePickers = CustomDatePickers(mContext)
+                customDatePickers.showDatePickerDialog(etBusinessEstablishDateUpdate)
+                return true
+            }
+
+        })
+        //callSubcategoryApi(selectedCatId)
     }
 
     private fun callUpdateBusinessUpdateApi(fileUri: Uri?, selectedCatId: Int, selectedSubCatId: Int) {
@@ -210,6 +253,7 @@ class BusinessListEditFragment : Fragment() {
             var catId = 0
             var subCatName = ""
             var subCatId = 0
+
             /*for (i in categoryDataList?.indices!!) {
                 catName = categoryDataList!![i].name
                 //catId = categoryDataList!![i].id
@@ -259,7 +303,6 @@ class BusinessListEditFragment : Fragment() {
                             CommonUtil.toast(t.toString(), mContext)
                             CommonUtil.logi(t.localizedMessage.toString())
                         }
-
                     })
 
             } else {
@@ -270,35 +313,31 @@ class BusinessListEditFragment : Fragment() {
         }
     }
 
-    private fun initializeView(view: View) {
-        editBusinessListingBack = view.findViewById(R.id.editBusinessListingBack)
-        ivBusinessLogoUpdate = view.findViewById(R.id.ivBusinessLogoUpdate)
-        ivCameraUpdate = view.findViewById(R.id.ivCameraUpdate)
-        etBusinessNameUpdate = view.findViewById(R.id.etBusinessNameUpdate)
-        fsvBusinessCategoryUpdate = view.findViewById(R.id.fsvBusinessCategoryUpdate)
-        fsvBusinessSubcategoryUpdate = view.findViewById(R.id.fsvBusinessSubcategoryUpdate)
-        tvBusinessCategoryUpdate = view.findViewById(R.id.tvBusinessCategoryUpdate)
-        tvBusinessSubcategoryUpdate = view.findViewById(R.id.tvBusinessSubcategoryUpdate)
-        etEmailUpdate = view.findViewById(R.id.etEmailUpdate)
-        etWebUrlUpdate = view.findViewById(R.id.etWebUrlUpdate)
-        etAboutUsPageUpdate = view.findViewById(R.id.etAboutUsPageUpdate)
-        btnUpdateBusinessData = view.findViewById(R.id.btnUpdateBusinessListUpdate)
+    private val logoImageLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+        if (it.resultCode == Activity.RESULT_OK) {
+            val uri = it.data?.data!!
+            mBusinessLogoImageUri = uri
+            ivBusinessLogoUpdate.setLocalImage(uri, true)
+        } else parseError(it)
+    }
 
-        searchableSpinnerCategory = SearchableSpinner(requireActivity())
-        searchableSpinnerCategory.windowTitle = "Select/Search Category"
+    private fun parseError(activityResult: ActivityResult) {
+        if (activityResult.resultCode == ImagePicker.RESULT_ERROR) {
+            Toast.makeText(requireActivity(), ImagePicker.getError(activityResult.data), Toast.LENGTH_SHORT).show()
+        } else {
+            Toast.makeText(requireActivity(), "Task Cancelled", Toast.LENGTH_SHORT).show()
+        }
+    }
 
-        searchableSpinnerSubcategory = SearchableSpinner(requireActivity())
-        searchableSpinnerSubcategory.windowTitle = "Select/Search Subcategory"
-
-        val args = arguments ?: return
-        listData = args.getSerializable("list") as BusinessListingResponse.Data
-        setDefaultData(listData)
-        callCategoryApi()
-        //callSubcategoryApi(selectedCatId)
+    private fun pickBusinessLogo(view: View) {
+        ImagePicker.with(requireActivity())
+            .crop()
+            .cropOval()
+            .maxResultSize(512, 512, true)
+            .createIntentFromDialog { logoImageLauncher.launch(it) }
     }
 
     private fun callCategoryApi() {
-
         if (CommonUtil.checkNetwork(mContext)) {
             val apiServices = GbusinessService.create(mContext)
             //if (userID != null) {

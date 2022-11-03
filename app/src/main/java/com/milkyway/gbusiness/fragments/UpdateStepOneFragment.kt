@@ -43,8 +43,8 @@ import com.milkyway.gbusiness.activities.MainActivity
 import com.milkyway.gbusiness.extension.setLocalImage
 import com.milkyway.gbusiness.retrofit.AppConstants
 import com.milkyway.gbusiness.retrofit.GbusinessService
-import com.milkyway.gbusiness.utils.CommonUtil
-import com.milkyway.gbusiness.utils.FileUtils
+import com.milkyway.gbusiness.global.CommonUtil
+import com.milkyway.gbusiness.global.FileUtils
 import dev.mortezaom.mdtoast.MDToast
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody

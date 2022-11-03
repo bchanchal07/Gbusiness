@@ -12,7 +12,7 @@ import com.beautycoder.pflockscreen.fragments.PFLockScreenFragment
 import com.beautycoder.pflockscreen.viewmodels.PFPinCodeViewModel
 import com.milkyway.gbusiness.R
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import org.jetbrains.anko.doAsync
 
 class Main2Activity : AppCompatActivity() {

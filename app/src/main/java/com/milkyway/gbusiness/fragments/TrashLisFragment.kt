@@ -20,7 +20,7 @@ import com.milkyway.gbusiness.models.DataXXXXXXXXXXXXXXXXXX
 import com.milkyway.gbusiness.models.TrashListDataClass
 import com.milkyway.gbusiness.models.UpdatePhone
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

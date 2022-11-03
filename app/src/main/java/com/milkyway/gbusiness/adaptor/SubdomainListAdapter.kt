@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.milkyway.gbusiness.R
 import com.milkyway.gbusiness.models.DataXXXXXXXXXXXXXXXXXXX
-import com.milkyway.gbusiness.utils.DateTimeUtils
+import com.milkyway.gbusiness.global.DateTimeUtils
 import kotlinx.android.synthetic.main.recyclerview_item_subdomain.view.*
 
 class SubdomainListAdapter(

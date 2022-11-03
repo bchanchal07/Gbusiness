@@ -21,7 +21,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.milkyway.gbusiness.adaptor.EarningFragmentAdoptor
 import com.milkyway.gbusiness.R
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import com.milkyway.gbusiness.retrofit.GbusinessService
 import com.milkyway.gbusiness.models.EarningDataClass
 import com.milkyway.gbusiness.models.EarningDateWiseDataClass

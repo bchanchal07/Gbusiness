@@ -33,7 +33,7 @@ import com.milkyway.gbusiness.extension.alert
 import com.milkyway.gbusiness.firebaseimpl.AutoLoginService
 import com.milkyway.gbusiness.firebaseimpl.RazorpayResultReceiver
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import com.razorpay.Checkout
 import id.ionbit.ionalert.IonAlert
 import org.json.JSONException

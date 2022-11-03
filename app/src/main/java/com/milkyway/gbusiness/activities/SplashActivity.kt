@@ -15,7 +15,7 @@ import com.milkyway.gbusiness.models.LogInDataClass
 import com.milkyway.gbusiness.models.LogInErrorClass
 import com.milkyway.gbusiness.models.SignUpDataClass
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import id.ionbit.ionalert.IonAlert
 import kotlinx.android.synthetic.main.activity_login.*
 import org.jetbrains.anko.doAsync

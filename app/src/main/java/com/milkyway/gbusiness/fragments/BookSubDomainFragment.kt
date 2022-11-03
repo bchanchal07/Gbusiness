@@ -22,8 +22,8 @@ import com.milkyway.gbusiness.R
 import com.milkyway.gbusiness.retrofit.GbusinessService
 import com.milkyway.gbusiness.models.*
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
-import com.milkyway.gbusiness.utils.ScrollViewText
+import com.milkyway.gbusiness.global.CommonUtil
+import com.milkyway.gbusiness.global.ScrollViewText
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

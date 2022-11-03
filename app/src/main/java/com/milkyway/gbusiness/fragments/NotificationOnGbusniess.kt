@@ -15,7 +15,7 @@ import com.milkyway.gbusiness.adaptor.NotificationOnGbusniessAdaptor
 
 import com.milkyway.gbusiness.R
 import com.milkyway.gbusiness.retrofit.AppConstants
-import com.milkyway.gbusiness.utils.CommonUtil
+import com.milkyway.gbusiness.global.CommonUtil
 import com.milkyway.gbusiness.retrofit.GbusinessService
 import com.milkyway.gbusiness.models.DataXXXXXXXXXXXXXXXXXXXXX
 import com.milkyway.gbusiness.models.NotificationDataClass
