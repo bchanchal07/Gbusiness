@@ -50,11 +50,11 @@ class BusinessUserAddListAdapter internal constructor( private val mCtx: Context
         val chStatus = convertView!!.findViewById<Chip>(R.id.chip_status)
         val chAction = convertView!!.findViewById<Chip>(R.id.ch_action)
 
-        tvUrl.text = expandedListText.businessWebUrl
-        tvAboutBusiness.text = expandedListText.businessAboutUs
+        tvUrl.text = expandedListText.business_web_url
+        tvAboutBusiness.text = expandedListText.business_about_us
         tvCategory.text = expandedListText.catname
         tvSubcategory.text = expandedListText.subcatname
-        chDate.text = expandedListText.createdAt
+        chDate.text = expandedListText.created_at
         when (expandedListText.status) {
             0 -> {
                 chStatus.text = "PENDING"
@@ -88,7 +88,7 @@ class BusinessUserAddListAdapter internal constructor( private val mCtx: Context
             dialog.setCancelable(true)
 
             var text_view: TextView = PopupView.findViewById(R.id.text_view)
-            text_view.text = expandedListText.businessAboutUs
+            text_view.text = expandedListText.business_about_us
         }
 
         return convertView
@@ -122,13 +122,13 @@ class BusinessUserAddListAdapter internal constructor( private val mCtx: Context
         //todo set text...
 //        tvSrNo.text = (listPosition + 1).toString()
         tvBusinessName.setTypeface(null, Typeface.BOLD)
-        tvBusinessName.text = listTitle.businessName
-        tvEmail.text = listTitle.businessEmail
-        tvEmail.tooltipText = listTitle.businessEmail
+        tvBusinessName.text = listTitle.business_name
+        tvEmail.text = listTitle.business_email
+        tvEmail.tooltipText = listTitle.business_email
 
 
-        if (listTitle.businessLogo != null) {
-            val urlLogo = GbusinessService.BASE_IMG_URL + listTitle.businessLogo
+        if (listTitle.business_logo != null) {
+            val urlLogo = GbusinessService.BASE_IMG_URL + listTitle.business_logo
             Glide.with(mCtx)
                 .load(urlLogo)
                 .into(ivBusinessLogo)

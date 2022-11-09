@@ -1,15 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.inpossoft:CountryCodePickerProject:2.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f518fe9dbc3c0db111b477968c88e1d8/jetified-CountryCodePickerProject-2.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f518fe9dbc3c0db111b477968c88e1d8/jetified-CountryCodePickerProject-2.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f518fe9dbc3c0db111b477968c88e1d8/jetified-CountryCodePickerProject-2.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/26678e4912d8e98a1a0230c9a5da1aa6/jetified-CountryCodePickerProject-2.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/26678e4912d8e98a1a0230c9a5da1aa6/jetified-CountryCodePickerProject-2.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/26678e4912d8e98a1a0230c9a5da1aa6/jetified-CountryCodePickerProject-2.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.inpossoft/CountryCodePickerProject/2.0.0/20bc2d84f64a7024e61cc411219220310663846b/CountryCodePickerProject-2.0.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.inpossoft/CountryCodePickerProject/2.0.0/77c5f02ddb36a15f2046031f982e7fb4789dd67c/CountryCodePickerProject-2.0.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.inpossoft/CountryCodePickerProject/2.0.0/e067299001410e32d2bf7e4d4fc6af098ff47bc0/CountryCodePickerProject-2.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -228,7 +228,7 @@ class BusinessListFragment : Fragment(), BusinessUserAddListAdapter.BtnClickList
                 .setConfirmClickListener {
                     it.dismissWithAnimation()
                     val bundle = Bundle()
-                    bundle.putSerializable("list", list)
+                    bundle.putSerializable("list",  list)
                     findNavController().navigate(R.id.action_myBusinessListFragment_to_editBusinessListFragment, bundle)
                 }.show()
             dialog.hide()
@@ -357,7 +357,7 @@ class BusinessListFragment : Fragment(), BusinessUserAddListAdapter.BtnClickList
     private fun onFilterChanged(filterQuery: String): List<BusinessListingResponse.Data> {
         val filteredList = ArrayList<BusinessListingResponse.Data>()
         for (searchList in listingDataList) {
-            if (searchList.businessName.lowercase().contains(filterQuery) ||
+            if (searchList.business_name.lowercase().contains(filterQuery) ||
                 searchList.catname.lowercase().contains(filterQuery) ||
                 searchList.subcatname.lowercase().contains(filterQuery)
             ) {

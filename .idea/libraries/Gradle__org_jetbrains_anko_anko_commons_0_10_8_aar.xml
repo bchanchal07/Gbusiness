@@ -2,7 +2,6 @@
   <library name="Gradle: org.jetbrains.anko:anko-commons:0.10.8@aar">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a1565dd74bad89759a9fc8adbdd52954/anko-commons-0.10.8/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a1565dd74bad89759a9fc8adbdd52954/anko-commons-0.10.8/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a1565dd74bad89759a9fc8adbdd52954/anko-commons-0.10.8/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />

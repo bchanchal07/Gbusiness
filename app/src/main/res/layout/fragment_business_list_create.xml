@@ -463,7 +463,7 @@
                         android:layout_marginTop="25dp"
                         app:fsv_borderAlpha="0.75"
                         app:fsv_borderColor="@color/grey"
-                        app:fsv_borderRadius="25dp"
+                        app:fsv_borderRadius="5dp"
                         app:fsv_borderWidth="2dp"
                         app:fsv_legend="Mobile Number"
                         app:fsv_legendColor="@color/grey"

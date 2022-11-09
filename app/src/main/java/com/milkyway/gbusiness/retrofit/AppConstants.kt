@@ -80,4 +80,27 @@ object AppConstants {
 
     const val SPEECH_REQUEST_CODE = 0
 
+    const val SUNDAY = "Sunday"
+    const val MONDAY = "Monday"
+    const val TUESDAY = "Tuesday"
+    const val WEDNESDAY = "Wednesday"
+    const val THURSDAY = "Thursday"
+    const val FRIDAY = "Friday"
+    const val SATURDAY = "Saturday"
+
+    const val SUN_START_TIME = "sun_start_time"
+    const val SUN_END_TIME = "sun_end_time"
+    const val MON_START_TIME = "mon_start_time"
+    const val MON_END_TIME = "mon_end_time"
+    const val TUE_START_TIME = "tue_start_time"
+    const val TUE_END_TIME = "tue_end_time"
+    const val WED_START_TIME = "wed_start_time"
+    const val WED_END_TIME = "wed_end_time"
+    const val THUR_START_TIME = "thur_start_time"
+    const val THUR_END_TIME = "thur_end_time"
+    const val FRI_START_TIME = "fri_start_time"
+    const val FRI_END_TIME = "fri_end_time"
+    const val SAT_START_TIME = "sat_start_time"
+    const val SAT_END_TIME = "sat_end_time"
+
 }

@@ -2,7 +2,6 @@
   <library name="Gradle: com.squareup.leakcanary:leakcanary-android-no-op:1.5.4@aar">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2d4ebf1e1e473359095644f236d68bcc/leakcanary-android-no-op-1.5.4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2d4ebf1e1e473359095644f236d68bcc/leakcanary-android-no-op-1.5.4/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2d4ebf1e1e473359095644f236d68bcc/leakcanary-android-no-op-1.5.4/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>

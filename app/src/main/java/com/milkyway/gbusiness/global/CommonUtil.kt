@@ -26,6 +26,7 @@ import androidx.fragment.app.FragmentActivity
 import com.google.gson.Gson
 import com.milkyway.gbusiness.models.SearchDomainDataDetailsClass
 import com.milkyway.gbusiness.R
+import com.milkyway.gbusiness.retrofit.AppConstants
 import com.milkyway.gbusiness.retrofit.AppConstants.CART_ITEM
 import com.milkyway.gbusiness.retrofit.AppConstants.PREFS_NAME
 import com.pawegio.kandroid.layoutInflater
@@ -330,7 +331,6 @@ class CommonUtil {
 
 
         fun showDialog(context: Context) {
-
             dialog = Dialog(context)
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
             //...set cancelable false so that it's never get hidden
@@ -449,6 +449,248 @@ class CommonUtil {
                 .addToBackStack(null)
                 .commit()
         }
+
+
+
+        //todo set and get working hour session storage data..
+        // todo Shared Preferences
+        lateinit var pref: SharedPreferences
+
+        //todo  Editor for Shared preferences
+        lateinit var editor: SharedPreferences.Editor
+
+        fun setSharedPrefernce(mContext: Context ,key: String, value: String) {
+            val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(mContext)
+            val editor = sharedPreferences.edit()
+            editor.putString(key, value)
+            editor.apply()
+        }
+
+        private fun getDataFromSharedPreferences(mContext: Context , Key: String): String? {
+            return try {
+                val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(mContext)
+                return sharedPreferences.getString(Key, "")
+            } catch (e: java.lang.Exception) {
+                ""
+            }
+        }
+
+        fun setSunday(mContext: Context ,sunday: String?) {
+            if (sunday != null) {
+                setSharedPrefernce(mContext, AppConstants.SUNDAY, sunday)
+            }
+        }
+
+        fun getSunday(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext, "Sunday")
+        }
+
+        fun setMonday(mContext: Context ,monday: String?) {
+            if (monday != null) {
+                setSharedPrefernce(mContext, AppConstants.MONDAY, monday)
+            }
+        }
+
+        fun getMonday(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"Monday")
+        }
+
+        fun setTuesday(mContext: Context ,tuesday: String?) {
+            if (tuesday != null) {
+                setSharedPrefernce(mContext, AppConstants.TUESDAY, tuesday)
+            }
+        }
+
+        fun getTuesday(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"Tuesday")
+        }
+
+        fun setWednesday(mContext: Context ,wednesday: String?) {
+            if (wednesday != null) {
+                setSharedPrefernce(mContext, AppConstants.WEDNESDAY, wednesday)
+            }
+        }
+
+        fun getWednesday(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"Wednesday")
+        }
+
+        fun setThursday(mContext: Context ,thursday: String?) {
+            if (thursday != null) {
+                setSharedPrefernce(mContext, AppConstants.THURSDAY, thursday)
+            }
+        }
+
+        fun getThursday(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"Thursday")
+        }
+        fun setFriday(mContext: Context ,friday: String?) {
+            if (friday != null) {
+                setSharedPrefernce(mContext, AppConstants.FRIDAY, friday)
+            }
+        }
+
+        fun getFriday(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"Friday")
+        }
+
+        fun setSaturday(mContext: Context ,saturday: String?) {
+            if (saturday != null) {
+                setSharedPrefernce(mContext, AppConstants.SATURDAY, saturday)
+            }
+        }
+
+        fun getSaturday(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"Saturday")
+        }
+
+        //todo sunday start and end time...
+        fun setSunStartTime(mContext: Context ,start_time: String?) {
+            if (start_time != null) {
+                setSharedPrefernce(mContext, AppConstants.SUN_START_TIME, start_time)
+            }
+        }
+
+        fun getSunStartTime(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"sun_start_time")
+        }
+
+        fun setSunEndTime(mContext: Context ,end_time: String?) {
+            if (end_time != null) {
+                setSharedPrefernce(mContext, AppConstants.SUN_END_TIME, end_time)
+            }
+        }
+
+        fun getSunEndTime(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"sun_end_time")
+        }
+
+        //todo monday start and end time....
+        fun setMonStartTime(mContext: Context ,start_time: String?) {
+            if (start_time != null) {
+                setSharedPrefernce(mContext, AppConstants.MON_START_TIME, start_time)
+            }
+        }
+
+        fun getMonStartTime(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"mon_start_time")
+        }
+
+        fun setMonEndTime(mContext: Context ,end_time: String?) {
+            if (end_time != null) {
+                setSharedPrefernce(mContext, AppConstants.MON_END_TIME, end_time)
+            }
+        }
+
+        fun getMonEndTime(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"mon_end_time")
+        }
+
+        //todo tuesday start and end time.....
+        fun setTueStartTime(mContext: Context ,start_time: String?) {
+            if (start_time != null) {
+                setSharedPrefernce(mContext, AppConstants.TUE_START_TIME, start_time)
+            }
+        }
+
+        fun getTueStartTime(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"tue_start_time")
+        }
+
+        fun setTueEndTime(mContext: Context ,end_time: String?) {
+            if (end_time != null) {
+                setSharedPrefernce(mContext, AppConstants.TUE_END_TIME, end_time)
+            }
+        }
+
+        fun getTueEndTime(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"tue_end_time")
+        }
+
+        //todo wednesday start and end time....
+        fun setWedStartTime(mContext: Context ,start_time: String?) {
+            if (start_time != null) {
+                setSharedPrefernce(mContext, AppConstants.WED_START_TIME, start_time)
+            }
+        }
+
+        fun getWedStartTime(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"wed_start_time")
+        }
+
+        fun setWedEndTime(mContext: Context ,end_time: String?) {
+            if (end_time != null) {
+                setSharedPrefernce(mContext, AppConstants.WED_END_TIME, end_time)
+            }
+        }
+
+        fun getWedEndTime(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"wed_end_time")
+        }
+
+        //todo thursday start and end time....
+        fun setThurStartTime(mContext: Context ,start_time: String?) {
+            if (start_time != null) {
+                setSharedPrefernce(mContext, AppConstants.THUR_START_TIME, start_time)
+            }
+        }
+
+        fun getThurStartTime(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"thur_start_time")
+        }
+
+        fun setThurEndTime(mContext: Context ,end_time: String?) {
+            if (end_time != null) {
+                setSharedPrefernce(mContext, AppConstants.THUR_END_TIME, end_time)
+            }
+        }
+
+        fun getThurEndTime(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"thur_end_time")
+        }
+
+        //todo friday start and end time....
+        fun setFriStartTime(mContext: Context ,start_time: String?) {
+            if (start_time != null) {
+                setSharedPrefernce(mContext, AppConstants.FRI_START_TIME, start_time)
+            }
+        }
+
+        fun getFriStartTime(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"fri_start_time")
+        }
+
+        fun setFriEndTime(mContext: Context ,end_time: String?) {
+            if (end_time != null) {
+                setSharedPrefernce(mContext, AppConstants.FRI_END_TIME, end_time)
+            }
+        }
+
+        fun getFriEndTime(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"fri_end_time")
+        }
+
+        //todo saturday start and end time...
+        fun setSatStartTime(mContext: Context ,start_time: String?) {
+            if (start_time != null) {
+                setSharedPrefernce(mContext, AppConstants.SAT_START_TIME, start_time)
+            }
+        }
+
+        fun getSatStartTime(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"sat_start_time")
+        }
+
+        fun setSatEndTime(mContext: Context ,end_time: String?) {
+            if (end_time != null) {
+                setSharedPrefernce(mContext, AppConstants.SAT_END_TIME, end_time)
+            }
+        }
+
+        fun getSatEndTime(mContext: Context): String? {
+            return getDataFromSharedPreferences(mContext,"sat_end_time")
+        }
+
     }
 }
 

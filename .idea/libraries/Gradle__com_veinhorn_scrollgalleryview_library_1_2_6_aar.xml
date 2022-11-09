@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.veinhorn.scrollgalleryview:library:1.2.6@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/97ebaa0a59252747db6717b8ef1a88cf/jetified-library-1.2.6/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/97ebaa0a59252747db6717b8ef1a88cf/jetified-library-1.2.6/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/97ebaa0a59252747db6717b8ef1a88cf/jetified-library-1.2.6/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/17b325d63b5d33d7a822710f44ebd71f/jetified-library-1.2.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/17b325d63b5d33d7a822710f44ebd71f/jetified-library-1.2.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/17b325d63b5d33d7a822710f44ebd71f/jetified-library-1.2.6/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.veinhorn.scrollgalleryview/library/1.2.6/a227a9fe04d3b4804c0d0efc3d757492f0b9e15/library-1.2.6-javadoc.jar!/" />

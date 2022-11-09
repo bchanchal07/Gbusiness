@@ -82,11 +82,9 @@
         android:usesCleartextTraffic="true" >
         <activity
             android:name="com.milkyway.gbusiness.activities.FullImageActivity"
-            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.milkyway.gbusiness.activities.SignUpActivity"
-            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.milkyway.gbusiness.activities.Main2Activity"
@@ -102,7 +100,6 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.milkyway.gbusiness.activities.MainActivity"
-            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.milkyway.gbusiness.activities.OtpActivity"

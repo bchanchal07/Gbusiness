@@ -4175,6 +4175,8 @@ id TOP_START
 id ThreeBounce
 id WanderingCubes
 id Wave
+id ac_end_time
+id ac_start_time
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -5083,6 +5085,7 @@ id list
 id listMode
 id list_item
 id llBottomView
+id ll_business_working_hours
 id ll_hide_list
 id ll_loader
 id ll_show_list
@@ -5420,6 +5423,8 @@ id rv_add_new_images
 id rv_item_list
 id rv_items
 id rv_show_image_list
+id rv_start_and_end_time
+id rv_working_weekdays
 id rzp_innerbox
 id rzp_outerbox
 id rzp_securedpayments
@@ -5541,6 +5546,7 @@ id supportFragment
 id supportRecyclerView
 id supportScrollUp
 id swipeRefreshLayout
+id switch_btn
 id tabLayout
 id tabMode
 id tableLayout
@@ -5595,6 +5601,8 @@ id thumbnails_container
 id thumbnails_scroll_view
 id ticker
 id tilConfirmPass
+id til_end_time
+id til_start_time
 id time
 id timePicker
 id title
@@ -5802,11 +5810,15 @@ id tvYrlyPrice
 id tvZipCode
 id tv_bank_details
 id tv_blank
+id tv_close
 id tv_domainPrice
+id tv_open
 id tv_payment_email
 id tv_payment_method
 id tv_payment_url
+id tv_startTime
 id tv_title
+id tv_weekends_name
 id tvprofileNewPas
 id tvprofileProfession
 id tvprofilecurrentPas
@@ -6005,6 +6017,8 @@ layout alert_profession_item
 layout alter_profession_layout
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout business_working_weekdays_name
+layout business_workinghours_start_and_end_time_layout
 layout buy_quites_service
 layout com_facebook_activity_layout
 layout com_facebook_device_auth_dialog_fragment
@@ -6046,6 +6060,7 @@ layout dlg_progress
 layout dlg_share_business_list
 layout dlg_submit_review
 layout domain_mysite_adapter
+layout drop_down_list
 layout earning_adopter
 layout expandable_business_list_child_layout
 layout expandable_business_list_group_layout

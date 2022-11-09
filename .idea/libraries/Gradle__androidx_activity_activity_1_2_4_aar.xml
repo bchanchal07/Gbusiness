@@ -5,7 +5,6 @@
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/75261e248618fffff47aa2655b12a693/activity-1.2.4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/75261e248618fffff47aa2655b12a693/activity-1.2.4/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/75261e248618fffff47aa2655b12a693/activity-1.2.4/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />

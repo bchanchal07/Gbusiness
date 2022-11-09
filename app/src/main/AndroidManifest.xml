@@ -43,11 +43,9 @@
 
         <activity
             android:name=".activities.FullImageActivity"
-            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".activities.SignUpActivity"
-            android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".activities.Main2Activity"
@@ -64,8 +62,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".activities.MainActivity"
-            android:screenOrientation="portrait"
-            android:exported="false"/>
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".activities.OtpActivity"
             android:screenOrientation="portrait" />
@@ -104,10 +101,8 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>

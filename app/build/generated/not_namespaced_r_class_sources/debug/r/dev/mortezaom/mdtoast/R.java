@@ -29,13 +29,13 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int icon = 0x7f0a02f9;
-        public static final int text = 0x7f0a059e;
+        public static final int icon = 0x7f0a02fb;
+        public static final int text = 0x7f0a05a4;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int custom_toast_container = 0x7f0d0039;
+        public static final int custom_toast_container = 0x7f0d003b;
     }
     public static final class string {
         private string() {}

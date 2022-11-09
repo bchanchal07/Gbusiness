@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.debutdeveloper:countrypickerandroid:dcbbda7fda@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/090bf367cdf3c5da2a7d1fe51760cbe5/jetified-countrypickerandroid-dcbbda7fda/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/090bf367cdf3c5da2a7d1fe51760cbe5/jetified-countrypickerandroid-dcbbda7fda/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/090bf367cdf3c5da2a7d1fe51760cbe5/jetified-countrypickerandroid-dcbbda7fda/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8cf03e5b3cb9da1fd86d0aafbdba7d91/jetified-countrypickerandroid-dcbbda7fda/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8cf03e5b3cb9da1fd86d0aafbdba7d91/jetified-countrypickerandroid-dcbbda7fda/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8cf03e5b3cb9da1fd86d0aafbdba7d91/jetified-countrypickerandroid-dcbbda7fda/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

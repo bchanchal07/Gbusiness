@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.libRG:customtextview:2.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0288c697aa811a6c0f2d2fccc4e358f/jetified-customtextview-2.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0288c697aa811a6c0f2d2fccc4e358f/jetified-customtextview-2.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0288c697aa811a6c0f2d2fccc4e358f/jetified-customtextview-2.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a18174574db02bb99a4c6c440574d06/jetified-customtextview-2.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a18174574db02bb99a4c6c440574d06/jetified-customtextview-2.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a18174574db02bb99a4c6c440574d06/jetified-customtextview-2.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.libRG/customtextview/2.2/909f99489b749f2bd758e072211c393211589517/customtextview-2.2-javadoc.jar!/" />

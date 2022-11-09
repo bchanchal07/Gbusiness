@@ -5,7 +5,6 @@
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/472971fc7861d5a79052be6236e9c950/imagepipeline-2.5.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/472971fc7861d5a79052be6236e9c950/imagepipeline-2.5.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/472971fc7861d5a79052be6236e9c950/imagepipeline-2.5.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>

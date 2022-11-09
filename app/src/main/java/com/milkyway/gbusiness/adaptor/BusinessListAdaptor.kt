@@ -25,17 +25,17 @@ class BusinessListAdaptor(private val mCtx: Context, private val businessList: L
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val list = businessList[position]
         holder.tvSrNo.text = (position + 1).toString()
-        holder.tvBusinessName.text = list.businessName
-        holder.tvEmail.text = list.businessEmail
-        holder.tvUrl.text = list.businessWebUrl
-        holder.tvAboutBusiness.text = list.businessAboutUs
+        holder.tvBusinessName.text = list.business_name
+        holder.tvEmail.text = list.business_email
+        holder.tvUrl.text = list.business_web_url
+        holder.tvAboutBusiness.text = list.business_about_us
         holder.tvCategory.text = list.catname
         holder.tvSubcategory.text = list.subcatname
-        var returnDate = if (list.updatedAt != null) {
-            DateTimeUtils.getMaxDateFromTwoDatesString(list.createdAt, list.updatedAt, DateTimeUtils.DATE_FORMAT_33).toString()
+        var returnDate = if (list.updated_at != null) {
+            DateTimeUtils.getMaxDateFromTwoDatesString(list.created_at, list.updated_at, DateTimeUtils.DATE_FORMAT_33).toString()
 
         } else {
-            list.createdAt
+            list.created_at
         }
         val finalDateFormatStr = DateTimeUtils.formatDateFromDateString(
             DateTimeUtils.DATE_FORMAT_33,
@@ -55,8 +55,8 @@ class BusinessListAdaptor(private val mCtx: Context, private val businessList: L
             }
         }
 
-        if (list.businessLogo != null) {
-            val urlLogo = GbusinessService.BASE_IMG_URL + list.businessLogo
+        if (list.business_logo != null) {
+            val urlLogo = GbusinessService.BASE_IMG_URL + list.business_logo
 
             Glide.with(mCtx)
                 .load(urlLogo)
